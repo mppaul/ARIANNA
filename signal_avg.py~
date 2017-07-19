@@ -46,7 +46,7 @@ for i in range(len(err)):
         	y = np.concatenate((chunk, shift))
 	else:
         	pass
-	
+	print samples
     	f = f + y
     
 favg = f/args.average
