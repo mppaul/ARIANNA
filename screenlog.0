@@ -1,0 +1,306 @@
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: unable to access 'https://github.com/mppaul/ARIANNA.git/': Could not resolve host: github.com
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': mppaul
+Password for 'https://mppaul@github.com': 
+Counting objects: 5606, done.
+Delta compression using up to 2 threads.
+Compressing objects:   0% (1/5597)   Compressing objects:   0% (34/5597)   Compressing objects:   1% (56/5597)   Compressing objects:   1% (67/5597)   Compressing objects:   1% (75/5597)   Compressing objects:   1% (93/5597)   Compressing objects:   2% (112/5597)   Compressing objects:   2% (116/5597)   Compressing objects:   2% (126/5597)   Compressing objects:   2% (133/5597)   Compressing objects:   2% (142/5597)   Compressing objects:   3% (168/5597)   Compressing objects:   3% (186/5597)   Compressing objects:   3% (195/5597)   Compressing objects:   3% (207/5597)   Compressing objects:   3% (222/5597)   Compressing objects:   4% (224/5597)   Compressing objects:   4% (247/5597)   Compressing objects:   4% (265/5597)   Compressing objects:   4% (273/5597)   Compressing objects:   5% (280/5597)   Compressing objects:   5% (292/5597)   Compressing objects:   5% (313/5597)   Compressing objects:   5% (326/5597)   Compressing objects:   6% (336/5597)   Compressing objects:   6% (351/5597)   Compressing objects:   6% (369/5597)   Compressing objects:   6% (376/5597)   Compressing objects:   6% (390/5597)   Compressing objects:   7% (392/5597)   Compressing objects:   7% (421/5597)   Compressing objects:   7% (441/5597)   Compressing objects:   8% (448/5597)   Compressing objects:   8% (453/5597)   Compressing objects:   8% (463/5597)   Compressing objects:   8% (496/5597)   Compressing objects:   9% (504/5597)   Compressing objects:   9% (518/5597)   Compressing objects:   9% (524/5597)   Compressing objects:   9% (543/5597)   Compressing objects:  10% (560/5597)   Compressing objects:  10% (565/5597)   Compressing objects:  10% (573/5597)   Compressing objects:  10% (577/5597)   Compressing objects:  10% (592/5597)   Compressing objects:  10% (615/5597)   Compressing objects:  11% (616/5597)   Compressing objects:  11% (622/5597)   Compressing objects:  11% (625/5597)   Compressing objects:  11% (629/5597)   Compressing objects:  11% (633/5597)   Compressing objects:  11% (640/5597)   Compressing objects:  11% (645/5597)   Compressing objects:  11% (668/5597)   Compressing objects:  12% (672/5597)   Compressing objects:  12% (674/5597)   Compressing objects:  12% (688/5597)   Compressing objects:  12% (693/5597)   Compressing objects:  12% (697/5597)   Compressing objects:  12% (712/5597)   Compressing objects:  12% (719/5597)   Compressing objects:  13% (728/5597)   Compressing objects:  13% (736/5597)   Compressing objects:  13% (751/5597)   Compressing objects:  13% (768/5597)   Compressing objects:  13% (777/5597)   Compressing objects:  14% (784/5597)   Compressing objects:  14% (793/5597)   Compressing objects:  14% (804/5597)   Compressing objects:  14% (818/5597)   Compressing objects:  14% (825/5597)   Compressing objects:  14% (834/5597)   Compressing objects:  15% (840/5597)   Compressing objects:  15% (856/5597)   Compressing objects:  15% (874/5597)   Compressing objects:  15% (887/5597)   Compressing objects:  16% (896/5597)   Compressing objects:  16% (900/5597)   Compressing objects:  16% (930/5597)   Compressing objects:  16% (949/5597)   Compressing objects:  17% (952/5597)   Compressing objects:  17% (953/5597)   Compressing objects:  17% (963/5597)   Compressing objects:  17% (991/5597)   Compressing objects:  18% (1008/5597)   Compressing objects:  18% (1010/5597)   Compressing objects:  18% (1029/5597)   Compressing objects:  18% (1036/5597)   Compressing objects:  18% (1042/5597)   Compressing objects:  18% (1055/5597)   Compressing objects:  19% (1064/5597)   Compressing objects:  19% (1073/5597)   Compressing objects:  19% (1079/5597)   Compressing objects:  19% (1086/5597)   Compressing objects:  19% (1094/5597)   Compressing objects:  19% (1109/5597)   Compressing objects:  19% (1119/5597)   Compressing objects:  20% (1120/5597)   Compressing objects:  20% (1132/5597)   Compressing objects:  20% (1138/5597)   Compressing objects:  20% (1142/5597)   Compressing objects:  20% (1147/5597)   Compressing objects:  20% (1151/5597)   Compressing objects:  20% (1157/5597)   Compressing objects:  20% (1175/5597)   Compressing objects:  21% (1176/5597)   Compressing objects:  21% (1204/5597)   Compressing objects:  21% (1213/5597)   Compressing objects:  21% (1226/5597)   Compressing objects:  22% (1232/5597)   Compressing objects:  22% (1254/5597)   Compressing objects:  22% (1272/5597)   Compressing objects:  23% (1288/5597)   Compressing objects:  23% (1292/5597)   Compressing objects:  23% (1303/5597)   Compressing objects:  23% (1326/5597)   Compressing objects:  24% (1344/5597)   Compressing objects:  24% (1345/5597)   Compressing objects:  24% (1356/5597)   Compressing objects:  24% (1378/5597)   Compressing objects:  24% (1393/5597)   Compressing objects:  25% (1400/5597)   Compressing objects:  25% (1402/5597)   Compressing objects:  25% (1412/5597)   Compressing objects:  25% (1439/5597)   Compressing objects:  26% (1456/5597)   Compressing objects:  26% (1460/5597)   Compressing objects:  26% (1476/5597)   Compressing objects:  26% (1488/5597)   Compressing objects:  26% (1504/5597)   Compressing objects:  27% (1512/5597)   Compressing objects:  27% (1532/5597)   Compressing objects:  27% (1554/5597)   Compressing objects:  27% (1562/5597)   Compressing objects:  28% (1568/5597)   Compressing objects:  28% (1571/5597)   Compressing objects:  28% (1597/5597)   Compressing objects:  28% (1611/5597)   Compressing objects:  28% (1618/5597)   Compressing objects:  29% (1624/5597)   Compressing objects:  29% (1645/5597)   Compressing objects:  29% (1666/5597)   Compressing objects:  29% (1673/5597)   Compressing objects:  30% (1680/5597)   Compressing objects:  30% (1686/5597)   Compressing objects:  30% (1708/5597)   Compressing objects:  30% (1729/5597)   Compressing objects:  31% (1736/5597)   Compressing objects:  31% (1745/5597)   Compressing objects:  31% (1755/5597)   Compressing objects:  31% (1771/5597)   Compressing objects:  32% (1792/5597)   Compressing objects:  32% (1798/5597)   Compressing objects:  32% (1823/5597)   Compressing objects:  32% (1831/5597)   Compressing objects:  32% (1843/5597)   Compressing objects:  33% (1848/5597)   Compressing objects:  33% (1865/5597)   Compressing objects:  33% (1880/5597)   Compressing objects:  33% (1890/5597)   Compressing objects:  34% (1903/5597)   Compressing objects:  34% (1918/5597)   Compressing objects:  34% (1937/5597)   Compressing objects:  34% (1949/5597)   Compressing objects:  35% (1959/5597)   Compressing objects:  35% (1961/5597)   Compressing objects:  35% (1981/5597)   Compressing objects:  35% (2009/5597)   Compressing objects:  36% (2015/5597)   Compressing objects:  36% (2018/5597)   Compressing objects:  36% (2024/5597)   Compressing objects:  36% (2042/5597)   Compressing objects:  36% (2067/5597)   Compressing objects:  37% (2071/5597)   Compressing objects:  37% (2083/5597)   Compressing objects:  37% (2098/5597)   Compressing objects:  37% (2101/5597)   Compressing objects:  37% (2102/5597)   Compressing objects:  37% (2108/5597)   Compressing objects:  37% (2115/5597)   Compressing objects:  38% (2127/5597)   Compressing objects:  38% (2132/5597)   Compressing objects:  38% (2158/5597)   Compressing objects:  38% (2166/5597)   Compressing objects:  39% (2183/5597)   Compressing objects:  39% (2191/5597)   Compressing objects:  39% (2213/5597)   Compressing objects:  39% (2222/5597)   Compressing objects:  39% (2230/5597)   Compressing objects:  40% (2239/5597)   Compressing objects:  40% (2256/5597)   Compressing objects:  40% (2275/5597)   Compressing objects:  40% (2293/5597)   Compressing objects:  41% (2295/5597)   Compressing objects:  41% (2304/5597)   Compressing objects:  41% (2326/5597)   Compressing objects:  41% (2339/5597)   Compressing objects:  41% (2344/5597)   Compressing objects:  41% (2347/5597)   Compressing objects:  42% (2351/5597)   Compressing objects:  42% (2362/5597)   Compressing objects:  42% (2385/5597)   Compressing objects:  43% (2407/5597)   Compressing objects:  43% (2408/5597)   Compressing objects:  43% (2430/5597)   Compressing objects:  43% (2445/5597)   Compressing objects:  43% (2457/5597)   Compressing objects:  44% (2463/5597)   Compressing objects:  44% (2467/5597)   Compressing objects:  44% (2481/5597)   Compressing objects:  44% (2487/5597)   Compressing objects:  44% (2491/5597)   Compressing objects:  44% (2503/5597)   Compressing objects:  45% (2519/5597)   Compressing objects:  46% (2575/5597)   Compressing objects:  46% (2584/5597)   Compressing objects:  47% (2631/5597)   Compressing objects:  48% (2687/5597)   Compressing objects:  49% (2743/5597)   Compressing objects:  50% (2799/5597)   Compressing objects:  50% (2838/5597)   Compressing objects:  51% (2855/5597)   Compressing objects:  51% (2877/5597)   Compressing objects:  51% (2903/5597)   Compressing objects:  52% (2911/5597)   Compressing objects:  52% (2933/5597)   Compressing objects:  52% (2961/5597)   Compressing objects:  53% (2967/5597)   Compressing objects:  53% (2999/5597)   Compressing objects:  53% (3013/5597)   Compressing objects:  54% (3023/5597)   Compressing objects:  54% (3051/5597)   Compressing objects:  54% (3078/5597)   Compressing objects:  55% (3079/5597)   Compressing objects:  55% (3102/5597)   Compressing objects:  56% (3135/5597)   Compressing objects:  56% (3136/5597)   Compressing objects:  56% (3159/5597)   Compressing objects:  57% (3191/5597)   Compressing objects:  57% (3208/5597)   Compressing objects:  57% (3245/5597)   Compressing objects:  58% (3247/5597)   Compressing objects:  58% (3264/5597)   Compressing objects:  58% (3293/5597)   Compressing objects:  59% (3303/5597)   Compressing objects:  59% (3317/5597)   Compressing objects:  59% (3339/5597)   Compressing objects:  60% (3359/5597)   Compressing objects:  60% (3370/5597)   Compressing objects:  60% (3397/5597)   Compressing objects:  61% (3415/5597)   Compressing objects:  61% (3421/5597)   Compressing objects:  61% (3455/5597)   Compressing objects:  62% (3471/5597)   Compressing objects:  62% (3475/5597)   Compressing objects:  62% (3507/5597)   Compressing objects:  63% (3527/5597)   Compressing objects:  63% (3529/5597)   Compressing objects:  63% (3563/5597)   Compressing objects:  64% (3583/5597)   Compressing objects:  64% (3591/5597)   Compressing objects:  64% (3608/5597)   Compressing objects:  65% (3639/5597)   Compressing objects:  65% (3641/5597)   Compressing objects:  65% (3662/5597)   Compressing objects:  65% (3666/5597)   Compressing objects:  65% (3685/5597)   Compressing objects:  66% (3695/5597)   Compressing objects:  66% (3724/5597)   Compressing objects:  67% (3750/5597)   Compressing objects:  67% (3751/5597)   Compressing objects:  67% (3780/5597)   Compressing objects:  68% (3806/5597)   Compressing objects:  68% (3809/5597)   Compressing objects:  68% (3839/5597)   Compressing objects:  68% (3859/5597)   Compressing objects:  69% (3862/5597)   Compressing objects:  69% (3887/5597)   Compressing objects:  69% (3895/5597)   Compressing objects:  70% (3918/5597)   Compressing objects:  70% (3921/5597)   Compressing objects:  70% (3955/5597)   Compressing objects:  71% (3974/5597)   Compressing objects:  71% (3979/5597)   Compressing objects:  71% (4000/5597)   Compressing objects:  71% (4005/5597)   Compressing objects:  71% (4007/5597)   Compressing objects:  71% (4010/5597)   Compressing objects:  72% (4030/5597)   Compressing objects:  72% (4034/5597)   Compressing objects:  72% (4036/5597)   Compressing objects:  72% (4041/5597)   Compressing objects:  72% (4042/5597)   Compressing objects:  72% (4048/5597)   Compressing objects:  72% (4056/5597)   Compressing objects:  72% (4067/5597)   Compressing objects:  72% (4080/5597)   Compressing objects:  73% (4086/5597)   Compressing objects:  73% (4093/5597)   Compressing objects:  73% (4105/5597)   Compressing objects:  73% (4119/5597)   Compressing objects:  73% (4129/5597)   Compressing objects:  73% (4136/5597)   Compressing objects:  74% (4142/5597)   Compressing objects:  74% (4153/5597)   Compressing objects:  74% (4167/5597)   Compressing objects:  74% (4178/5597)   Compressing objects:  75% (4198/5597)   Compressing objects:  75% (4200/5597)   Compressing objects:  75% (4210/5597)   Compressing objects:  75% (4231/5597)   Compressing objects:  75% (4250/5597)   Compressing objects:  76% (4254/5597)   Compressing objects:  76% (4289/5597)   Compressing objects:  76% (4309/5597)   Compressing objects:  77% (4310/5597)   Compressing objects:  77% (4342/5597)   Compressing objects:  77% (4351/5597)   Compressing objects:  78% (4366/5597)   Compressing objects:  78% (4390/5597)   Compressing objects:  78% (4416/5597)   Compressing objects:  79% (4422/5597)   Compressing objects:  79% (4449/5597)   Compressing objects:  80% (4478/5597)   Compressing objects:  80% (4482/5597)   Compressing objects:  80% (4512/5597)   Compressing objects:  81% (4534/5597)   Compressing objects:  81% (4567/5597)   Compressing objects:  82% (4590/5597)   Compressing objects:  82% (4593/5597)   Compressing objects:  82% (4625/5597)   Compressing objects:  83% (4646/5597)   Compressing objects:  83% (4655/5597)   Compressing objects:  83% (4667/5597)   Compressing objects:  83% (4679/5597)   Compressing objects:  84% (4702/5597)   Compressing objects:  84% (4713/5597)   Compressing objects:  84% (4738/5597)   Compressing objects:  85% (4758/5597)   Compressing objects:  85% (4773/5597)   Compressing objects:  85% (4791/5597)   Compressing objects:  86% (4814/5597)   Compressing objects:  86% (4826/5597)   Compressing objects:  86% (4841/5597)   Compressing objects:  86% (4868/5597)   Compressing objects:  87% (4870/5597)   Compressing objects:  87% (4906/5597)   Compressing objects:  87% (4922/5597)   Compressing objects:  88% (4926/5597)   Compressing objects:  88% (4967/5597)   Compressing objects:  89% (4982/5597)   Compressing objects:  89% (4986/5597)   Compressing objects:  89% (5019/5597)   Compressing objects:  90% (5038/5597)   Compressing objects:  90% (5044/5597)   Compressing objects:  90% (5073/5597)   Compressing objects:  91% (5094/5597)   Compressing objects:  91% (5100/5597)   Compressing objects:  91% (5136/5597)   Compressing objects:  91% (5148/5597)   Compressing objects:  92% (5150/5597)   Compressing objects:  92% (5185/5597)   Compressing objects:  93% (5206/5597)   Compressing objects:  93% (5211/5597)   Compressing objects:  93% (5234/5597)   Compressing objects:  94% (5262/5597)   Compressing objects:  94% (5263/5597)   Compressing objects:  94% (5289/5597)   Compressing objects:  94% (5311/5597)   Compressing objects:  95% (5318/5597)   Compressing objects:  95% (5337/5597)   Compressing objects:  96% (5374/5597)   Compressing objects:  96% (5375/5597)   Compressing objects:  96% (5399/5597)   Compressing objects:  96% (5426/5597)   Compressing objects:  96% (5427/5597)   Compressing objects:  96% (5428/5597)   Compressing objects:  96% (5429/5597)   Compressing objects:  97% (5430/5597)   Compressing objects:  97% (5431/5597)   Compressing objects:  97% (5433/5597)   Compressing objects:  97% (5434/5597)   Compressing objects:  97% (5435/5597)   Compressing objects:  97% (5436/5597)   Compressing objects:  97% (5441/5597)   Compressing objects:  97% (5457/5597)   Compressing objects:  97% (5476/5597)   Compressing objects:  98% (5486/5597)   Compressing objects:  98% (5501/5597)   Compressing objects:  98% (5514/5597)   Compressing objects:  98% (5515/5597)   Compressing objects:  98% (5517/5597)   Compressing objects:  98% (5519/5597)   Compressing objects:  98% (5520/5597)   Compressing objects:  98% (5521/5597)   Compressing objects:  98% (5522/5597)   Compressing objects:  98% (5523/5597)   Compressing objects:  98% (5525/5597)   Compressing objects:  98% (5526/5597)   Compressing objects:  98% (5527/5597)   Compressing objects:  98% (5528/5597)   Compressing objects:  98% (5529/5597)   Compressing objects:  98% (5530/5597)   Compressing objects:  98% (5531/5597)   Compressing objects:  98% (5532/5597)   Compressing objects:  98% (5533/5597)   Compressing objects:  98% (5534/5597)   Compressing objects:  98% (5535/5597)   Compressing objects:  98% (5536/5597)   Compressing objects:  98% (5537/5597)   Compressing objects:  98% (5538/5597)   Compressing objects:  98% (5540/5597)   Compressing objects:  98% (5541/5597)   Compressing objects:  99% (5542/5597)   Compressing objects:  99% (5544/5597)   Compressing objects:  99% (5545/5597)   Compressing objects:  99% (5551/5597)   Compressing objects:  99% (5552/5597)   Compressing objects:  99% (5553/5597)   Compressing objects:  99% (5555/5597)   Compressing objects:  99% (5557/5597)   Compressing objects:  99% (5558/5597)   Compressing objects:  99% (5559/5597)   Compressing objects:  99% (5560/5597)   Compressing objects:  99% (5561/5597)   Compressing objects:  99% (5562/5597)   Compressing objects:  99% (5563/5597)   Compressing objects:  99% (5564/5597)   error: pack-objects died of signal 9
+fatal: The remote end hung up unexpectedly
+fatal: The remote end hung up unexpectedly
+error: failed to push some refs to 'https://github.com/mppaul/ARIANNA.git'
+fatal: write error: Bad file descriptor
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git pushssh arianna@snowflake.ps.uci.edugit push[K[Kls
+[0m[01;34m207[0m                         [34;42mr00345_Forced[0m
+[01;35m2_of_8.png[0m                  [34;42mr00555[0m
+[01;34m4_CHAN_STATION[0m              [34;42mr00700[0m
+[01;32mch_0_1ms1_2.csv[0m             [34;42mr01000[0m
+[01;32mch_1_1ms1_2.csv[0m             README.md
+GainCalibration.TXT.save    [01;32mReadoutCalibSet.gainCalib8Ch.0002F7F2DA83.root[0m
+GainCalibration.TXT.save.1  screenlog.0
+LookAtOneEvent.py           [01;34mSP_Station_Testing[0m
+majority2.root              [01;34mStation_Temp_Test[0m
+[01;34mMajority_Logic[0m              Thermal_Noise.py
+plots.root                  Thermal_Noise.py.save
+[34;42mr00001[0m                      Thermal_Noise.py.save.1
+[34;42mr00002[0m                      [01;34mThreshold_Calibration_Scans[0m
+[34;42mr00004[0m                      [01;32mTrace_0001_shift.csv[0m
+[34;42mr00010[0m                      [01;32mTrace_0002_NoShift.csv[0m
+[34;42mr00088[0m                      [01;34mTwo_to_One_AmpBox[0m
+[34;42mr00089[0m                      [01;34mVSWR[0m
+[34;42mr00345[0m
+manuel@manuel-Inspiron-660s:~/ARIANNA$ push [K[K[K[K[Kgit push ./207
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: './207' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mscreenlog.0[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git commit ./207
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+	[31mscreenlog.0[m
+
+nothing added to commit but untracked files present
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git commit ./207 ./207[K ./207[K ./207[K ./207[K ./207[K ./207[Ka ./207d ./207d ./207
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git commit ./207
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+	[31mscreenlog.0[m
+
+nothing added to commit but untracked files present
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git commit
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Untracked files:
+	[31mscreenlog.0[m
+
+nothing added to commit but untracked files present
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git psuh[K[K[Kush
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': mapp   opp   pa paul
+Password for 'https://mppaul@github.com': 
+To https://github.com/mppaul/ARIANNA.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/mppaul/ARIANNA.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git pull
+remote: Enumerating objects: 8, done.[K
+remote: Counting objects:  12% (1/8)   [Kremote: Counting objects:  25% (2/8)   [Kremote: Counting objects:  37% (3/8)   [Kremote: Counting objects:  50% (4/8)   [Kremote: Counting objects:  62% (5/8)   [Kremote: Counting objects:  75% (6/8)   [Kremote: Counting objects:  87% (7/8)   [Kremote: Counting objects: 100% (8/8)   [Kremote: Counting objects: 100% (8/8), done.[K
+remote: Compressing objects:  14% (1/7)   [Kremote: Compressing objects:  28% (2/7)   [Kremote: Compressing objects:  42% (3/7)   [Kremote: Compressing objects:  57% (4/7)   [Kremote: Compressing objects:  71% (5/7)   [Kremote: Compressing objects:  85% (6/7)   [Kremote: Compressing objects: 100% (7/7)   [Kremote: Compressing objects: 100% (7/7), done.[K
+remote: Total 7 (delta 0), reused 7 (delta 0), pack-reused 0[K
+Unpacking objects:  14% (1/7)   Unpacking objects:  28% (2/7)   Unpacking objects:  42% (3/7)   Unpacking objects:  57% (4/7)   Unpacking objects:  71% (5/7)   Unpacking objects:  85% (6/7)   Unpacking objects: 100% (7/7)   Unpacking objects: 100% (7/7), done.
+From https://github.com/mppaul/ARIANNA
+   e293be2..051c533  master     -> origin/master
+(B)0[1;24r[m[?7h[?1h=[?1h=[?1h=[H[J[22;33H[0;7m[ Reading File ][19A[m[22;39H[0;7m 7 lines[12A[m[H[0;7m  GNU nano 2.5.3     File: /home/manuel/ARIANNA/.git/MERGE_MSG                  [3;1H[mMerge branch 'master' of https://github.com/mppaul/ARIANNA[2B# Please enter a commit message to explain why this merge is necessary,[1B# especially if it merges an updated upstream into a topic branch.[1B#[1B# Lines starting with '#' will be ignored, and an empty message aborts[1B# the commit.[14B[0;7m^G[m Get Help  [0;7m^O[m Write Out [0;7m^W[m Where Is  [0;7m^K[m Cut Text  [0;7m^J[m Justify   [0;7m^C[m Cur Pos[1B[0;7m^X[m Exit[6C[0;7m^R[m Read File [0;7m^\[m Replace   [0;7m^U[m Uncut Text[0;7m^T[m To Spell  [0;7m^_[m Go To Line[21A[19B[J[2B[79C[24;1H[?1l>Merge made by the 'recursive' strategy.
+ .B01VisualizeThresholdTuning.py.swp | Bin [31m0[m -> [32m1024[m bytes
+ B01VisualizeThresholdTuning.py      |  67 [32m+++++++++++++++++++++++++++[m
+ Manual_ThresCalib.py                |  38 [32m+++++++++++++++[m
+ data.json                           |  89 [32m++++++++++++++++++++++++++++++++++++[m
+ test.csv                            |  26 [32m+++++++++++[m
+ 5 files changed, 220 insertions(+)
+ create mode 100644 .B01VisualizeThresholdTuning.py.swp
+ create mode 100644 B01VisualizeThresholdTuning.py
+ create mode 100644 Manual_ThresCalib.py
+ create mode 100644 data.json
+ create mode 100644 test.csv
+manuel@manuel-Inspiron-660s:~/ARIANNA$ 
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git[K[K[Kls
+[0m[01;34m207[0m                             [34;42mr00345[0m
+[01;35m2_of_8.png[0m                      [34;42mr00345_Forced[0m
+[01;34m4_CHAN_STATION[0m                  [34;42mr00555[0m
+B01VisualizeThresholdTuning.py  [34;42mr00700[0m
+[01;32mch_0_1ms1_2.csv[0m                 [34;42mr01000[0m
+[01;32mch_1_1ms1_2.csv[0m                 README.md
+data.json                       [01;32mReadoutCalibSet.gainCalib8Ch.0002F7F2DA83.root[0m
+GainCalibration.TXT.save        screenlog.0
+GainCalibration.TXT.save.1      [01;34mSP_Station_Testing[0m
+LookAtOneEvent.py               [01;34mStation_Temp_Test[0m
+majority2.root                  test.csv
+[01;34mMajority_Logic[0m                  Thermal_Noise.py
+Manual_ThresCalib.py            Thermal_Noise.py.save
+plots.root                      Thermal_Noise.py.save.1
+[34;42mr00001[0m                          [01;34mThreshold_Calibration_Scans[0m
+[34;42mr00002[0m                          [01;32mTrace_0001_shift.csv[0m
+[34;42mr00004[0m                          [01;32mTrace_0002_NoShift.csv[0m
+[34;42mr00010[0m                          [01;34mTwo_to_One_AmpBox[0m
+[34;42mr00088[0m                          [01;34mVSWR[0m
+[34;42mr00089[0m
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git commit
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+Untracked files:
+	[31mscreenlog.0[m
+
+nothing added to commit but untracked files present
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': mppaul
+Password for 'https://mppaul@github.com': 
+Counting objects: 5608, done.
+Delta compression using up to 2 threads.
+Compressing objects:   0% (1/5599)   Compressing objects:   0% (34/5599)   Compressing objects:   1% (56/5599)   Compressing objects:   1% (67/5599)   Compressing objects:   1% (75/5599)   Compressing objects:   1% (94/5599)   Compressing objects:   2% (112/5599)   Compressing objects:   2% (116/5599)   Compressing objects:   2% (126/5599)   Compressing objects:   2% (134/5599)   Compressing objects:   2% (145/5599)   Compressing objects:   3% (168/5599)   Compressing objects:   3% (187/5599)   Compressing objects:   3% (198/5599)   Compressing objects:   3% (212/5599)   Compressing objects:   4% (224/5599)   Compressing objects:   4% (231/5599)   Compressing objects:   4% (255/5599)   Compressing objects:   4% (268/5599)   Compressing objects:   4% (275/5599)   Compressing objects:   5% (280/5599)   Compressing objects:   5% (299/5599)   Compressing objects:   5% (319/5599)   Compressing objects:   5% (331/5599)   Compressing objects:   6% (336/5599)   Compressing objects:   6% (354/5599)   Compressing objects:   6% (372/5599)   Compressing objects:   6% (380/5599)   Compressing objects:   7% (392/5599)   Compressing objects:   7% (405/5599)   Compressing objects:   7% (429/5599)   Compressing objects:   7% (447/5599)   Compressing objects:   8% (448/5599)   Compressing objects:   8% (461/5599)   Compressing objects:   8% (482/5599)   Compressing objects:   9% (504/5599)   Compressing objects:   9% (514/5599)   Compressing objects:   9% (521/5599)   Compressing objects:   9% (531/5599)   Compressing objects:   9% (556/5599)   Compressing objects:  10% (560/5599)   Compressing objects:  10% (570/5599)   Compressing objects:  10% (581/5599)   Compressing objects:  10% (615/5599)   Compressing objects:  11% (616/5599)   Compressing objects:  11% (624/5599)   Compressing objects:  11% (631/5599)   Compressing objects:  11% (641/5599)   Compressing objects:  12% (672/5599)   Compressing objects:  12% (693/5599)   Compressing objects:  12% (703/5599)   Compressing objects:  12% (720/5599)   Compressing objects:  13% (728/5599)   Compressing objects:  13% (749/5599)   Compressing objects:  13% (770/5599)   Compressing objects:  13% (782/5599)   Compressing objects:  14% (784/5599)   Compressing objects:  14% (803/5599)   Compressing objects:  14% (819/5599)   Compressing objects:  14% (833/5599)   Compressing objects:  15% (840/5599)   Compressing objects:  15% (856/5599)   Compressing objects:  15% (874/5599)   Compressing objects:  15% (887/5599)   Compressing objects:  16% (896/5599)   Compressing objects:  16% (900/5599)   Compressing objects:  16% (930/5599)   Compressing objects:  16% (949/5599)   Compressing objects:  17% (952/5599)   Compressing objects:  17% (956/5599)   Compressing objects:  17% (975/5599)   Compressing objects:  17% (1005/5599)   Compressing objects:  18% (1008/5599)   Compressing objects:  18% (1017/5599)   Compressing objects:  18% (1032/5599)   Compressing objects:  18% (1042/5599)   Compressing objects:  18% (1062/5599)   Compressing objects:  19% (1064/5599)   Compressing objects:  19% (1081/5599)   Compressing objects:  19% (1093/5599)   Compressing objects:  19% (1117/5599)   Compressing objects:  20% (1120/5599)   Compressing objects:  20% (1136/5599)   Compressing objects:  20% (1144/5599)   Compressing objects:  20% (1156/5599)   Compressing objects:  21% (1176/5599)   Compressing objects:  21% (1186/5599)   Compressing objects:  21% (1209/5599)   Compressing objects:  21% (1222/5599)   Compressing objects:  22% (1232/5599)   Compressing objects:  22% (1233/5599)   Compressing objects:  22% (1266/5599)   Compressing objects:  22% (1287/5599)   Compressing objects:  23% (1288/5599)   Compressing objects:  23% (1296/5599)   Compressing objects:  23% (1317/5599)   Compressing objects:  23% (1338/5599)   Compressing objects:  24% (1344/5599)   Compressing objects:  24% (1351/5599)   Compressing objects:  24% (1378/5599)   Compressing objects:  24% (1396/5599)   Compressing objects:  25% (1400/5599)   Compressing objects:  25% (1403/5599)   Compressing objects:  25% (1419/5599)   Compressing objects:  25% (1449/5599)   Compressing objects:  26% (1456/5599)   Compressing objects:  26% (1469/5599)   Compressing objects:  26% (1477/5599)   Compressing objects:  26% (1488/5599)   Compressing objects:  26% (1504/5599)   Compressing objects:  27% (1512/5599)   Compressing objects:  27% (1533/5599)   Compressing objects:  27% (1554/5599)   Compressing objects:  27% (1562/5599)   Compressing objects:  28% (1568/5599)   Compressing objects:  28% (1571/5599)   Compressing objects:  28% (1597/5599)   Compressing objects:  28% (1611/5599)   Compressing objects:  28% (1619/5599)   Compressing objects:  29% (1624/5599)   Compressing objects:  29% (1646/5599)   Compressing objects:  29% (1667/5599)   Compressing objects:  29% (1672/5599)   Compressing objects:  30% (1680/5599)   Compressing objects:  30% (1703/5599)   Compressing objects:  30% (1722/5599)   Compressing objects:  31% (1736/5599)   Compressing objects:  31% (1742/5599)   Compressing objects:  31% (1750/5599)   Compressing objects:  31% (1766/5599)   Compressing objects:  32% (1792/5599)   Compressing objects:  32% (1809/5599)   Compressing objects:  32% (1827/5599)   Compressing objects:  32% (1837/5599)   Compressing objects:  33% (1848/5599)   Compressing objects:  33% (1855/5599)   Compressing objects:  33% (1876/5599)   Compressing objects:  33% (1887/5599)   Compressing objects:  34% (1904/5599)   Compressing objects:  34% (1908/5599)   Compressing objects:  34% (1930/5599)   Compressing objects:  34% (1946/5599)   Compressing objects:  34% (1956/5599)   Compressing objects:  35% (1960/5599)   Compressing objects:  35% (1979/5599)   Compressing objects:  35% (2003/5599)   Compressing objects:  36% (2016/5599)   Compressing objects:  36% (2017/5599)   Compressing objects:  36% (2024/5599)   Compressing objects:  36% (2042/5599)   Compressing objects:  36% (2066/5599)   Compressing objects:  37% (2072/5599)   Compressing objects:  37% (2083/5599)   Compressing objects:  37% (2098/5599)   Compressing objects:  37% (2100/5599)   Compressing objects:  37% (2107/5599)   Compressing objects:  37% (2112/5599)   Compressing objects:  37% (2122/5599)   Compressing objects:  38% (2128/5599)   Compressing objects:  38% (2155/5599)   Compressing objects:  38% (2163/5599)   Compressing objects:  39% (2184/5599)   Compressing objects:  39% (2185/5599)   Compressing objects:  39% (2195/5599)   Compressing objects:  39% (2209/5599)   Compressing objects:  39% (2220/5599)   Compressing objects:  39% (2231/5599)   Compressing objects:  40% (2240/5599)   Compressing objects:  40% (2259/5599)   Compressing objects:  40% (2278/5599)   Compressing objects:  40% (2294/5599)   Compressing objects:  41% (2296/5599)   Compressing objects:  41% (2306/5599)   Compressing objects:  41% (2327/5599)   Compressing objects:  41% (2343/5599)   Compressing objects:  41% (2344/5599)   Compressing objects:  41% (2347/5599)   Compressing objects:  42% (2352/5599)   Compressing objects:  42% (2362/5599)   Compressing objects:  42% (2386/5599)   Compressing objects:  43% (2408/5599)   Compressing objects:  43% (2430/5599)   Compressing objects:  43% (2446/5599)   Compressing objects:  43% (2459/5599)   Compressing objects:  44% (2464/5599)   Compressing objects:  44% (2467/5599)   Compressing objects:  44% (2484/5599)   Compressing objects:  44% (2490/5599)   Compressing objects:  44% (2491/5599)   Compressing objects:  44% (2511/5599)   Compressing objects:  45% (2520/5599)   Compressing objects:  46% (2576/5599)   Compressing objects:  46% (2592/5599)   Compressing objects:  47% (2632/5599)   Compressing objects:  48% (2688/5599)   Compressing objects:  49% (2744/5599)   Compressing objects:  50% (2800/5599)   Compressing objects:  50% (2840/5599)   Compressing objects:  51% (2856/5599)   Compressing objects:  51% (2879/5599)   Compressing objects:  51% (2905/5599)   Compressing objects:  52% (2912/5599)   Compressing objects:  52% (2936/5599)   Compressing objects:  52% (2964/5599)   Compressing objects:  53% (2968/5599)   Compressing objects:  53% (3002/5599)   Compressing objects:  53% (3015/5599)   Compressing objects:  54% (3024/5599)   Compressing objects:  54% (3054/5599)   Compressing objects:  55% (3080/5599)   Compressing objects:  55% (3081/5599)   Compressing objects:  55% (3104/5599)   Compressing objects:  55% (3135/5599)   Compressing objects:  56% (3136/5599)   Compressing objects:  56% (3159/5599)   Compressing objects:  56% (3189/5599)   Compressing objects:  57% (3192/5599)   Compressing objects:  57% (3209/5599)   Compressing objects:  57% (3241/5599)   Compressing objects:  58% (3248/5599)   Compressing objects:  58% (3265/5599)   Compressing objects:  58% (3291/5599)   Compressing objects:  59% (3304/5599)   Compressing objects:  59% (3314/5599)   Compressing objects:  59% (3338/5599)   Compressing objects:  60% (3360/5599)   Compressing objects:  60% (3364/5599)   Compressing objects:  60% (3395/5599)   Compressing objects:  61% (3416/5599)   Compressing objects:  61% (3421/5599)   Compressing objects:  61% (3453/5599)   Compressing objects:  61% (3471/5599)   Compressing objects:  62% (3472/5599)   Compressing objects:  62% (3502/5599)   Compressing objects:  62% (3526/5599)   Compressing objects:  63% (3528/5599)   Compressing objects:  63% (3557/5599)   Compressing objects:  64% (3584/5599)   Compressing objects:  64% (3587/5599)   Compressing objects:  64% (3602/5599)   Compressing objects:  64% (3637/5599)   Compressing objects:  65% (3640/5599)   Compressing objects:  65% (3657/5599)   Compressing objects:  65% (3666/5599)   Compressing objects:  65% (3684/5599)   Compressing objects:  66% (3696/5599)   Compressing objects:  66% (3718/5599)   Compressing objects:  66% (3739/5599)   Compressing objects:  67% (3752/5599)   Compressing objects:  67% (3776/5599)   Compressing objects:  67% (3791/5599)   Compressing objects:  68% (3808/5599)   Compressing objects:  68% (3827/5599)   Compressing objects:  68% (3853/5599)   Compressing objects:  69% (3864/5599)   Compressing objects:  69% (3880/5599)   Compressing objects:  69% (3896/5599)   Compressing objects:  69% (3907/5599)   Compressing objects:  70% (3920/5599)   Compressing objects:  70% (3945/5599)   Compressing objects:  70% (3968/5599)   Compressing objects:  71% (3976/5599)   Compressing objects:  71% (3997/5599)   Compressing objects:  71% (4002/5599)   Compressing objects:  71% (4006/5599)   Compressing objects:  71% (4007/5599)   Compressing objects:  71% (4012/5599)   Compressing objects:  71% (4020/5599)   Compressing objects:  72% (4032/5599)   Compressing objects:  72% (4036/5599)   Compressing objects:  72% (4039/5599)   Compressing objects:  72% (4044/5599)   Compressing objects:  72% (4047/5599)   Compressing objects:  72% (4056/5599)   Compressing objects:  72% (4068/5599)   Compressing objects:  72% (4079/5599)   Compressing objects:  73% (4088/5599)   Compressing objects:  73% (4092/5599)   Compressing objects:  73% (4104/5599)   Compressing objects:  73% (4109/5599)   Compressing objects:  73% (4120/5599)   Compressing objects:  73% (4128/5599)   Compressing objects:  73% (4132/5599)   Compressing objects:  73% (4138/5599)   Compressing objects:  74% (4144/5599)   Compressing objects:  74% (4146/5599)   Compressing objects:  74% (4165/5599)   Compressing objects:  74% (4172/5599)   Compressing objects:  74% (4193/5599)   Compressing objects:  75% (4200/5599)   Compressing objects:  75% (4209/5599)   Compressing objects:  75% (4215/5599)   Compressing objects:  75% (4246/5599)   Compressing objects:  76% (4256/5599)   Compressing objects:  76% (4272/5599)   Compressing objects:  76% (4296/5599)   Compressing objects:  77% (4312/5599)   Compressing objects:  77% (4330/5599)   Compressing objects:  77% (4349/5599)   Compressing objects:  77% (4367/5599)   Compressing objects:  78% (4368/5599)   Compressing objects:  78% (4402/5599)   Compressing objects:  78% (4421/5599)   Compressing objects:  79% (4424/5599)   Compressing objects:  79% (4462/5599)   Compressing objects:  80% (4480/5599)   Compressing objects:  80% (4490/5599)   Compressing objects:  80% (4521/5599)   Compressing objects:  81% (4536/5599)   Compressing objects:  81% (4545/5599)   Compressing objects:  81% (4580/5599)   Compressing objects:  82% (4592/5599)   Compressing objects:  82% (4601/5599)   Compressing objects:  82% (4636/5599)   Compressing objects:  83% (4648/5599)   Compressing objects:  83% (4660/5599)   Compressing objects:  83% (4690/5599)   Compressing objects:  84% (4704/5599)   Compressing objects:  84% (4718/5599)   Compressing objects:  84% (4742/5599)   Compressing objects:  85% (4760/5599)   Compressing objects:  85% (4778/5599)   Compressing objects:  85% (4800/5599)   Compressing objects:  86% (4816/5599)   Compressing objects:  86% (4828/5599)   Compressing objects:  86% (4842/5599)   Compressing objects:  87% (4872/5599)   Compressing objects:  87% (4877/5599)   Compressing objects:  87% (4882/5599)   Compressing objects:  87% (4911/5599)   Compressing objects:  88% (4928/5599)   Compressing objects:  88% (4931/5599)   Compressing objects:  88% (4974/5599)   Compressing objects:  89% (4984/5599)   Compressing objects:  89% (4993/5599)   Compressing objects:  89% (5026/5599)   Compressing objects:  90% (5040/5599)   Compressing objects:  90% (5049/5599)   Compressing objects:  90% (5080/5599)   Compressing objects:  91% (5096/5599)   Compressing objects:  91% (5113/5599)   Compressing objects:  91% (5139/5599)   Compressing objects:  92% (5152/5599)   Compressing objects:  92% (5154/5599)   Compressing objects:  92% (5190/5599)   Compressing objects:  93% (5208/5599)   Compressing objects:  93% (5216/5599)   Compressing objects:  93% (5246/5599)   Compressing objects:  94% (5264/5599)   Compressing objects:  94% (5267/5599)   Compressing objects:  94% (5295/5599)   Compressing objects:  94% (5319/5599)   Compressing objects:  95% (5320/5599)   Compressing objects:  95% (5340/5599)   Compressing objects:  96% (5376/5599)   Compressing objects:  96% (5380/5599)   Compressing objects:  96% (5407/5599)   Compressing objects:  96% (5428/5599)   Compressing objects:  96% (5429/5599)   Compressing objects:  96% (5430/5599)   Compressing objects:  96% (5431/5599)   Compressing objects:  97% (5432/5599)   Compressing objects:  97% (5433/5599)   Compressing objects:  97% (5435/5599)   Compressing objects:  97% (5436/5599)   Compressing objects:  97% (5437/5599)   Compressing objects:  97% (5438/5599)   Compressing objects:  97% (5442/5599)   Compressing objects:  97% (5459/5599)   Compressing objects:  97% (5478/5599)   Compressing objects:  98% (5488/5599)   Compressing objects:  98% (5505/5599)   Compressing objects:  98% (5516/5599)   Compressing objects:  98% (5517/5599)   Compressing objects:  98% (5519/5599)   Compressing objects:  98% (5521/5599)   Compressing objects:  98% (5523/5599)   Compressing objects:  98% (5525/5599)   Compressing objects:  98% (5527/5599)   Compressing objects:  98% (5528/5599)   Compressing objects:  98% (5529/5599)   Compressing objects:  98% (5530/5599)   Compressing objects:  98% (5531/5599)   Compressing objects:  98% (5532/5599)   Compressing objects:  98% (5533/5599)   Compressing objects:  98% (5534/5599)   Compressing objects:  98% (5535/5599)   Compressing objects:  98% (5536/5599)   Compressing objects:  98% (5537/5599)   Compressing objects:  98% (5538/5599)   Compressing objects:  98% (5539/5599)   Compressing objects:  98% (5540/5599)   Compressing objects:  98% (5542/5599)   Compressing objects:  98% (5543/5599)   Compressing objects:  99% (5544/5599)   Compressing objects:  99% (5546/5599)   Compressing objects:  99% (5547/5599)   Compressing objects:  99% (5553/5599)   Compressing objects:  99% (5554/5599)   ^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[BCompressing objects:  99% (5555/5599)   ^[[B^[[B^[[B^[[B^[[B^[[B^[[A^[[A^[[A^[[A^[[A^[[A^[[ACompressing objects:  99% (5559/5599)   Compressing objects:  99% (5560/5599)   Compressing objects:  99% (5561/5599)   Compressing objects:  99% (5562/5599)   Compressing objects:  99% (5563/5599)   Compressing objects:  99% (5564/5599)   Compressing objects:  99% (5565/5599)   Compressing objects:  99% (5566/5599)   Compressing objects:  99% (5567/5599)   warning: suboptimal pack - out of memory
+Compressing objects:  99% (5568/5599)   error: pack-objects died of signal 9
+fatal: The remote end hung up unexpectedly
+fatal: The remote end hung up unexpectedly
+error: failed to push some refs to 'https://github.com/mppaul/ARIANNA.git'
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git pushcommitls[Kgit pullshcommit ./207add ./207[Kcommit ./207status[Kpush ./207ls[Kgit pushssh arianna@snowflake.ps.uci.eduecho hello[Kssh arianna@snowflake.ps.uci.edugit push[Kls[Kgit push ./207status[Kcommit ./207add ./207[Kcommit ./207[Kpush[Kllls[Kgit commitpush[K[Kgit pushcommitls[Kgit pullshcommit ./207fatal: write error: Bad file descriptor
+git status
+error: pathspec './207git' did not match any file(s) known to git.
+error: pathspec 'status' did not match any file(s) known to git.
+manuel@manuel-Inspiron-660s:~/ARIANNA$ ls
+[0m[01;34m207[0m                             data.json                   Manual_ThresCalib.py  [34;42mr00088[0m         [34;42mr01000[0m                                          test.csv                     [01;32mTrace_0002_NoShift.csv[0m
+[01;35m2_of_8.png[0m                      GainCalibration.TXT.save    plots.root            [34;42mr00089[0m         README.md                                       Thermal_Noise.py             [01;34mTwo_to_One_AmpBox[0m
+[01;34m4_CHAN_STATION[0m                  GainCalibration.TXT.save.1  [34;42mr00001[0m                [34;42mr00345[0m         [01;32mReadoutCalibSet.gainCalib8Ch.0002F7F2DA83.root[0m  Thermal_Noise.py.save        [01;34mVSWR[0m
+B01VisualizeThresholdTuning.py  LookAtOneEvent.py           [34;42mr00002[0m                [34;42mr00345_Forced[0m  screenlog.0                                     Thermal_Noise.py.save.1
+[01;32mch_0_1ms1_2.csv[0m                 majority2.root              [34;42mr00004[0m                [34;42mr00555[0m         [01;34mSP_Station_Testing[0m                              [01;34mThreshold_Calibration_Scans[0m
+[01;32mch_1_1ms1_2.csv[0m                 [01;34mMajority_Logic[0m              [34;42mr00010[0m                [34;42mr00700[0m         [01;34mStation_Temp_Test[0m                               [01;32mTrace_0001_shift.csv[0m
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git add /.[K[K./207
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mscreenlog.0[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git commit ./207
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+Untracked files:
+	[31mscreenlog.0[m
+
+nothing added to commit but untracked files present
+manuel@manuel-Inspiron-660s:~/ARIANNA$ git ush[K[K[Kpush ./207
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: './207' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+manuel@manuel-Inspiron-660s:~/ARIANNA$ 

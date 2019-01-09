@@ -1,0 +1,13 @@
+
+POST-DATA COLLECTION SET UP
+
+Copy gainCalibration.py to $SNS/scripts/offline/
+Copy saveStationCalibs.py to $SNS/scripts/offline/
+Make Directory GainData at $SNS/
+Organize Data Collected as the following:	
+	$SNS/GainData/203/r01010/SnEvt*.dat
+	Where each board is a directory under GainData, 
+		each board directory contains the 7 run directories 
+		and corresponding data. 
+
+Go into $SNS/scripts/offline and run python gainCalibration.py
