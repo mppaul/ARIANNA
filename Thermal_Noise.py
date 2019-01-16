@@ -11,19 +11,19 @@ from optparse import OptionParser
 if __name__ == '__main__':
         parser = OptionParser()
         parser.add_option("-f", "--file", help = "File contaning calib tree")
-        parser.add_option("-n", "--nChans", default = 4, help = "Number of DAq channels")
+        parser.add_option("-n", "--nChans", default = 8, help = "Number of DAq channels")
         (options, args) = parser.parse_args()
 	infn = options.file
         nChans = int(options.nChans)
 
 print "Initializing..."
 
-Printvals = False 	# Print each channel's average sigma, VRMS and offset for the entire data set
-makePlots = False	# Make histogram plots of the noise voltage
+Printvals = True 	# Print each channel's average sigma, VRMS and offset for the entire data set
+makePlots = True	# Make histogram plots of the noise voltage
 log = False 		# Plot histogram in log
-TempPlots = True 	# Make Temperature Plots: 1) VRMS vs Temp 2) Temp vs Time**
+TempPlots = False	# Make Temperature Plots: 1) VRMS vs Temp 2) Temp vs Time**
 FreqPlots = True	# Make Frequency Plots: 1) AVG Frequency 2) Frequency vs Event
-Freq_Temp = True	# Make Frequency as a function of Temperature Plot** *MUST Have TempPlots and FreqPlots = True*
+Freq_Temp = False	# Make Frequency as a function of Temperature Plot** *MUST Have TempPlots and FreqPlots = True*
 
 colors = ["#FF9900","#0066FF","#CC00CC","#339933","#fd5249","#00c7c1","#58008f","#5ca7ff"]
 

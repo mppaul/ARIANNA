@@ -70,3 +70,20 @@ All measurements only showed unique waveforms when power to the Vin is abrutly
 stopped. While slowly decreasing the voltage nothing creates large events.
 
 
+Test #3
+_______________________
+
+12345 - Run took only thremal triggers for 2 hours. Small issue with ground 
+of BMU that may cause some data to be use less in the beginning. Station was
+closed and terminators are placed on the inputs of the station and on the 
+inputs of the SST board. 
+
+
+
+
+20004 - FPN measurement
+20005 - Thermal Trigg Test
+20006 - Trig In Trig Out
+
+
+Make better measurements of the pulses and use scope to measure stuff.
