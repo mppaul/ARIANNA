@@ -1,0 +1,6 @@
+#SSH alias
+alias OUTREACH='sshpass -p "sun&galaxy" ssh -X -Y outreach@sagittarius.ps.uci.e$
+alias HPC='sshpass -p "DrPasqual2023" ssh -X -Y mppaul@hpc.oit.uci.edu'
+alias SNOWFLAKE='sshpass -p "iceRadio11" ssh -X -Y arianna@snowflake.ps.uci.edu'
+alias ASTRO_MOUNT='sshfs outreach@sagittarius.ps.uci.edu: ~/Outreach'
+
