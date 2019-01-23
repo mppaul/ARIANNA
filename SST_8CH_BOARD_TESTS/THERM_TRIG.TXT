@@ -91,14 +91,14 @@ RunMode=RunSeqListOneCommWin
 # (ATWD) dac number: 0=HI (c4), 1=LO (c2/c1), 2=LO (c1/c2), 3=HI (c3)
 #
 # (SST)  DACS= channel : dac low thresh, dac high thresh
-DACS= 0 : 21400,25600
-DACS= 1 : 21400,25600
-DACS= 2 : 21400,25600
-DACS= 3 : 21400,25600
-DACS= 4 : 21400,25600
-DACS= 5 : 21400,25600
-DACS= 6 : 21400,25600
-DACS= 7 : 21400,25600
+DACS= 0 : 21488,25681
+DACS= 1 : 21488,25681
+DACS= 2 : 21488,25681
+DACS= 3 : 21488,25681
+DACS= 4 : 21488,25681
+DACS= 5 : 21488,25681
+DACS= 6 : 21488,25681
+DACS= 7 : 21488,25681
 # number of cards in the majority logic
 NumCardsMajLog=1
 # if False, will disable all thermal triggers (!)

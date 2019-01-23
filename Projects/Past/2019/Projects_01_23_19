@@ -1,0 +1,39 @@
+Current Projects (Due Wed. Jan. 23)
+_____________________
+
+BMU Noise Study
+XX Take better oscilloscope data from power lines
+XX Run the station till the battery dies
+XX Reprobe and take thermal triggers when battery is barely operating and 
+   charging
+OO Build 4 channel amp box, filter pin box and partially assemble 4 channel
+   station for similar probing and thermal trigger testing.
+OO Calibrate new BMU for testing
+XX Sync the Vin and outside power line pulses
+
+Iridium File Size Transfer Study
+XX Talk to Geoff about what was happening when data didn't make it through SBD
+XX Develop plan for testing
+-- Get a key to the High Bay
+
+Building and Testing Heater Strip
+XX Look for epoxy material that can go to signicantly low temperatures and 
+   decently high temperatures
+-- Call the epoxy company  and ask for prices
+-- Get steve to order the epoxy material
+
+Trigger Threshold Study
+XX Get Astrid acquainted with Theshold Calibration process
+
+MISC
+-- Read paper and provide feedback
+
+
+Save for Next Week Projects (Maybe over a few weeks)
+-- Have Astrid finish the Manual Threshold Calibration and Gain Calibration
+-- Begin testing new python program for converting the csv file to json
+-- Begin thinking how to use the json data to produce the Threshold 
+   Calibrations
+
+
+

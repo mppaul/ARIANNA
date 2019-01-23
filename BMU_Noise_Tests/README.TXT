@@ -84,6 +84,60 @@ inputs of the SST board.
 20004 - FPN measurement
 20005 - Thermal Trigg Test
 20006 - Trig In Trig Out
-
+60000 - Threshold Calibration
+05679 - ???
 
 Make better measurements of the pulses and use scope to measure stuff.
+
+
+Vin Probing
+scope_7_2 (ignore)
+
+scope_9 largest pulse
+
+Notes: Image looks like ramping up and down voltages. Difference in time 
+between peaks is about 500ms with some pulses being able to disrupt this.
+
+4p Probing
+
+scope_10 image
+
+vout probing 
+
+scope11 image
+
+
+Notes: replaced the power supply and the same effect happens
+
+Test #4
+________________________
+
+I am going to attenpt to  sync the pulse on the Vin line with the pulse
+measured on the power supply outside the box.
+
+I will also see if there are dramatic differences when the battery is at very
+low charge (dead).
+
+Observation: The voltage range at which the station begins to power cycle 
+moves! Power cycling occurs when the input voltage matches the voltage of the
+battery. Since the battery was "dead" around 11-12V it began to power cycle
+early. Also once the voltage on the battery increased past the input power 
+the current decreases which makes sense since the BMU no longer take thinks 
+the input voltage is useful for charging. 
+
+Results: The power line outside the box experiences many little pulses with 
+the largest pulses being paired with a pulse from the Vin of the BMU. The 
+pulse seen on the outer line is indeed the beginning of the Vin pulse so 
+the low frequncy stuff is taken away and only high frequency stuff is what 
+goes back and forth along the power lines. It is my judgement that the smaller
+pulses seen on the outside power line are reflections as their amplitudes get 
+smaller and smaller. I would imagine there is not much attentuation since
+these reflected pulses are in abundance. I say they are reflected pulses 
+because the largest pulse are allways accompanied with a pulse from the Vin.
+Also they are all the same waveform shape but they do get more dispersed. 
+
+It is clear that the BMU Vin pulse is first as it and the pulse measured on
+the power line have a 19ns separation with the power line trailing. Also I am 
+not sure if power cycling is the best term anymore because at these voltages 
+the current is not cycling but we are still getting noise on the power lines.
+ 

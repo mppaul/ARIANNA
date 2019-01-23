@@ -16,10 +16,10 @@ DAQchip=SST8Ch_20171GHz
 #
 #
 # the (unique!) label for this config
-ConfLabel=Do_Nothing
+ConfLabel=Kill_Battery
 #
 # the run number and first sequence number
-Run=34676
+Run=7000
 FirstSeq=0
 #
 # number of X per sequence, where X is either saved triggered events (default)
@@ -109,7 +109,7 @@ ThermalTrigOn=False
 # (with MBED revision 18 and above)
 # the period can be specified from 0.05s to 1800s
 # of course, triggering faster than the throttle is useless
-ForcedPeriod=0
+ForcedPeriod=0.05
 #
 # heartbeat period (s). 1800 max. 0 = off. integer values.
 # NOTE: May want "CommWinSendData=StatSendHtbt" enabled
@@ -142,7 +142,7 @@ TempCheckPeriodAndPower=8,MbedPower
 # the comm win duration safety net min is 600.
 # the duration is capped at 86400 (24hrs)
 CommWinPeriod=900
-CommWinDuration=0
+CommWinDuration=600
 #
 # CommWinSendEvents: if >0, will send this number of events
 # back during the communication window.
@@ -261,7 +261,7 @@ PowerOnFor=CardDatTak
 PowerOnFor=AmpsComWin
 #PowerOnFor=CardComWin
 #PowerOnFor=AfarComWin
-#PowerOnFor=IridComWin
+PowerOnFor=IridComWin
 #
 # how many least significant (noise) bits to lose (>0 is lossy)
 WvLoseLSB=0
