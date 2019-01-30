@@ -78,33 +78,17 @@ of BMU that may cause some data to be use less in the beginning. Station was
 closed and terminators are placed on the inputs of the station and on the 
 inputs of the SST board. 
 
+Note: Need to rerun test#3.
 
-
-
-20004 - FPN measurement
-20005 - Thermal Trigg Test
-20006 - Trig In Trig Out
-60000 - Threshold Calibration
-05679 - ???
-
-Make better measurements of the pulses and use scope to measure stuff.
-
-
-Vin Probing
-scope_7_2 (ignore)
-
-scope_9 largest pulse
+Better measurements of noise with scope.
+scope_9 - largest pulse
 
 Notes: Image looks like ramping up and down voltages. Difference in time 
 between peaks is about 500ms with some pulses being able to disrupt this.
 
-4p Probing
+4p Probing - scope_10 image
 
-scope_10 image
-
-vout probing 
-
-scope11 image
+vout probing - scope11 image
 
 
 Notes: replaced the power supply and the same effect happens
@@ -128,16 +112,96 @@ the input voltage is useful for charging.
 Results: The power line outside the box experiences many little pulses with 
 the largest pulses being paired with a pulse from the Vin of the BMU. The 
 pulse seen on the outer line is indeed the beginning of the Vin pulse so 
-the low frequncy stuff is taken away and only high frequency stuff is what 
+the high frequncy stuff is taken away and only low frequency stuff is what 
 goes back and forth along the power lines. It is my judgement that the smaller
 pulses seen on the outside power line are reflections as their amplitudes get 
 smaller and smaller. I would imagine there is not much attentuation since
 these reflected pulses are in abundance. I say they are reflected pulses 
 because the largest pulse are allways accompanied with a pulse from the Vin.
-Also they are all the same waveform shape but they do get more dispersed. 
+Also they are all the same waveform shape but they do get more dispersed.
+
+Note: After some conversations with Steve and Stewart the little pulses on the
+power line outside the box are associated with the noise of the power source.
+It seems that the little pulses get added to the large pulse that makes it out
+the station from giving the appearence that the pulses are synced really what
+is happening is the large pulse being emitted from the BMU is making it out
+the filter pin and is being found on the powerline. However this pulse is 
+attenuated and lost some of its higher frequency components.
 
 It is clear that the BMU Vin pulse is first as it and the pulse measured on
 the power line have a 19ns separation with the power line trailing. Also I am 
 not sure if power cycling is the best term anymore because at these voltages 
 the current is not cycling but we are still getting noise on the power lines.
  
+==============================================================================
+                    CONSULTATION w/ Steve & Stewart
+			   January 24, 2019
+==============================================================================
+
+Stewart believes that the sawtooth or exponential waveforms are due to the BMU
+trying to decide whether or not to charge the battery. This usually occurs 
+when the power source voltage significanty close to the voltage measured 
+on the battery. Stewart brough up the point that we should be using constant
+current instead of voltage since that is a more accurate way of representing
+the wind gen and solar panels. When using constant current the same waveform 
+appear. The frequency of the exponential waveform is about 4.2 Hz or 240ms. 
+When the power source is about +1V above the battery voltage the exponential 
+waveform goes away. This is because we are at a voltage that is high enough
+that the battery is safely be always charging.
+
+Stewart also believes that the more narrow pulses that appear at a frequency
+of 500Hz that are overlaid on top of the exponential waveform may be due to 
+the current limiter. These pulse continue till the power supply is 3V higher 
+than the battery voltage. In addition the higher in voltage we go the frequncy
+increases as well to about 33 kHz. Stewart beleive this is the current 
+limiter because the voltage and corresponding current is to much to charge 
+the battery so the limiter could be making descisions to lower the current to 
+a safe charging current. If the power source is raised higher then stewart 
+belives the current limiter could be no longer charging the battery or has 
+lowered the current as far down as possible.
+
+Steve and Astrid have observed lines that appear on the time difference 
+between event vs event number. The lines appear at multiples of 240ms. This 
+is likely due to the exponential waveform. The extra multiples come from the 
+station missing the trigger. The wind gen data shows these lines more 
+frequnently because of the intermident wind fluctions. 
+
+Steve, according to last meeting, asked Astrid to look closer at the solar
+panel stations to see if they also show these lines in the delta t's vs event
+number especially at times when the sun is setting. A preliminiary look at stn
+14 showed some of these lines during times when the sun is going down. A more 
+detailed look is to  come soon.
+
+A problem we faced is not being able to view the high frequency stuff that is
+coming out the power line that could trigger the station. Stewart beleives that
+the power supply we are using has a lot of capcitance that doesn't allow any 
+fast moving/ high frequency fluctuations to happen on the line. Stewart 
+suggested we use a solar panel and try and mimic this behavior especially if
+Astrid shows that the solar panel also causes this nosie to occur when the 
+power source voltage matches the battery voltage from old data. 
+
+Steve says the solar panel is difficult to use when it come to trying to lower
+the power going to the battery. I suggested using a 12V Max solar panel and 
+using the battery when it is 'dead" (11V) so that the solar panel will charge
+it into the range where the noise starts to occur. At this point we should be 
+able to see if any high frequency stuff is leaking out.
+
+Steve also suggested a redo of Test#3. To double check that the station does 
+not trigger it's self on the inside this is because Stewart's suggestion to 
+fix this over all issue with the BMU is creating a better filter to filter 
+out the high noise. The question then becomes where to put it. If the noise does
+not trigger the station on the inside then the current filter pins on the BMU
+box do not need to be changed. The filter can then go on the Power in to the 
+station. But if they do in fact trigger the station on the inside then it 
+should go on the BMU box.
+
+Steve believes we may be able to just buy better filer pins instead of creating
+a filter all together. Stewart would also like to see the wind gen circuit
+diagram to see if the pulse being sent to the wind gen could cause a reaction
+by the wind gen which could then be creating high frequency noise.
+
+Next Steps:
+-- Find a 12V solar panel for Steve to buy
+-- Rerun Test #3 with details
+-- Place 12V solar panel on top of the High Bay and try to recreate noise with
+dead battery.
