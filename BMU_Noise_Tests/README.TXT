@@ -141,3 +141,4 @@ the power line have a 19ns separation with the power line trailing. Also I am
 not sure if power cycling is the best term anymore because at these voltages 
 the current is not cycling but we are still getting noise on the power lines.
  
+          

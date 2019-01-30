@@ -14,7 +14,7 @@ for i in range(len(file1)-2):
 data = np.array(data)
 time = np.array(time)
 
-print time[1]-time[0]
+print 1/(time[1]-time[0])
 
 freq = np.fft.rfftfreq(len(data), d=time[1]-time[0])
 freq_data = np.abs(np.fft.rfft(data, norm="ortho"))
