@@ -11,29 +11,30 @@ if sys.argv[1].endswith('.csv'):
 	CH = ["CH0", "CH1", "CH2", "CH3", "CH4", "CH5", "CH6", "CH7"]
 	col = [0, 4, 8, 12, 16, 20, 24, 28]
 	
-	#for k in range(len(CH))
-	ind = []
-	for i in range(dim[0]):
-		if data[i][col[0]] == CH[0]:
-			d[data[i][col[0]]] = {}
-		if data[i][0] == "PG Value":
-			d[CH[col[0]]][data[i][col[0]+2][5:]] = {}
-			d[CH[col[0]]][data[i][col[0]+2][5:]][data[i][col[0]]] = []
-			d[CH[col[0]]][data[i][col[0]+2][5:]][data[i][col[0]+1]] = []
-			d[CH[col[0]]][data[i][col[0]+2][5:]]["Frequency"] = []
-			ind.append(i)
+	for l in range(8):
+		ind = []
+		for i in range(dim[0]):
+			if data[i][col[l]] == CH[l]:
+				d[data[i][col[l]]] = {}
+			if data[i][col[l]] == "PG Value":
+				d[CH[l]][data[i][col[l]+2][5:]] = {}
+				d[CH[l]][data[i][col[l]+2][5:]][data[i][col[l]]] = []
+				d[CH[l]][data[i][col[l]+2][5:]][data[i][col[l]+1]] = []
+				d[CH[l]][data[i][col[l]+2][5:]]["Frequency"] = []
+				ind.append(i)
 		
-	for j in range(len(ind)):
-		if ind[j] == ind[-1]:
-			end = dim[0]
-				
-		else:
-			end = ind[j+1]
-		
-		for k in range(ind[j]+1,end):			 
-			d[CH[col[0]]][data[ind[j]][col[0]+2][5:]][data[ind[j]][col[0]]].append(float(data[k][col[0]]))
-			d[CH[col[0]]][data[ind[j]][col[0]+2][5:]][data[ind[j]][col[0]+1]].append(float(data[k][col[0]+1]))
-			d[CH[col[0]]][data[ind[j]][col[0]+2][5:]]["Frequency"].append(float(data[k][col[0]+2]))
+		for j in range(len(ind)):
+			if ind[j] == ind[-1]:
+				end = dim[0]		
+			else:
+				end = ind[j+1]
+			
+			for k in range(ind[j]+1,end):
+				if any(np.core.defchararray.startswith(data[k][col[l]],["-",'1','2','3','4','5','6','7','8','9'])) == False:
+					break
+				d[CH[l]][data[ind[j]][col[l]+2][5:]][data[ind[j]][col[l]]].append(float(data[k][col[l]]))
+				d[CH[l]][data[ind[j]][col[l]+2][5:]][data[ind[j]][col[l]+1]].append(float(data[k][col[l]+1]))
+				d[CH[l]][data[ind[j]][col[l]+2][5:]]["Frequency"].append(float(data[k][col[l]+2]))
 	
 	with open("data.json", 'w') as outfile:
 		json.dump(d, outfile, sort_keys=True, indent=4)
