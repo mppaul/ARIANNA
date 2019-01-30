@@ -12,11 +12,11 @@
 #   DAQchip=SST2014     : compatible with the SST chip and 2014 FPGA code
 #   DAQchip=ATWD2013    : compatible with the ATWD chip and the 2013 online code
 #   DAQchip=OldATWD2012 : compatible with the ATWD chip and old 2012 online code
-DAQchip=SST8Ch_20171GHz
+DAQchip=SST20151GHz
 #
 #
 # the (unique!) label for this config
-ConfLabel=SBD_File_Transfer_100_FTpS
+ConfLabel=SBD_File_Transfer_Test_100_FTpS
 #
 # the run number and first sequence number
 Run=703
@@ -95,10 +95,6 @@ DACS= 0 : 200,4000
 DACS= 1 : 200,4000
 DACS= 2 : 200,4000
 DACS= 3 : 200,4000
-DACS= 4 : 200,4000
-DACS= 5 : 200,4000
-DACS= 6 : 200,4000
-DACS= 7 : 200,4000
 # number of cards in the majority logic
 NumCardsMajLog=2
 # if False, will disable all thermal triggers (!)
@@ -109,7 +105,7 @@ ThermalTrigOn=False
 # (with MBED revision 18 and above)
 # the period can be specified from 0.05s to 1800s
 # of course, triggering faster than the throttle is useless
-ForcedPeriod=0.5
+ForcedPeriod=0.05
 #
 # heartbeat period (s). 1800 max. 0 = off. integer values.
 # NOTE: May want "CommWinSendData=StatSendHtbt" enabled
@@ -255,13 +251,13 @@ CommWinListenTOmins=1,Afar
 # Note: current dCard FPGA program will not accept new threshold values unless
 # power to card is cycled. The work around is to power cards off during comm win.
 #PowerOnFor=AmpsDatTak
-#PowerOnFor=CardDatTak
+PowerOnFor=CardDatTak
 #PowerOnFor=AfarDatTak
 #PowerOnFor=IridDatTak
 #PowerOnFor=AmpsComWin
-#PowerOnFor=CardComWin
+PowerOnFor=CardComWin
 #PowerOnFor=AfarComWin
-PowerOnFor=IridComWin
+#PowerOnFor=IridComWin
 #
 # how many least significant (noise) bits to lose (>0 is lossy)
 WvLoseLSB=0
