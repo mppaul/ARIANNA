@@ -12,7 +12,7 @@
 #   DAQchip=SST2014     : compatible with the SST chip and 2014 FPGA code
 #   DAQchip=ATWD2013    : compatible with the ATWD chip and the 2013 online code
 #   DAQchip=OldATWD2012 : compatible with the ATWD chip and old 2012 online code
-DAQchip=SST20151GHz
+DAQchip=SST2015
 #
 #
 # the (unique!) label for this config

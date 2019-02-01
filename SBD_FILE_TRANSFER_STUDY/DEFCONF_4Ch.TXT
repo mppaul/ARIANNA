@@ -12,19 +12,19 @@
 #   DAQchip=SST2014     : compatible with the SST chip and 2014 FPGA code
 #   DAQchip=ATWD2013    : compatible with the ATWD chip and the 2013 online code
 #   DAQchip=OldATWD2012 : compatible with the ATWD chip and old 2012 online code
-DAQchip=SST20151GHz
+DAQchip=SST2015
 #
 #
 # the (unique!) label for this config
-ConfLabel=SBD_File_Transfer_Test_10_FTpS
+ConfLabel=SBD_comm
 #
 # the run number and first sequence number
-Run=701
+Run=707
 FirstSeq=0
 #
 # number of X per sequence, where X is either saved triggered events (default)
 # or number of saved power readings (if CountPower bit set in RunMode)
-EvtsPerSeq=10
+EvtsPerSeq=300
 #
 # run mode: each line enables one bit. possible bits are:
 #   SingleSeq:  unset (default) = take many sequences,
@@ -72,12 +72,12 @@ EvtsPerSeq=10
 # DualThresh and DiffTrig are ignored for ATWD stations, but these bits
 # should almost certainly be set for SST stations.
 #
-RunMode=SingleSeq
+#RunMode=SingleSeq
 #RunMode=CountPower
 #RunMode=DualThresh
 #RunMode=DiffTrig
 #RunMode=LowPwrSBDonly
-#RunMode=RunSeqListOneCommWin
+RunMode=RunSeqListOneCommWin
 #RunMode=IgnoreSDcard
 #RunMode=CommPowerSimple
 #RunMode=CommWinEachEvent
@@ -105,7 +105,7 @@ ThermalTrigOn=False
 # (with MBED revision 18 and above)
 # the period can be specified from 0.05s to 1800s
 # of course, triggering faster than the throttle is useless
-ForcedPeriod=0.05
+ForcedPeriod=0
 #
 # heartbeat period (s). 1800 max. 0 = off. integer values.
 # NOTE: May want "CommWinSendData=StatSendHtbt" enabled
@@ -137,8 +137,8 @@ TempCheckPeriodAndPower=8,MbedPower
 # the comm win period safety net range is [120, 259200]
 # the comm win duration safety net min is 600.
 # the duration is capped at 86400 (24hrs)
-CommWinPeriod=240
-CommWinDuration=0
+CommWinPeriod=1200
+CommWinDuration=1800
 #
 # CommWinSendEvents: if >0, will send this number of events
 # back during the communication window.
@@ -167,14 +167,14 @@ CommWinDuration=0
 CommWinSendData=DefaultSendData
 #CommWinSendData=AllFiles
 #CommWinSendData=DeleteIfReceived
-#CommWinSendData=HandshakeBeforeSendData
+CommWinSendData=HandshakeBeforeSendData
 CommWinSendData=CloseOnTimeout
 #CommWinSendData=SendRunSeqList
-#CommWinSendData=ForceSBDtoSendFileData
+CommWinSendData=ForceSBDtoSendFileData
 CommWinSendData=StatSendConf
 CommWinSendData=StatSendTrgTim
 CommWinSendData=StatSendPwrDat
-CommWinSendData=StatSendEvent
+#CommWinSendData=StatSendEvent
 #CommWinSendData=StatSendHtbt
 CommWinSendData=StatSendTmpDat
 #
@@ -257,7 +257,7 @@ PowerOnFor=CardDatTak
 #PowerOnFor=AmpsComWin
 PowerOnFor=CardComWin
 #PowerOnFor=AfarComWin
-#PowerOnFor=IridComWin
+PowerOnFor=IridComWin
 #
 # how many least significant (noise) bits to lose (>0 is lossy)
 WvLoseLSB=0
