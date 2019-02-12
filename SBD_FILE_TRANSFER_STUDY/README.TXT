@@ -76,7 +76,7 @@ the station first sends the requested file.
 The debug output will be collected when there is a loss of data noticed. 
 
 
-DATA FROM SD CARD
+DATA FROM SD CARD:
 
 FILE	# OF EVENTS	DAT BYTES	ROOT BYTES 
 701	10		16214		41823		
@@ -89,15 +89,15 @@ FILE	# OF EVENTS	DAT BYTES	ROOT BYTES
 Note: r00703 has 4 sequences in it but we only care about the first one since 
 that is the only one we request.
 
-DATA TRANSFER
+DATA TRANSFER:
 
 	FIRST TRANSFER			SECOND TRANSFER 
 	---------------------------	---------------------------
 FILE	# OF EVENTS     DAT BYTES	# OF EVENTS     DAT BYTES 
-701	10		16214	
-702	29		46516
+701	10		16214		10		16214
+702	29		46516		23		36940
 703	17		27364		23		36940
-704	17		27364
+704	17		27364		17		27364
 705	23		36940		17		27364
 706	17		27364		17		27364
 

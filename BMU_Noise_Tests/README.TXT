@@ -1,11 +1,17 @@
+==============================================================================
+                               BMU Noise Study
+==============================================================================
+Problem
+
 This folder contains the files and data from BMU Noise tests. According to 
 the Antarctica team the wind gen does not supply constant charging and 
 discharging to the BMU. The idea is that the BMU has to make more desicions 
 when it loses charging voltage and when it gains it. Causing more noise to 
 be created. 
 
+==============================================================================
 Test #1
-______________________
+------------------------------------------------------------------------------
 
 This test will look at the baseline noise while the station is charging and 
 discharging. Force triggers and thermal triggers are taken to measure the 
@@ -56,8 +62,9 @@ the current begings to jump around alot. The current becomes stable again at
 14.3V. Would like to proble this with the oscilloscope. Config started at 
 5:15PM on Jan 11. Config ended at 5:30PM.
 
+------------------------------------------------------------------------------
 Test #2
-_______________________
+------------------------------------------------------------------------------
 
 DMM - Noise caused by probing Vout with DMM
 VOUT - Noise from Vout
@@ -69,9 +76,9 @@ NOTES:
 All measurements only showed unique waveforms when power to the Vin is abrutly
 stopped. While slowly decreasing the voltage nothing creates large events.
 
-
+------------------------------------------------------------------------------
 Test #3
-_______________________
+------------------------------------------------------------------------------
 
 12345 - Run took only thremal triggers for 2 hours. Small issue with ground 
 of BMU that may cause some data to be use less in the beginning. Station was
@@ -93,8 +100,10 @@ vout probing - scope11 image
 
 Notes: replaced the power supply and the same effect happens
 
+------------------------------------------------------------------------------
 Test #4
-________________________
+------------------------------------------------------------------------------
+
 
 I am going to attenpt to  sync the pulse on the Vin line with the pulse
 measured on the power supply outside the box.
@@ -205,3 +214,34 @@ Next Steps:
 -- Rerun Test #3 with details
 -- Place 12V solar panel on top of the High Bay and try to recreate noise with
 dead battery.
+
+------------------------------------------------------------------------------
+Test #5 - Redo of Test #3
+------------------------------------------------------------------------------
+
+r06789 - Config takes only thermal triggers. Set threshold low to make sure
+we only trigger on amps noise and extra noise from BMU. The thresholds are set
+to around +/- 45V. Channels 2 and 7 are connected to amps while all others 
+are terminated on the SST board. Station is set to High or low and 1 of 2
+majority.
+
+Notes: The station was dead. The battery voltage was 11.5V. I waited until 
+it reach around 12V before beginning test. The station would turn off when the
+power cycling began around 11.5V. Makes sense since the only reason the station
+is on is because of the power source. If it cycles in power then it will 
+naturally turn it off. 
+
+The station is taking thermal triggers I will check the rates once I get the 
+data. I will take two sets. One while pwoer cycling and the other when it is not
+to compare the rates at these thresholds. T
+
+Test began at 8:20PM. The station was put into power cycling. Will change the 
+power source voltage at 9:06PM. Station was put into charging mode with large 
+voltage ~17V. Data taking ended at 10:05PM.
+
+
+------------------------------------------------------------------------------
+Test #6 - Solar Panel + BMU Noise Tests
+------------------------------------------------------------------------------
+
+
