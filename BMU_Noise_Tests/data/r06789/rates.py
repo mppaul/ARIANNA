@@ -28,7 +28,14 @@ for j in range(s):
 			cnt += 1
 	rate.append(cnt/(intv*3600))
 
-t = np.arange(intv,intv*(s+1),intv)
+t = np.arange(intv,intv*(s+1),intv) -0.125
 
+plt.errorbar(t, rate, xerr=0.125, fmt='o')
+plt.title("Internal Thermal Trigger Rates [~60mV Threshold]")
+plt.ylabel("Thermal Trigger Rates [Hz]")
+plt.xlabel("Time [hr]")
+plt.ylim(0, 1)
+plt.xlim(0,2)
+plt.show()
 
 
