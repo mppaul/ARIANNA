@@ -105,10 +105,10 @@ FILE	# OF EVENTS     DAT BYTES	# OF EVENTS     DAT BYTES
         THIRD TRANSFER                  FOURTH TRANSFER
         ---------------------------     ---------------------------   
 FILE    # OF EVENTS     DAT BYTES       # OF EVENTS     DAT BYTES
-701        
-702     
-703     
-704     
-705     
-706     
+701     10		16214		---
+702     17		27364		---
+703     23		36940		---
+704     17		27364		---
+705     17		27364		---
+706     23		36940		300		479054
 

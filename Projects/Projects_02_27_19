@@ -1,0 +1,34 @@
+==============================================================================
+			    Current Projects 
+			    Due Wed. Feb. 20
+==============================================================================
+
+BMU Noise Study (H)
+-- Begin Initial Tests w/ Solar Panel Power Source and Station**
+-- Redo Internal Noise Test w/ Solar Panel if Possible
+-- Attach Long 5-7m Cables to the Inputs of Stn for an Increase of Rates
+-- Use the BMU pulses to Trigger the Stn w/ LPDAs Connected to Input
+
+Iridum File Transfer Study (M)
+-- Redo 9hr Transfer of 300 Event File w/ Computer Hooked Up for Debug Output
+-- Replace the 4CH Board w/ 8CH Board and Redo Tests
+
+Building and Testing Heating Strip (M)
+-- Make Diagram of 1st Model Heating Strip**
+-- Check Current Strip for Damage
+-- Send Steve Smaller Alternative Heating Strip the Size of LPDA
+
+Calibration Studies (L)
+-- Astrid to finish Manual Threshold Calibration by 2/8
+-- Begin writing document for Manual Threshold Calibration
+
+MISC
+
+==============================================================================
+
+(--) Not Done
+(XX) Finished
+(X-) Partially Done
+(OO) No Longer Needed
+* Rolled Over From Last Week (MUST DO!)
+** Rolled Over From Two Weeks (REALLY MUST DO!)
