@@ -1,0 +1,68 @@
+
+
+Run 201 - Forced Triggers
+
+- Start Time: 12:22pm  4/30/18
+- End Time: 10:50am 5/2/18
+
+
+
+Run 203 - Thermal Triggers 
+
+- Start Time after the box was closed: 12:28pm  5/2/18
+- Run time : roughly 4 hours. 
+
+
+Run 204 - Square Wave
+
+- Powered 12:22pm
+- Box was closed at 12:29pm
+
+- Channel 0:
+	- Start Time - 12:30pm
+	- End Time - 12:37pm
+
+- Channel 1:
+	- Start Time - 12:38pm
+	- End Time - 12:43pm
+
+- Channel 2:
+	- Start Time - 12:44pm
+	- End Time - 12:50pm
+
+- Channel 3:
+	- Start Time - 12:51pm
+	- End Time - 12:56pm
+
+
+Run 205 - Forced Triggers with Amplifiers in a separate box.
+
+- Start Time: 12:11pm  5/23/18
+- End Time: 10:36am 5/24/18
+
+Run 206 - Thermal Triggers with Amplifiers in a separate box
+
+- Start Time : 11:10am 5/24/18
+- End Time : 5:46pm 5/24/18
+
+Run 207 - Square Wave with Amplifiers in a separate box.
+
+- Start Time : 12:17pm
+- End Time : 12:50pm
+
+Ch 0 - Amp 329
+Ch 1 - Amp 325
+Ch 2 - Amp 330
+Ch 3 - Amp 333
+
+Square Wave Information 
+
+frequency: 2Hz
+50dB Attenuation
+Width: 10 ns
+Lead Edge: 1.2ns
+Trail Edge: 1.2ns
+Amplitude: 1V
+Load Impedance: 50ohms
+
+Thermal Threshold +/- 40 mV
