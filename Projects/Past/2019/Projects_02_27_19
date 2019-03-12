@@ -10,16 +10,16 @@ BMU Noise Study (H)
 -- Use the BMU pulses to Trigger the Stn w/ LPDAs Connected to Input
 
 Iridum File Transfer Study (M)
--- Redo 9hr Transfer of 300 Event File w/ Computer Hooked Up for Debug Output
--- Replace the 4CH Board w/ 8CH Board and Redo Tests
+OO Redo 9hr Transfer of 300 Event File w/ Computer Hooked Up for Debug Output
+XO Replace the 4CH Board w/ 8CH Board and Redo Tests
 
 Building and Testing Heating Strip (M)
 -- Make Diagram of 1st Model Heating Strip**
--- Check Current Strip for Damage
--- Send Steve Smaller Alternative Heating Strip the Size of LPDA
+XX Check Current Strip for Damage
+XX Send Steve Smaller Alternative Heating Strip the Size of LPDA
 
 Calibration Studies (L)
--- Astrid to finish Manual Threshold Calibration by 2/8
+XX Astrid to finish Manual Threshold Calibration by 2/8
 -- Begin writing document for Manual Threshold Calibration
 
 MISC

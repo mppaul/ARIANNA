@@ -1,0 +1,44 @@
+==============================================================================
+			    Current Projects 
+			    Due Wed. Mar. 06
+==============================================================================
+
+BMU Noise Study (H)
+-- Begin Initial Tests w/ Solar Panel Power Source and Station!!
+-- Redo Internal Noise Test w/ Solar Panel if Possible*
+-- Attach Long 5-7m Cables to the Inputs of Stn for an Increase of Rates**
+-- Use the BMU pulses to Trigger the Stn w/ LPDAs Connected to Input**
+
+Iridum File Transfer Study (M)
+XX Transfer Data Using a 30min Comm Window
+OO Transfer 100 Event File in 5hr Comm  Window
+OO Take More Data and Transfer it (7, 15, 25, 300 events)
+-- Take Data and Comm Window Data Transfer 
+X- Record Watchdog Resets 
+
+Building and Testing Heating Strip (M)
+-- Make Diagram of 1st Model Heating Strip!!
+XX Waiting for New Heating Strips
+XO- Begin Thinking About New Design
+
+Calibration Studies (L)
+X- Begin writing document for Manual Threshold Calibration
+XO Write Program to Calculate Linear Threshold Equation
+
+400 Series Amps (H)
+-- Connect Amp to SST Board and Take Force Triggers
+XX Measure Noise with Oscilloscope with Amps in Station Box
+-- Connect Amp to Full Station and Take Thermal Triggers
+-- Become Familiar with Amp Noise Statisitcs
+
+MISC
+
+==============================================================================
+
+(--) Not Done
+(XX) Finished
+(X-) Partially Done
+(OO) No Longer Needed
+* Rolled Over From Last Week (MUST DO!)
+** Rolled Over From Two Weeks (REALLY MUST DO!)
+!! Rolled Over From 3+ Weeks (JUST DO IT!!!)
