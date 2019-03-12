@@ -1,0 +1,3968 @@
+2019-03-05 00:12:12+0000 [-] ensureNoOver rawStatus/status.0002F7F2E82D.20190305-001058.SBD.dat
+2019-03-05 00:12:12+0000 [-] Checking dir exists for [rawStatus/status.0002F7F2E82D.20190305-001058.SBD.
+dat]
+2019-03-05 00:12:12+0000 [-] Made raw status file [rawStatus/status.0002F7F2E82D.20190305-001058.SBD.dat
+]
+2019-03-05 00:12:12+0000 [-] status i/o vers = 10 => wait for status done code
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 72
+  time            = Tue, 05 Mar 2019 00:10:58 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.7
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Mon, 04 Mar 2019 13:01:19 +0000 (GMT) +        0 nsec
+  temperature     = 25.3125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+2019-03-05 00:12:12+0000 [-] Clearing header!
+2019-03-05 00:12:12+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 00:12:12+0000 [-] handlePower
+2019-03-05 00:12:12+0000 [-] callback for whenGotStatusPwr
+2019-03-05 00:12:12+0000 [-] IncomingStatusPowerReading
+TSnPowerReading: 
+  ave V1 = 19815.6
+  ave V2 = 19778.9
+  rms V1 = 8.31946
+  rms V2 = 7.67507
+  est. V ~ 12.018
+  est. C ~ 0.101128 (SST)
+  time   = Tue, 05 Mar 2019 00:10:50 +0000 (GMT) +        0 nsec
+2019-03-05 00:12:12+0000 [-] pullFromBuffToBinFile to rawStatus/status.0002F7F2E82D.20190305-001058.SBD.dat with len 21
+2019-03-05 00:12:12+0000 [-] incoming:
+OBJ: TSnCommIncStatus   TSnCommIncStatus        an incoming status info packet
+Timestamp (0x13f76b80):
+Date/Time = Tue, 05 Mar 2019 00:12:12 +0000 (GMT) +        0 nsec
+Status (0x15a7c260):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 72
+  time            = Tue, 05 Mar 2019 00:10:58 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.7
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Mon, 04 Mar 2019 13:01:19 +0000 (GMT) +        0 nsec
+  temperature     = 25.3125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+PowerReading (0x15612520)
+TSnPowerReading: 
+  ave V1 = 19815.6
+  ave V2 = 19778.9
+  rms V1 = 8.31946
+  rms V2 = 7.67507
+  est. V ~ 12.018
+  est. C ~ 0.101128 (SST)
+  time   = Tue, 05 Mar 2019 00:10:50 +0000 (GMT) +        0 nsec
+Power IO version:  2
+2019-03-05 00:12:12+0000 [-] mac=0002F7F2E82D
+2019-03-05 00:12:12+0000 [-] getActorFor 0002F7F2E82D, AriStatusActor
+2019-03-05 00:12:12+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 00:12:12+0000 [-] Opening actor file /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 00:12:12+0000 [-] Checking dir exists for [/data/ONLINE/Stage/AriStage.0002F7F2E82D.root]
+2019-03-05 00:12:12+0000 [-] Got actor:
+OBJ: TSnCommActor       AriStatusActor  0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From Queue To Stn (TSnCommActSendQueued)
+------ #2: Resend Conf If Not On Stn (TSnCommActConfResend)
+------ #3: Send No New Conf Signal (TSnCommActSendNoConf)
+2019-03-05 00:12:12+0000 [-] Clearing header!
+2019-03-05 00:12:12+0000 [-] CompactifyBufferCheck
+2019-03-05 00:12:12+0000 [-] didHandle=[30979]
+2019-03-05 00:12:12+0000 [-] Responder = TSnCommActSendNoConf
+2019-03-05 00:12:12+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 00:12:12+0000 [-] sendCommObj
+2019-03-05 00:12:12+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 00:12:12+0000 [-] sendIObuf
+2019-03-05 00:12:12+0000 [-] Sending 5 bytes to station.
+2019-03-05 00:14:56+0000 [-] Making AriStatusDataPackBinFile
+2019-03-05 00:14:56+0000 [-] ensureNoOver statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00072.dat
+2019-03-05 00:14:56+0000 [-] Checking dir exists for [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00072.dat]
+2019-03-05 00:14:56+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00072.dat with len 26
+2019-03-05 00:14:56+0000 [-] Clearing header!
+2019-03-05 00:14:56+0000 [-] handleHeader: mcode=x12, mlen=185
+2019-03-05 00:14:56+0000 [-] handleStatusDataPack
+2019-03-05 00:14:56+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00072.dat with len 185
+2019-03-05 00:14:56+0000 [-] Clearing header!
+2019-03-05 00:14:56+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 00:14:56+0000 [-] handleStatusDataPack
+2019-03-05 00:14:56+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00072.dat with len 22
+2019-03-05 00:14:56+0000 [-] Clearing header!
+2019-03-05 00:14:56+0000 [-] handleHeader: mcode=x12, mlen=14
+2019-03-05 00:14:56+0000 [-] handleStatusDataPack
+2019-03-05 00:14:56+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00072.dat with len 14
+2019-03-05 00:14:56+0000 [-] Clearing header!
+2019-03-05 00:14:56+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 00:14:56+0000 [-] handleStatusDataPack
+2019-03-05 00:14:56+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00072.dat with len 22
+2019-03-05 00:14:56+0000 [-] Clearing header!
+2019-03-05 00:14:56+0000 [-] handleHeader: mcode=x14, mlen=0
+2019-03-05 00:14:56+0000 [-] handleStatusDataPackDone
+2019-03-05 00:14:56+0000 [-] writeBinFileToDisk
+2019-03-05 00:14:56+0000 [-] outf=<AriFiles.AriStatusDataPackBinFile object at 0x7f99cc4b5cd0>, rawFile=None, statFile=None
+2019-03-05 00:14:56+0000 [-] Wrote status data packs to [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00072.dat]
+2019-03-05 00:14:56+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a handshaking code
+Timestamp (0x12908670):
+Date/Time = Tue, 05 Mar 2019 00:12:12 +0000 (GMT) +        0 nsec
+Status (0x13a1ca30):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 72
+  time            = Tue, 05 Mar 2019 00:10:58 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.7
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Mon, 04 Mar 2019 13:01:19 +0000 (GMT) +        0 nsec
+  temperature     = 25.3125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 00:14:56+0000 [-] mac=0002F7F2E82D
+2019-03-05 00:14:56+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 00:14:56+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 00:14:56+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 00:14:56+0000 [-] Clearing header!
+2019-03-05 00:14:56+0000 [-] CompactifyBufferCheck
+2019-03-05 00:14:56+0000 [-] didHandle=[30982, 30983, 30984, 30985, 30986]
+2019-03-05 00:14:56+0000 [-] Responder = TSnCommFiActNoReplyHndshk
+2019-03-05 00:14:56+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 6f (HnShNoReplyCode)
+  payload = 0 (0)
+2019-03-05 00:14:56+0000 [-] sendCommObj
+2019-03-05 00:14:56+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 6f (HnShNoReplyCode)
+  payload = 0 (0)
+2019-03-05 00:14:56+0000 [-] sendIObuf
+2019-03-05 00:14:56+0000 [-] Sending 5 bytes to station.
+2019-03-05 00:17:27+0000 [-] filename=[SnEvtsM0002F7F2E82Dr00808s00072.dat]
+2019-03-05 00:17:27+0000 [-] ensureNoOver binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat
+2019-03-05 00:17:27+0000 [-] Checking dir exists for [binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat]
+2019-03-05 00:17:27+0000 [-] IncomingFilename [SnEvtsM0002F7F2E82Dr00808s00072.dat]
+2019-03-05 00:17:27+0000 [-] Set incoming status, timee
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x13f73ce0):
+Date/Time = Tue, 05 Mar 2019 00:12:12 +0000 (GMT) +        0 nsec
+Status (0x149dbae0):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 72
+  time            = Tue, 05 Mar 2019 00:10:58 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.7
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Mon, 04 Mar 2019 13:01:19 +0000 (GMT) +        0 nsec
+  temperature     = 25.3125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [SnEvtsM0002F7F2E82Dr00808s00072.dat] (version [0])
+2019-03-05 00:17:27+0000 [-] Saving raw file [binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat]
+2019-03-05 00:17:27+0000 [-] Clearing header!
+2019-03-05 00:17:27+0000 [-] handleHeader: mcode=x2a, mlen=15
+2019-03-05 00:17:27+0000 [-] handleFileHeader
+2019-03-05 00:17:27+0000 [-] IncomingFileVersion
+2019-03-05 00:17:27+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 15
+2019-03-05 00:17:27+0000 [-] Clearing header!
+2019-03-05 00:17:27+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 00:17:27+0000 [-] handlePower
+2019-03-05 00:17:27+0000 [-] IncomingFilePowerReading
+2019-03-05 00:17:27+0000 [-] saving power reading to event binf
+2019-03-05 00:17:27+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 21
+2019-03-05 00:17:27+0000 [-] Clearing header!
+2019-03-05 00:17:27+0000 [-] handleHeader: mcode=x40, mlen=180
+2019-03-05 00:17:27+0000 [-] handleConfig
+2019-03-05 00:17:27+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 180
+2019-03-05 00:17:27+0000 [-] Clearing header!
+2019-03-05 00:17:27+0000 [-] handleHeader: mcode=x24, mlen=17
+2019-03-05 00:17:27+0000 [-] handleClockSetTrgStart
+2019-03-05 00:17:27+0000 [-] handleClockSet
+2019-03-05 00:17:27+0000 [-] saving clock set to event binf
+2019-03-05 00:17:27+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 17
+2019-03-05 00:17:27+0000 [-] Clearing header!
+2019-03-05 00:17:27+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 00:17:27+0000 [-] handlePower
+2019-03-05 00:17:27+0000 [-] IncomingFilePowerReading
+2019-03-05 00:17:27+0000 [-] saving power reading to event binf
+2019-03-05 00:17:27+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 21
+2019-03-05 00:18:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 21
+2019-03-05 00:18:26+0000 [-] Clearing header!
+2019-03-05 00:18:26+0000 [-] Need to hanle header. br=259, hl=5
+2019-03-05 00:18:26+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 00:18:26+0000 [-] handlePower
+2019-03-05 00:18:26+0000 [-] IncomingFilePowerReading
+2019-03-05 00:18:26+0000 [-] saving power reading to event binf
+2019-03-05 00:18:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 21
+2019-03-05 00:18:26+0000 [-] Clearing header!
+2019-03-05 00:18:26+0000 [-] handleHeader: mcode=x74, mlen=9
+2019-03-05 00:18:26+0000 [-] handleTemperature
+2019-03-05 00:18:26+0000 [-] saving temperature reading to event binf
+2019-03-05 00:18:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 9
+2019-03-05 00:18:26+0000 [-] IncomingFileTemperature
+2019-03-05 00:18:26+0000 [-] Clearing header!
+2019-03-05 00:18:26+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 00:18:26+0000 [-] handlePower
+2019-03-05 00:18:26+0000 [-] IncomingFilePowerReading
+2019-03-05 00:18:26+0000 [-] saving power reading to event binf
+2019-03-05 00:18:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 21
+2019-03-05 00:18:26+0000 [-] Clearing header!
+2019-03-05 00:18:26+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 00:18:26+0000 [-] handlePower
+2019-03-05 00:18:26+0000 [-] IncomingFilePowerReading
+2019-03-05 00:18:26+0000 [-] saving power reading to event binf
+2019-03-05 00:18:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 21
+2019-03-05 00:18:26+0000 [-] Clearing header!
+2019-03-05 00:18:26+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 00:18:26+0000 [-] handlePower
+2019-03-05 00:18:26+0000 [-] IncomingFilePowerReading
+2019-03-05 00:18:26+0000 [-] saving power reading to event binf
+2019-03-05 00:18:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 21
+2019-03-05 00:18:26+0000 [-] Clearing header!
+2019-03-05 00:18:26+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 00:18:26+0000 [-] handlePower
+2019-03-05 00:18:26+0000 [-] IncomingFilePowerReading
+2019-03-05 00:18:26+0000 [-] saving power reading to event binf
+2019-03-05 00:18:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 21
+2019-03-05 00:18:26+0000 [-] Clearing header!
+2019-03-05 00:18:26+0000 [-] handleHeader: mcode=x74, mlen=9
+2019-03-05 00:18:26+0000 [-] handleTemperature
+2019-03-05 00:18:26+0000 [-] saving temperature reading to event binf
+2019-03-05 00:18:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 9
+2019-03-05 00:18:26+0000 [-] IncomingFileTemperature
+2019-03-05 00:18:26+0000 [-] Clearing header!
+2019-03-05 00:18:26+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 00:18:26+0000 [-] handlePower
+2019-03-05 00:18:26+0000 [-] IncomingFilePowerReading
+2019-03-05 00:18:26+0000 [-] saving power reading to event binf
+2019-03-05 00:18:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 21
+2019-03-05 00:18:26+0000 [-] Clearing header!
+2019-03-05 00:18:26+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 00:18:26+0000 [-] handlePower
+2019-03-05 00:18:26+0000 [-] IncomingFilePowerReading
+2019-03-05 00:18:26+0000 [-] saving power reading to event binf
+2019-03-05 00:18:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 21
+2019-03-05 00:18:26+0000 [-] Clearing header!
+2019-03-05 00:18:26+0000 [-] handleHeader: mcode=x25, mlen=17
+2019-03-05 00:18:26+0000 [-] handleClockSetTrgStop
+2019-03-05 00:18:26+0000 [-] handleClockSet
+2019-03-05 00:18:26+0000 [-] saving clock set to event binf
+2019-03-05 00:18:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00072.dat with len 17
+2019-03-05 00:18:26+0000 [-] FileReceivedChecksum
+Local CRC   = [1070790252]
+From file [SnEvtsM0002F7F2E82Dr00808s00072.dat] (version [4])
+2019-03-05 00:18:26+0000 [-] DeferredResponseToFile
+2019-03-05 00:18:26+0000 [-] _deferredResponseTo (AriFileActor)
+2019-03-05 00:18:26+0000 [-] incoming:
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x13f73ce0):
+Date/Time = Tue, 05 Mar 2019 00:12:12 +0000 (GMT) +        0 nsec
+Status (0x149dbae0):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 72
+  time            = Tue, 05 Mar 2019 00:10:58 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.7
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Mon, 04 Mar 2019 13:01:19 +0000 (GMT) +        0 nsec
+  temperature     = 25.3125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [1070790252]
+Local CRC   = [1070790252]
+Received 0/0 events.
+Received 10/10 power readings.
+From file [SnEvtsM0002F7F2E82Dr00808s00072.dat] (version [4])
+2019-03-05 00:18:26+0000 [-] mac=0002F7F2E82D
+2019-03-05 00:18:26+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 00:18:26+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 00:18:26+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 00:18:26+0000 [-] Responder = TSnCommFiActTransComplete
+2019-03-05 00:18:26+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 61 (HnShOkComplCode)
+  payload = 0 (0)
+2019-03-05 00:18:26+0000 [-] fcrc=1070790252, resp=<ROOT.TSnCommProtocolMsg object ("TSnCommProtocolMsg") at 0x7f99b403f4f0>
+2019-03-05 00:18:26+0000 [-] sendCommObj
+2019-03-05 00:18:26+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 61 (HnShOkComplCode)
+  payload = 0 (0)
+2019-03-05 00:18:26+0000 [-] sendIObuf
+2019-03-05 00:18:26+0000 [-] Sending 5 bytes to station.
+2019-03-05 00:21:05+0000 [-] Station [0002F7F2E82D] signed off.
+
+
+
+#################################################################################################
+#################################################################################################
+
+2019-03-05 00:43:09+0000 [-] ensureNoOver rawStatus/status.0002F7F2E82D.20190305-004059.SBD.dat
+2019-03-05 00:43:09+0000 [-] Checking dir exists for [rawStatus/status.0002F7F2E82D.20190305-004059.SBD.
+dat]
+2019-03-05 00:43:09+0000 [-] Made raw status file [rawStatus/status.0002F7F2E82D.20190305-004059.SBD.dat
+]
+2019-03-05 00:43:09+0000 [-] status i/o vers = 10 => wait for status done code
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 73
+  time            = Tue, 05 Mar 2019 00:40:59 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.7
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Mon, 04 Mar 2019 13:01:19 +0000 (GMT) +        0 nsec
+  temperature     = 24.75
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+2019-03-05 00:43:09+0000 [-] Clearing header!
+2019-03-05 00:43:09+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 00:43:09+0000 [-] handlePower
+2019-03-05 00:43:09+0000 [-] callback for whenGotStatusPwr
+2019-03-05 00:43:09+0000 [-] IncomingStatusPowerReading
+TSnPowerReading: 
+  ave V1 = 19816.3
+  ave V2 = 19780.1
+  rms V1 = 8.46344
+  rms V2 = 6.64107
+  est. V ~ 12.0184
+  est. C ~ 0.0997104 (SST)
+  time   = Tue, 05 Mar 2019 00:40:53 +0000 (GMT) +        0 nsec
+2019-03-05 00:43:09+0000 [-] pullFromBuffToBinFile to rawStatus/status.0002F7F2E82D.20190305-004059.SBD.dat with len 21
+2019-03-05 00:43:09+0000 [-] incoming:
+OBJ: TSnCommIncStatus   TSnCommIncStatus        an incoming status info packet
+Timestamp (0x150851e0):
+Date/Time = Tue, 05 Mar 2019 00:43:09 +0000 (GMT) +        0 nsec
+Status (0x14a3b9b0):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 73
+  time            = Tue, 05 Mar 2019 00:40:59 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.7
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Mon, 04 Mar 2019 13:01:19 +0000 (GMT) +        0 nsec
+  temperature     = 24.75
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+PowerReading (0x15612520)
+TSnPowerReading: 
+  ave V1 = 19816.3
+  ave V2 = 19780.1
+  rms V1 = 8.46344
+  rms V2 = 6.64107
+  est. V ~ 12.0184
+  est. C ~ 0.0997104 (SST)
+  time   = Tue, 05 Mar 2019 00:40:53 +0000 (GMT) +        0 nsec
+Power IO version:  2
+2019-03-05 00:43:09+0000 [-] mac=0002F7F2E82D
+2019-03-05 00:43:09+0000 [-] getActorFor 0002F7F2E82D, AriStatusActor
+2019-03-05 00:43:09+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 00:43:09+0000 [-] Opening actor file /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 00:43:09+0000 [-] Checking dir exists for [/data/ONLINE/Stage/AriStage.0002F7F2E82D.root]
+2019-03-05 00:43:09+0000 [-] Got actor:
+OBJ: TSnCommActor       AriStatusActor  0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From Queue To Stn (TSnCommActSendQueued)
+------ #2: Resend Conf If Not On Stn (TSnCommActConfResend)
+------ #3: Send No New Conf Signal (TSnCommActSendNoConf)
+2019-03-05 00:43:09+0000 [-] Clearing header!
+2019-03-05 00:43:32+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 00:43:32+0000 [-] sendCommObj
+2019-03-05 00:43:32+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 00:43:32+0000 [-] sendIObuf
+2019-03-05 00:43:32+0000 [-] Sending 5 bytes to station.
+
+#################################################################################################
+#################################################################################################
+
+2019-03-05 01:05:40+0000 [-] ensureNoOver rawStatus/status.0002F7F2E82D.20190305-010431.SBD.dat
+2019-03-05 01:05:40+0000 [-] Checking dir exists for [rawStatus/status.0002F7F2E82D.20190305-010431.SBD.
+dat]
+2019-03-05 01:05:40+0000 [-] Made raw status file [rawStatus/status.0002F7F2E82D.20190305-010431.SBD.dat
+]
+2019-03-05 01:05:40+0000 [-] status i/o vers = 10 => wait for status done code
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm
+  run             = 804
+  seq             = 0
+  time            = Tue, 05 Mar 2019 01:04:31 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 0
+  watchdog reset  = TRUE
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.1875
+  SD init ok      = false
+  seq livetime    = 0
+  num thm trgs    = 0 (1000000.00 Hz)
+  num saved evts  = 0 (1000000.00 Hz)
+  Received via    = SBD
+2019-03-05 01:05:40+0000 [-] Clearing header!
+2019-03-05 01:05:40+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 01:05:40+0000 [-] handlePower
+2019-03-05 01:05:40+0000 [-] callback for whenGotStatusPwr
+2019-03-05 01:05:40+0000 [-] IncomingStatusPowerReading
+TSnPowerReading: 
+  ave V1 = 19814.6
+  ave V2 = 19778.8
+  rms V1 = 8.36987
+  rms V2 = 7.84484
+  est. V ~ 12.0174
+  est. C ~ 0.0990042 (SST)
+  time   = Tue, 05 Mar 2019 01:04:24 +0000 (GMT) +        0 nsec
+2019-03-05 01:05:40+0000 [-] pullFromBuffToBinFile to rawStatus/status.0002F7F2E82D.20190305-010431.SBD.dat with len 21
+2019-03-05 01:05:40+0000 [-] incoming:
+OBJ: TSnCommIncStatus   TSnCommIncStatus        an incoming status info packet
+Timestamp (0x150aa490):
+Date/Time = Tue, 05 Mar 2019 01:05:40 +0000 (GMT) +        0 nsec
+Status (0x13a94280):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm
+  run             = 804
+  seq             = 0
+  time            = Tue, 05 Mar 2019 01:04:31 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 0
+  watchdog reset  = TRUE
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.1875
+  SD init ok      = false
+  seq livetime    = 0
+  num thm trgs    = 0 (1000000.00 Hz)
+  num saved evts  = 0 (1000000.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+PowerReading (0x1556c600)
+TSnPowerReading: 
+  ave V1 = 19814.6
+  ave V2 = 19778.8
+  rms V1 = 8.36987
+  rms V2 = 7.84484
+  est. V ~ 12.0174
+  est. C ~ 0.0990042 (SST)
+  time   = Tue, 05 Mar 2019 01:04:24 +0000 (GMT) +        0 nsec
+Power IO version:  2
+2019-03-05 01:05:40+0000 [-] mac=0002F7F2E82D
+2019-03-05 01:05:40+0000 [-] getActorFor 0002F7F2E82D, AriStatusActor
+2019-03-05 01:05:40+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 01:05:40+0000 [-] Opening actor file /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 01:05:40+0000 [-] Checking dir exists for [/data/ONLINE/Stage/AriStage.0002F7F2E82D.root]
+2019-03-05 01:05:40+0000 [-] Got actor:
+OBJ: TSnCommActor       AriStatusActor  0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From Queue To Stn (TSnCommActSendQueued)
+------ #2: Resend Conf If Not On Stn (TSnCommActConfResend)
+------ #3: Send No New Conf Signal (TSnCommActSendNoConf)
+2019-03-05 01:05:40+0000 [-] Clearing header!
+2019-03-05 01:05:40+0000 [-] CompactifyBufferCheck
+2019-03-05 01:05:40+0000 [-] didHandle=[31007]
+2019-03-05 01:05:40+0000 [-] Responder = TSnCommActConfResend
+2019-03-05 01:05:43+0000 [-] Got response:
+TSnRunInfo:
+   Run        = 808
+   First Seq  = 0
+   Evts / Seq = 300
+   Station    = 
+   Config     = SBD_Comm_diff
+TSnDAQConfig: SBD_Comm_diff
+  usage         = 
+  user          = 
+  description   = 
+  date built    = Sun, 03 Mar 2019 08:41:13 +0000 (GMT) +141593000 nsec
+  dacs:
+    ch0: [200, 4000]
+    ch1: [200, 4000]
+    ch2: [200, 4000]
+    ch3: [200, 4000]
+    ch4: [200, 4000]
+    ch5: [200, 4000]
+    ch6: [200, 4000]
+    ch7: [200, 4000]
+  plas:
+    
+  trigger setup:
+  trigger logic:
+    majority logic = 2
+  trig throttle = 0
+  forced period = 0
+  therm trig on = false
+  L1 single frq = off
+  L1 trgs apply = false
+  thm trig bits = 0000000000000000
+  L1 single freq ratio cut = 77 (0.301961)
+  L1 scaledown  = 50
+  run mode bits (32) = 0000000000100000
+    continuous data taking
+    counting events
+    single threshold mode (SST)
+    separate comparitor trigger mode (SST)
+    Afar/SBD powering unchanged in low power mode
+    run/seq list cleared after each comm win
+    Data read/write from/to SD card enabled
+    Afar/SBD powered as needed during comm win
+    Comm window according to comm period only
+    Chips reset when MBED starts waiting for triggers
+  heartbeat per = 0
+  stream hi lo  = false
+  wv lose LSB   = 0
+  wv lose MSB   = 4
+  wv baseline   = 0
+  dat pack bits : 00001111
+  pow mode bits = (98) = 01100010
+    amps data take off
+    card data take ON
+    irid data take off
+    afar data take off
+    amps comm wind off
+    card comm wind ON
+    irid comm wind ON
+    afar comm wind off
+  bat volt  TO  low pwr = 0
+  bat volt FROM low pwr = 0
+  volt chk per  = 127
+  temp chk per  = 8
+  temp pwr mode = mbed
+  comm win dur  = 1800
+  comm win per  = 1200
+  connect t.o. Irid  = 3 (mins)
+  listen t.o.  Irid  = 3 (mins)
+  connect t.o. Afar  = 1 (mins)
+  listen t.o.  Afar  = 1 (mins)
+  com send bits (-11340) : 
+    send latest file
+    stop sending at timeout
+    keep files on station
+    data files sent even over SBD
+    wait for handshake before sending data
+    send status data packet: config
+    send status data packet: trigger start/stop times
+    send status data packet: power reading
+    not sending event with status data
+    not sending heartbeat with status data
+    send status data packet: temperature
+  com dur lowp  = 600
+  com per lowp  = 21600
+  watchdog time = 1200
+TSnNetAdrSet:
+  Remote Serv = DEF
+  Remote Port = 0
+  Local IP    = DEF
+  Local Mask  = DEF
+  Local Gate  = DEF
+Config Frame IO version [17]
+2019-03-05 01:05:43+0000 [-] sendCommObj
+2019-03-05 01:05:43+0000 [-] Sending station (0002F7F2E82D):
+2019-03-05 01:05:43+0000 [-] Sending station (0002F7F2E82D):
+TSnRunInfo:
+   Run        = 808
+   First Seq  = 0
+   Evts / Seq = 300
+   Station    = 
+   Config     = SBD_Comm_diff
+TSnDAQConfig: SBD_Comm_diff
+  usage         = 
+  user          = 
+  description   = 
+  date built    = Sun, 03 Mar 2019 08:41:13 +0000 (GMT) +141593000 nsec
+  dacs:
+    ch0: [200, 4000]
+    ch1: [200, 4000]
+    ch2: [200, 4000]
+    ch3: [200, 4000]
+    ch4: [200, 4000]
+    ch5: [200, 4000]
+    ch6: [200, 4000]
+    ch7: [200, 4000]
+  plas:
+    
+  trigger setup:
+  trigger logic:
+    majority logic = 2
+  trig throttle = 0
+  forced period = 0
+  therm trig on = false
+  L1 single frq = off
+  L1 trgs apply = false
+  thm trig bits = 0000000000000000
+  L1 single freq ratio cut = 77 (0.301961)
+  L1 scaledown  = 50
+  run mode bits (32) = 0000000000100000
+    continuous data taking
+    counting events
+    single threshold mode (SST)
+    separate comparitor trigger mode (SST)
+    Afar/SBD powering unchanged in low power mode
+    run/seq list cleared after each comm win
+    Data read/write from/to SD card enabled
+    Afar/SBD powered as needed during comm win
+    Comm window according to comm period only
+    Chips reset when MBED starts waiting for triggers
+  heartbeat per = 0
+  stream hi lo  = false
+  wv lose LSB   = 0
+  wv lose MSB   = 4
+  wv baseline   = 0
+  dat pack bits : 00001111
+  pow mode bits = (98) = 01100010
+    amps data take off
+    card data take ON
+    irid data take off
+    afar data take off
+    amps comm wind off
+    card comm wind ON
+    irid comm wind ON
+    afar comm wind off
+  bat volt  TO  low pwr = 0
+  bat volt FROM low pwr = 0
+  volt chk per  = 127
+  temp chk per  = 8
+  temp pwr mode = mbed
+  comm win dur  = 1800
+  comm win per  = 1200
+  connect t.o. Irid  = 3 (mins)
+  listen t.o.  Irid  = 3 (mins)
+  connect t.o. Afar  = 1 (mins)
+  listen t.o.  Afar  = 1 (mins)
+  com send bits (-11340) : 
+    send latest file
+    stop sending at timeout
+    keep files on station
+    data files sent even over SBD
+    wait for handshake before sending data
+    send status data packet: config
+    send status data packet: trigger start/stop times
+    send status data packet: power reading
+    not sending event with status data
+    not sending heartbeat with status data
+    send status data packet: temperature
+  com dur lowp  = 600
+  com per lowp  = 21600
+  watchdog time = 1200
+TSnNetAdrSet:
+  Remote Serv = DEF
+  Remote Port = 0
+  Local IP    = DEF
+  Local Mask  = DEF
+  Local Gate  = DEF
+Config Frame IO version [17]
+2019-03-05 01:05:43+0000 [-] sendIObuf
+2019-03-05 01:05:43+0000 [-] Sending 185 bytes to station.
+2019-03-05 01:07:40+0000 [-] ensureNoOver statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00804s00000.dat
+2019-03-05 01:07:40+0000 [-] Checking dir exists for [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00804s00000.dat]
+2019-03-05 01:07:40+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00804s00000.dat with len 185
+2019-03-05 01:07:40+0000 [-] Clearing header!
+2019-03-05 01:07:40+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 01:07:40+0000 [-] handleStatusDataPack
+2019-03-05 01:07:40+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00804s00000.dat with len 22
+2019-03-05 01:07:40+0000 [-] Clearing header!
+2019-03-05 01:07:40+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 01:07:40+0000 [-] handleStatusDataPack
+2019-03-05 01:07:40+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00804s00000.dat with len 22
+2019-03-05 01:07:40+0000 [-] Clearing header!
+2019-03-05 01:07:40+0000 [-] handleHeader: mcode=x14, mlen=0
+2019-03-05 01:07:40+0000 [-] handleStatusDataPackDone
+2019-03-05 01:07:40+0000 [-] writeBinFileToDisk
+2019-03-05 01:07:40+0000 [-] outf=<AriFiles.AriStatusDataPackBinFile object at 0x7f99c62d4290>, rawFile=None, statFile=None
+2019-03-05 01:07:40+0000 [-] Wrote status data packs to [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00804s00000.dat]
+2019-03-05 01:07:40+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a handshaking code
+Timestamp (0x15c73620):
+Date/Time = Tue, 05 Mar 2019 01:05:40 +0000 (GMT) +        0 nsec
+Status (0x14532b50):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm
+  run             = 804
+  seq             = 0
+  time            = Tue, 05 Mar 2019 01:04:31 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 0
+  watchdog reset  = TRUE
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.1875
+  SD init ok      = false
+  seq livetime    = 0
+  num thm trgs    = 0 (1000000.00 Hz)
+  num saved evts  = 0 (1000000.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 01:07:40+0000 [-] mac=0002F7F2E82D
+2019-03-05 01:07:40+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 01:07:40+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 01:07:40+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ #1: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+------ #2: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 01:07:40+0000 [-] Clearing header!
+2019-03-05 01:07:40+0000 [-] CompactifyBufferCheck
+2019-03-05 01:07:40+0000 [-] didHandle=[31011, 31012, 31013]
+2019-03-05 01:07:40+0000 [-] Responder = TSnCommFiActSendQueued
+2019-03-05 01:07:40+0000 [-] ALERT from addRunSeqRequestToQueue.
+        Subject: Requesting part of run [801].
+        Message: 
+2019-03-05 01:07:40+0000 [-] Got response:
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+2019-03-05 01:07:41+0000 [-] sendCommObj
+2019-03-05 01:07:41+0000 [-] Sending station (0002F7F2E82D):
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+2019-03-05 01:07:41+0000 [-] sendIObuf
+2019-03-05 01:07:41+0000 [-] Sending 5 bytes to station.
+2019-03-05 01:10:48+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a hand
+shaking code
+Timestamp (0x1437f820):
+Date/Time = Tue, 05 Mar 2019 01:05:40 +0000 (GMT) +        0 nsec
+Status (0x1504ce50):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm
+  run             = 804
+  seq             = 0
+  time            = Tue, 05 Mar 2019 01:04:31 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 0
+  watchdog reset  = TRUE
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.1875
+  SD init ok      = false
+  seq livetime    = 0
+  num thm trgs    = 0 (1000000.00 Hz)
+  num saved evts  = 0 (1000000.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 01:10:48+0000 [-] mac=0002F7F2E82D
+2019-03-05 01:10:48+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 01:10:48+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 01:10:48+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ #1: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 01:10:48+0000 [-] Clearing header!
+2019-03-05 01:10:48+0000 [-] ALERT from addRunSeqRequestToQueue.
+        Subject: Requesting min/max seq [0]=[0,0]
+        Message: 
+2019-03-05 01:10:48+0000 [-] Got response:
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+2019-03-05 01:10:48+0000 [-] sendCommObj
+2019-03-05 01:10:48+0000 [-] Sending station (0002F7F2E82D):
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+2019-03-05 01:10:48+0000 [-] sendIObuf
+2019-03-05 01:10:48+0000 [-] Sending 5 bytes to station.
+2019-03-05 01:12:30+0000 [-] filename=[SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 01:12:30+0000 [-] ensureNoOver binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat
+2019-03-05 01:12:30+0000 [-] Checking dir exists for [binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 01:12:30+0000 [-] IncomingFilename [SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 01:12:30+0000 [-] Set incoming status, timee
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x13f718f0):
+Date/Time = Tue, 05 Mar 2019 01:05:40 +0000 (GMT) +        0 nsec
+Status (0x14e16a00):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm
+  run             = 804
+  seq             = 0
+  time            = Tue, 05 Mar 2019 01:04:31 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 0
+  watchdog reset  = TRUE
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.1875
+  SD init ok      = false
+  seq livetime    = 0
+  num thm trgs    = 0 (1000000.00 Hz)
+  num saved evts  = 0 (1000000.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [SnEvtsM0002F7F2E82Dr00801s00000.dat] (version [0])
+2019-03-05 01:12:30+0000 [-] Saving raw file [binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 01:12:30+0000 [-] Clearing header!
+2019-03-05 01:12:30+0000 [-] handleHeader: mcode=x2a, mlen=15
+2019-03-05 01:12:30+0000 [-] handleFileHeader
+2019-03-05 01:12:30+0000 [-] IncomingFileVersion
+2019-03-05 01:12:30+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 15
+2019-03-05 01:12:30+0000 [-] Clearing header!
+2019-03-05 01:12:30+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 01:12:30+0000 [-] handlePower
+2019-03-05 01:12:30+0000 [-] IncomingFilePowerReading
+2019-03-05 01:12:30+0000 [-] saving power reading to event binf
+2019-03-05 01:12:30+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 21
+2019-03-05 01:12:30+0000 [-] Clearing header!
+2019-03-05 01:12:30+0000 [-] handleHeader: mcode=x40, mlen=180
+2019-03-05 01:12:30+0000 [-] handleConfig
+2019-03-05 01:12:30+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 180
+2019-03-05 01:12:30+0000 [-] Clearing header!
+2019-03-05 01:12:30+0000 [-] handleHeader: mcode=x24, mlen=17
+2019-03-05 01:12:30+0000 [-] handleClockSetTrgStart
+2019-03-05 01:12:30+0000 [-] handleClockSet
+2019-03-05 01:12:30+0000 [-] saving clock set to event binf
+2019-03-05 01:12:30+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 17
+2019-03-05 01:15:00+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 3159
+.
+.
+.
+2019-03-05 01:31:35+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 17
+2019-03-05 01:31:35+0000 [-] FileReceivedChecksum
+Local CRC   = [1922154052]
+From file [SnEvtsM0002F7F2E82Dr00801s00000.dat] (version [4])
+2019-03-05 01:31:35+0000 [-] DeferredResponseToFile
+2019-03-05 01:31:35+0000 [-] _deferredResponseTo (AriFileActor)
+2019-03-05 01:31:35+0000 [-] incoming:
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x13f718f0):
+Date/Time = Tue, 05 Mar 2019 01:05:40 +0000 (GMT) +        0 nsec
+Status (0x14e16a00):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm
+  run             = 804
+  seq             = 0
+  time            = Tue, 05 Mar 2019 01:04:31 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 0
+  watchdog reset  = TRUE
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.1875
+  SD init ok      = false
+  seq livetime    = 0
+  num thm trgs    = 0 (1000000.00 Hz)
+  num saved evts  = 0 (1000000.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [1922154052]
+Local CRC   = [1922154052]
+Received 10/10 events.
+Received 1/1 power readings.
+From file [SnEvtsM0002F7F2E82Dr00801s00000.dat] (version [4])
+2019-03-05 01:31:35+0000 [-] mac=0002F7F2E82D
+2019-03-05 01:31:35+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 01:31:35+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 01:31:35+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 01:31:35+0000 [-] Responder = TSnCommFiActTransComplete
+2019-03-05 01:31:35+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 61 (HnShOkComplCode)
+  payload = 0 (0)
+2019-03-05 01:31:35+0000 [-] fcrc=1922154052, resp=<ROOT.TSnCommProtocolMsg object ("TSnCommProtocolMsg") at 0x7f99b403f610>
+2019-03-05 01:31:35+0000 [-] sendCommObj
+2019-03-05 01:31:35+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 61 (HnShOkComplCode)
+  payload = 0 (0)
+2019-03-05 01:31:35+0000 [-] sendIObuf
+2019-03-05 01:31:35+0000 [-] Sending 5 bytes to station.
+2019-03-05 01:33:12+0000 [-] Station [0002F7F2E82D] signed off.
+
+#################################################################################################
+#################################################################################################
+
+2019-03-05 01:54:04+0000 [-] ensureNoOver rawStatus/status.0002F7F2E82D.20190305-015316.SBD.dat
+2019-03-05 01:54:04+0000 [-] Checking dir exists for [rawStatus/status.0002F7F2E82D.20190305-015316.SBD.dat]
+2019-03-05 01:54:04+0000 [-] Made raw status file [rawStatus/status.0002F7F2E82D.20190305-015316.SBD.dat]
+2019-03-05 01:54:04+0000 [-] status i/o vers = 10 => wait for status done code
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 74
+  time            = Tue, 05 Mar 2019 01:53:16 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.7
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+2019-03-05 01:54:04+0000 [-] Clearing header!
+2019-03-05 01:54:04+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 01:54:04+0000 [-] handlePower
+2019-03-05 01:54:04+0000 [-] callback for whenGotStatusPwr
+2019-03-05 01:54:04+0000 [-] IncomingStatusPowerReading
+TSnPowerReading: 
+  ave V1 = 19814.7
+  ave V2 = 19778.8
+  rms V1 = 7.99358
+  rms V2 = 8.23734
+  est. V ~ 12.0174
+  est. C ~ 0.0990959 (SST)
+  time   = Tue, 05 Mar 2019 01:53:09 +0000 (GMT) +        0 nsec
+2019-03-05 01:54:04+0000 [-] pullFromBuffToBinFile to rawStatus/status.0002F7F2E82D.20190305-015316.SBD.dat with len 21
+2019-03-05 01:54:04+0000 [-] incoming:
+OBJ: TSnCommIncStatus   TSnCommIncStatus        an incoming status info packet
+Timestamp (0x149d8980):
+Date/Time = Tue, 05 Mar 2019 01:54:04 +0000 (GMT) +        0 nsec
+Status (0x14a3d830):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 74
+  time            = Tue, 05 Mar 2019 01:53:16 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.7
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+PowerReading (0x1554f580)
+TSnPowerReading: 
+  ave V1 = 19814.7
+  ave V2 = 19778.8
+  rms V1 = 7.99358
+  rms V2 = 8.23734
+  est. V ~ 12.0174
+  est. C ~ 0.0990959 (SST)
+  time   = Tue, 05 Mar 2019 01:53:09 +0000 (GMT) +        0 nsec
+Power IO version:  2
+2019-03-05 01:54:04+0000 [-] mac=0002F7F2E82D
+2019-03-05 01:54:04+0000 [-] getActorFor 0002F7F2E82D, AriStatusActor
+2019-03-05 01:54:04+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 01:54:04+0000 [-] Opening actor file /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 01:54:04+0000 [-] Checking dir exists for [/data/ONLINE/Stage/AriStage.0002F7F2E82D.root]
+2019-03-05 01:54:04+0000 [-] Got actor:
+OBJ: TSnCommActor       AriStatusActor  0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From Queue To Stn (TSnCommActSendQueued)
+------ #2: Resend Conf If Not On Stn (TSnCommActConfResend)
+------ #3: Send No New Conf Signal (TSnCommActSendNoConf)
+2019-03-05 01:54:04+0000 [-] Clearing header!
+2019-03-05 01:54:04+0000 [-] CompactifyBufferCheck
+2019-03-05 01:54:04+0000 [-] didHandle=[31127]
+2019-03-05 01:54:04+0000 [-] Responder = TSnCommActSendNoConf
+2019-03-05 01:54:05+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 01:54:05+0000 [-] sendCommObj
+2019-03-05 01:54:05+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 01:54:05+0000 [-] sendIObuf
+2019-03-05 01:54:05+0000 [-] Sending 5 bytes to station.
+2019-03-05 01:56:51+0000 [-] Making AriStatusDataPackBinFile
+2019-03-05 01:56:51+0000 [-] ensureNoOver statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00074.dat
+2019-03-05 01:56:51+0000 [-] Checking dir exists for [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00074.dat]
+2019-03-05 01:56:51+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00074.dat with len 26
+2019-03-05 01:56:51+0000 [-] Clearing header!
+2019-03-05 01:56:51+0000 [-] handleHeader: mcode=x12, mlen=185
+2019-03-05 01:56:51+0000 [-] handleStatusDataPack
+2019-03-05 01:56:51+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00074.dat with len 185
+2019-03-05 01:56:51+0000 [-] Clearing header!
+2019-03-05 01:56:51+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 01:56:51+0000 [-] handleStatusDataPack
+2019-03-05 01:56:51+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00074.dat with len 22
+2019-03-05 01:56:51+0000 [-] Clearing header!
+2019-03-05 01:56:51+0000 [-] handleHeader: mcode=x12, mlen=14
+2019-03-05 01:56:51+0000 [-] handleStatusDataPack
+2019-03-05 01:56:51+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00074.dat with len 14
+2019-03-05 01:56:51+0000 [-] Clearing header!
+2019-03-05 01:56:51+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 01:56:51+0000 [-] handleStatusDataPack
+2019-03-05 01:56:51+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00074.dat with len 22
+2019-03-05 01:56:51+0000 [-] Clearing header!
+2019-03-05 01:56:51+0000 [-] handleHeader: mcode=x14, mlen=0
+2019-03-05 01:56:51+0000 [-] handleStatusDataPackDone
+2019-03-05 01:56:51+0000 [-] writeBinFileToDisk
+2019-03-05 01:56:51+0000 [-] outf=<AriFiles.AriStatusDataPackBinFile object at 0x7f99a036d1d0>, rawFile=None, statFile=None
+2019-03-05 01:56:51+0000 [-] Wrote status data packs to [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00074.dat]
+2019-03-05 01:56:51+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a handshaking code
+Timestamp (0x14a47a30):
+Date/Time = Tue, 05 Mar 2019 01:54:04 +0000 (GMT) +        0 nsec
+Status (0x14533bb0):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 74
+  time            = Tue, 05 Mar 2019 01:53:16 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.7
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 01:56:51+0000 [-] mac=0002F7F2E82D
+2019-03-05 01:56:51+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 01:56:51+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 01:56:51+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 01:56:51+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 6f (HnShNoReplyCode)
+  payload = 0 (0)
+2019-03-05 01:56:52+0000 [-] sendCommObj
+2019-03-05 01:56:52+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 6f (HnShNoReplyCode)
+  payload = 0 (0)
+2019-03-05 01:56:52+0000 [-] sendIObuf
+2019-03-05 01:56:52+0000 [-] Sending 5 bytes to station.
+2019-03-05 01:58:50+0000 [-] filename=[SnEvtsM0002F7F2E82Dr00808s00074.dat]
+2019-03-05 01:58:50+0000 [-] ensureNoOver binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat
+2019-03-05 01:58:50+0000 [-] Checking dir exists for [binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat]
+2019-03-05 01:58:50+0000 [-] IncomingFilename [SnEvtsM0002F7F2E82Dr00808s00074.dat]
+2019-03-05 01:58:50+0000 [-] Set incoming status, timee
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x13271190):
+Date/Time = Tue, 05 Mar 2019 01:54:04 +0000 (GMT) +        0 nsec
+Status (0x1505a880):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 74
+  time            = Tue, 05 Mar 2019 01:53:16 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.7
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [SnEvtsM0002F7F2E82Dr00808s00074.dat] (version [0])
+2019-03-05 01:58:50+0000 [-] Saving raw file [binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat]
+2019-03-05 01:58:50+0000 [-] Clearing header!
+2019-03-05 01:58:50+0000 [-] handleHeader: mcode=x2a, mlen=15
+2019-03-05 01:58:50+0000 [-] handleFileHeader
+2019-03-05 01:58:50+0000 [-] IncomingFileVersion
+2019-03-05 01:58:50+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 15
+2019-03-05 01:58:50+0000 [-] Clearing header!
+2019-03-05 01:58:50+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 01:58:50+0000 [-] handlePower
+2019-03-05 01:58:50+0000 [-] IncomingFilePowerReading
+2019-03-05 01:58:50+0000 [-] saving power reading to event binf
+2019-03-05 01:58:50+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 21
+2019-03-05 01:58:50+0000 [-] Clearing header!
+2019-03-05 01:58:50+0000 [-] handleHeader: mcode=x40, mlen=180
+2019-03-05 01:58:50+0000 [-] handleConfig
+2019-03-05 01:58:50+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 180
+2019-03-05 01:58:50+0000 [-] Clearing header!
+2019-03-05 01:58:50+0000 [-] handleHeader: mcode=x24, mlen=17
+2019-03-05 01:58:50+0000 [-] handleClockSetTrgStart
+2019-03-05 01:58:50+0000 [-] handleClockSet
+2019-03-05 01:58:50+0000 [-] saving clock set to event binf
+2019-03-05 01:58:50+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 17
+2019-03-05 01:58:50+0000 [-] Clearing header!
+2019-03-05 01:58:50+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 01:58:50+0000 [-] handlePower
+2019-03-05 01:58:50+0000 [-] IncomingFilePowerReading
+2019-03-05 01:58:50+0000 [-] saving power reading to event binf
+2019-03-05 01:58:50+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 21
+2019-03-05 01:59:46+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 21
+2019-03-05 01:59:46+0000 [-] Clearing header!
+2019-03-05 01:59:46+0000 [-] Need to hanle header. br=259, hl=5
+2019-03-05 01:59:46+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 01:59:46+0000 [-] handlePower
+2019-03-05 01:59:46+0000 [-] IncomingFilePowerReading
+2019-03-05 01:59:46+0000 [-] saving power reading to event binf
+2019-03-05 01:59:46+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 21
+2019-03-05 01:59:46+0000 [-] Clearing header!
+2019-03-05 01:59:46+0000 [-] handleHeader: mcode=x74, mlen=9
+2019-03-05 01:59:46+0000 [-] handleTemperature
+2019-03-05 01:59:46+0000 [-] saving temperature reading to event binf
+2019-03-05 01:59:46+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 9
+2019-03-05 01:59:46+0000 [-] IncomingFileTemperature
+2019-03-05 01:59:46+0000 [-] Clearing header!
+2019-03-05 01:59:46+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 01:59:46+0000 [-] handlePower
+2019-03-05 01:59:46+0000 [-] IncomingFilePowerReading
+2019-03-05 01:59:46+0000 [-] saving power reading to event binf
+2019-03-05 01:59:46+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 21
+2019-03-05 01:59:46+0000 [-] Clearing header!
+2019-03-05 01:59:46+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 01:59:46+0000 [-] handlePower
+2019-03-05 01:59:46+0000 [-] IncomingFilePowerReading
+2019-03-05 01:59:46+0000 [-] saving power reading to event binf
+2019-03-05 01:59:46+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 21
+2019-03-05 01:59:46+0000 [-] Clearing header!
+2019-03-05 01:59:46+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 01:59:46+0000 [-] handlePower
+2019-03-05 01:59:46+0000 [-] IncomingFilePowerReading
+2019-03-05 01:59:46+0000 [-] saving power reading to event binf
+2019-03-05 01:59:46+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 21
+2019-03-05 01:59:46+0000 [-] Clearing header!
+2019-03-05 01:59:46+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 01:59:46+0000 [-] handlePower
+2019-03-05 01:59:46+0000 [-] IncomingFilePowerReading
+2019-03-05 01:59:46+0000 [-] saving power reading to event binf
+2019-03-05 01:59:46+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 21
+2019-03-05 01:59:46+0000 [-] Clearing header!
+2019-03-05 01:59:46+0000 [-] handleHeader: mcode=x74, mlen=9
+2019-03-05 01:59:46+0000 [-] handleTemperature
+2019-03-05 01:59:46+0000 [-] saving temperature reading to event binf
+2019-03-05 01:59:46+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 9
+2019-03-05 01:59:46+0000 [-] IncomingFileTemperature
+2019-03-05 01:59:46+0000 [-] Clearing header!
+2019-03-05 01:59:46+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 01:59:46+0000 [-] handlePower
+2019-03-05 01:59:46+0000 [-] IncomingFilePowerReading
+2019-03-05 01:59:46+0000 [-] saving power reading to event binf
+2019-03-05 01:59:46+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 21
+2019-03-05 01:59:46+0000 [-] Clearing header!
+2019-03-05 01:59:46+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 01:59:46+0000 [-] handlePower
+2019-03-05 01:59:46+0000 [-] IncomingFilePowerReading
+2019-03-05 01:59:46+0000 [-] saving power reading to event binf
+2019-03-05 01:59:46+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 21
+2019-03-05 01:59:46+0000 [-] Clearing header!
+2019-03-05 01:59:46+0000 [-] handleHeader: mcode=x25, mlen=17
+2019-03-05 01:59:46+0000 [-] handleClockSetTrgStop
+2019-03-05 01:59:46+0000 [-] handleClockSet
+2019-03-05 01:59:46+0000 [-] saving clock set to event binf
+2019-03-05 01:59:46+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00074.dat with len 17
+2019-03-05 01:59:46+0000 [-] FileReceivedChecksum
+Local CRC   = [3953359693]
+From file [SnEvtsM0002F7F2E82Dr00808s00074.dat] (version [4])
+2019-03-05 01:59:46+0000 [-] DeferredResponseToFile
+2019-03-05 01:59:46+0000 [-] _deferredResponseTo (AriFileActor)
+2019-03-05 01:59:46+0000 [-] incoming:
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x13271190):
+Date/Time = Tue, 05 Mar 2019 01:54:04 +0000 (GMT) +        0 nsec
+Status (0x1505a880):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 74
+  time            = Tue, 05 Mar 2019 01:53:16 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.7
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [3953359693]
+Local CRC   = [3953359693]
+Received 0/0 events.
+Received 10/10 power readings.
+From file [SnEvtsM0002F7F2E82Dr00808s00074.dat] (version [4])
+2019-03-05 01:59:46+0000 [-] mac=0002F7F2E82D
+2019-03-05 01:59:46+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 01:59:46+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 01:59:46+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 01:59:46+0000 [-] Responder = TSnCommFiActTransComplete
+2019-03-05 01:59:46+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 61 (HnShOkComplCode)
+  payload = 0 (0)
+2019-03-05 01:59:46+0000 [-] fcrc=3953359693, resp=<ROOT.TSnCommProtocolMsg object ("TSnCommProtocolMsg") at 0x7f99bc02f6e0>
+2019-03-05 01:59:46+0000 [-] sendCommObj
+2019-03-05 01:59:46+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 61 (HnShOkComplCode)
+  payload = 0 (0)
+2019-03-05 01:59:46+0000 [-] sendIObuf
+2019-03-05 01:59:46+0000 [-] Sending 5 bytes to station.
+2019-03-05 02:01:48+0000 [-] Station [0002F7F2E82D] signed off.
+
+#################################################################################################
+#################################################################################################
+
+
+2019-03-05 03:55:16+0000 [-] Station [0002F7F2E82D] signed off.
+2019-03-05 03:58:27+0000 [-] Station [0002F7F2E82D] signed off.
+2019-03-05 04:01:50+0000 [-] Station [0002F7F2E82D] signed off.
+2019-03-05 04:06:10+0000 [-] Station [0002F7F2E82D] signed off.
+2019-03-05 04:10:47+0000 [-] Station [0002F7F2E82D] signed off.
+2019-03-05 04:14:15+0000 [-] Station [0002F7F2E82D] signed off.
+2019-03-05 04:18:47+0000 [-] Station [0002F7F2E82D] signed off.
+2019-03-05 04:21:27+0000 [-] Station [0002F7F2E82D] signed off.
+
+
+#################################################################################################
+#################################################################################################
+
+
+File Request Sent at 5:54. Last Comm Ended  at 5:45.
+
+#################################################################################################
+#################################################################################################
+
+2019-03-05 06:06:46+0000 [-] ensureNoOver rawStatus/status.0002F7F2E82D.20190305-060553.SBD.dat
+2019-03-05 06:06:46+0000 [-] Checking dir exists for [rawStatus/status.0002F7F2E82D.20190305-060553.SBD.d
+at]
+2019-03-05 06:06:46+0000 [-] Made raw status file [rawStatus/status.0002F7F2E82D.20190305-060553.SBD.dat]
+2019-03-05 06:06:46+0000 [-] status i/o vers = 10 => wait for status done code
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 82
+  time            = Tue, 05 Mar 2019 06:05:53 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.4
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 24.9375
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+2019-03-05 06:06:46+0000 [-] Clearing header!
+2019-03-05 06:06:46+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 06:06:46+0000 [-] handlePower
+2019-03-05 06:06:46+0000 [-] callback for whenGotStatusPwr
+2019-03-05 06:06:46+0000 [-] IncomingStatusPowerReading
+TSnPowerReading: 
+  ave V1 = 19814.2
+  ave V2 = 19778.4
+  rms V1 = 8.42023
+  rms V2 = 8.1098
+  est. V ~ 12.0171
+  est. C ~ 0.0988317 (SST)
+  time   = Tue, 05 Mar 2019 06:05:46 +0000 (GMT) +        0 nsec
+2019-03-05 06:06:46+0000 [-] pullFromBuffToBinFile to rawStatus/status.0002F7F2E82D.20190305-060553.SBD.d
+at with len 21
+2019-03-05 06:06:46+0000 [-] incoming:
+OBJ: TSnCommIncStatus   TSnCommIncStatus        an incoming status info packet
+Timestamp (0x1458b660):
+Date/Time = Tue, 05 Mar 2019 06:06:46 +0000 (GMT) +        0 nsec
+Status (0x15657250):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 82
+  time            = Tue, 05 Mar 2019 06:05:53 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.4
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 24.9375
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+PowerReading (0x1501b120)
+TSnPowerReading: 
+  ave V1 = 19814.2
+  ave V2 = 19778.4
+  rms V1 = 8.42023
+  rms V2 = 8.1098
+  est. V ~ 12.0171
+  est. C ~ 0.0988317 (SST)
+  time   = Tue, 05 Mar 2019 06:05:46 +0000 (GMT) +        0 nsec
+Power IO version:  2
+2019-03-05 06:06:46+0000 [-] mac=0002F7F2E82D
+2019-03-05 06:06:46+0000 [-] getActorFor 0002F7F2E82D, AriStatusActor
+2019-03-05 06:06:46+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 06:06:46+0000 [-] Opening actor file /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 06:06:46+0000 [-] Checking dir exists for [/data/ONLINE/Stage/AriStage.0002F7F2E82D.root]
+2019-03-05 06:06:46+0000 [-] Got actor:
+OBJ: TSnCommActor       AriStatusActor  0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From Queue To Stn (TSnCommActSendQueued)
+------ #2: Resend Conf If Not On Stn (TSnCommActConfResend)
+------ #3: Send No New Conf Signal (TSnCommActSendNoConf)
+2019-03-05 06:06:46+0000 [-] Clearing header!
+2019-03-05 06:06:46+0000 [-] CompactifyBufferCheck
+2019-03-05 06:06:46+0000 [-] didHandle=[31309]
+2019-03-05 06:06:46+0000 [-] Responder = TSnCommActSendNoConf
+2019-03-05 06:06:46+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 06:06:46+0000 [-] sendCommObj
+2019-03-05 06:06:46+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 06:06:46+0000 [-] sendIObuf
+2019-03-05 06:06:46+0000 [-] Sending 5 bytes to station.
+2019-03-05 06:09:53+0000 [-] ensureNoOver statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00082.dat
+2019-03-05 06:09:53+0000 [-] Checking dir exists for [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00082.dat]
+2019-03-05 06:09:53+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00082.dat with len 26
+2019-03-05 06:09:53+0000 [-] Clearing header!
+2019-03-05 06:09:53+0000 [-] handleHeader: mcode=x12, mlen=185
+2019-03-05 06:09:53+0000 [-] handleStatusDataPack
+2019-03-05 06:09:53+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00082.dat with len 185
+2019-03-05 06:09:53+0000 [-] Clearing header!
+2019-03-05 06:09:53+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 06:09:53+0000 [-] handleStatusDataPack
+2019-03-05 06:09:53+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00082.dat with len 22
+2019-03-05 06:09:53+0000 [-] Clearing header!
+2019-03-05 06:09:53+0000 [-] handleHeader: mcode=x12, mlen=14
+2019-03-05 06:09:53+0000 [-] handleStatusDataPack
+2019-03-05 06:09:53+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00082.dat with len 14
+2019-03-05 06:09:53+0000 [-] Clearing header!
+2019-03-05 06:09:53+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 06:09:53+0000 [-] handleStatusDataPack
+2019-03-05 06:09:53+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00082.dat with len 22
+2019-03-05 06:09:53+0000 [-] Clearing header!
+2019-03-05 06:09:53+0000 [-] handleHeader: mcode=x14, mlen=0
+2019-03-05 06:09:53+0000 [-] handleStatusDataPackDone
+2019-03-05 06:09:53+0000 [-] writeBinFileToDisk
+2019-03-05 06:09:53+0000 [-] outf=<AriFiles.AriStatusDataPackBinFile object at 0x7f99a036d750>, rawFile=None, statFile=None
+2019-03-05 06:09:53+0000 [-] Wrote status data packs to [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00082.dat]
+2019-03-05 06:09:53+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a handshaking code
+Timestamp (0x15a0d7c0):
+Date/Time = Tue, 05 Mar 2019 06:06:46 +0000 (GMT) +        0 nsec
+Status (0x15b277f0):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 82
+  time            = Tue, 05 Mar 2019 06:05:53 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.4
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 24.9375
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 06:09:53+0000 [-] mac=0002F7F2E82D
+2019-03-05 06:09:53+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 06:09:53+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 06:09:53+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ #1: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+------ #2: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 06:09:53+0000 [-] Clearing header!
+2019-03-05 06:09:53+0000 [-] CompactifyBufferCheck
+2019-03-05 06:09:53+0000 [-] didHandle=[31313, 31314, 31315, 31316]
+2019-03-05 06:09:53+0000 [-] uponBdysSorted
+2019-03-05 06:09:53+0000 [-] Process msg MOMSN 27920 from 300234065709910 at 2019-03-05 06:08:05
+2019-03-05 06:09:53+0000 [-] processMsgCache
+2019-03-05 06:09:53+0000 [-] getSeqYesNo()
+2019-03-05 06:09:53+0000 [-] getSeqYesNo()
+2019-03-05 06:09:53+0000 [-] momsnVals=[27919, 27920]
+2019-03-05 06:09:53+0000 [-] seqMomsn =[27919, 27920]
+2019-03-05 06:09:53+0000 [-] is sequential = True
+2019-03-05 06:09:53+0000 [-] didHandle=[27920]
+2019-03-05 06:09:53+0000 [-] Responder = TSnCommFiActSendQueued
+2019-03-05 06:09:53+0000 [-] ALERT from addRunSeqRequestToQueue.
+        Subject: Requesting part of run [801].
+        Message: 
+2019-03-05 06:09:53+0000 [-] Got response:
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+2019-03-05 06:09:53+0000 [-] sendCommObj
+2019-03-05 06:09:53+0000 [-] Sending station (0002F7F2E82D):
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+2019-03-05 06:09:53+0000 [-] sendIObuf
+2019-03-05 06:09:53+0000 [-] Sending 5 bytes to station.
+2019-03-05 06:13:00+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a hands
+haking code
+Timestamp (0x14a49250):
+Date/Time = Tue, 05 Mar 2019 06:06:46 +0000 (GMT) +        0 nsec
+Status (0x15649bf0):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 82
+  time            = Tue, 05 Mar 2019 06:05:53 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.4
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 24.9375
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 06:13:00+0000 [-] mac=0002F7F2E82D
+2019-03-05 06:13:00+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 06:13:00+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 06:13:00+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ #1: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 06:13:00+0000 [-] Clearing header!
+2019-03-05 06:13:00+0000 [-] CompactifyBufferCheck
+2019-03-05 06:13:00+0000 [-] didHandle=[31320, 31321, 31322]
+2019-03-05 06:13:00+0000 [-] Responder = TSnCommFiActSendQueued
+2019-03-05 06:13:00+0000 [-] ALERT from addRunSeqRequestToQueue.
+        Subject: Requesting min/max seq [0]=[0,0]
+        Message: 
+2019-03-05 06:13:00+0000 [-] Got response:
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+2019-03-05 06:13:00+0000 [-] sendCommObj
+2019-03-05 06:13:00+0000 [-] Sending station (0002F7F2E82D):
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+2019-03-05 06:13:00+0000 [-] sendIObuf
+2019-03-05 06:13:00+0000 [-] Sending 5 bytes to station.
+2019-03-05 06:15:32+0000 [-] filename=[SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 06:15:32+0000 [-] ensureNoOver binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat
+2019-03-05 06:15:32+0000 [-] Checking dir exists for [binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 06:15:32+0000 [-] IncomingFilename [SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 06:15:32+0000 [-] Set incoming status, timee
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x150b00f0):
+Date/Time = Tue, 05 Mar 2019 06:06:46 +0000 (GMT) +        0 nsec
+Status (0xdcd3fa0):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 82
+  time            = Tue, 05 Mar 2019 06:05:53 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.4
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 24.9375
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [SnEvtsM0002F7F2E82Dr00801s00000.dat] (version [0])
+2019-03-05 06:15:32+0000 [-] Saving raw file [binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 06:15:32+0000 [-] Clearing header!
+2019-03-05 06:15:32+0000 [-] handleHeader: mcode=x2a, mlen=15
+2019-03-05 06:15:32+0000 [-] handleFileHeader
+2019-03-05 06:15:32+0000 [-] IncomingFileVersion
+2019-03-05 06:15:32+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 15
+2019-03-05 06:15:32+0000 [-] Clearing header!
+2019-03-05 06:15:32+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 06:15:32+0000 [-] handlePower
+2019-03-05 06:15:32+0000 [-] IncomingFilePowerReading
+2019-03-05 06:15:32+0000 [-] saving power reading to event binf
+2019-03-05 06:15:32+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 21
+2019-03-05 06:15:32+0000 [-] Clearing header!
+2019-03-05 06:15:32+0000 [-] handleHeader: mcode=x40, mlen=180
+2019-03-05 06:15:32+0000 [-] handleConfig
+2019-03-05 06:15:32+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 180
+2019-03-05 06:17:52+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 3159
+.
+.
+.
+2019-03-05 06:36:49+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with l
+en 3159
+
+#################################################################################################
+#################################################################################################
+
+2019-03-05 07:00:06+0000 [-] ensureNoOver rawStatus/status.0002F7F2E82D.20190305-065908.SBD.dat
+2019-03-05 07:00:06+0000 [-] Checking dir exists for [rawStatus/status.0002F7F2E82D.20190305-065908.SBD.d
+at]
+2019-03-05 07:00:06+0000 [-] Made raw status file [rawStatus/status.0002F7F2E82D.20190305-065908.SBD.dat]
+2019-03-05 07:00:06+0000 [-] status i/o vers = 10 => wait for status done code
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 83
+  time            = Tue, 05 Mar 2019 06:59:08 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.4
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+2019-03-05 07:00:06+0000 [-] Clearing header!
+2019-03-05 07:00:06+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 07:00:06+0000 [-] handlePower
+2019-03-05 07:00:06+0000 [-] callback for whenGotStatusPwr
+2019-03-05 07:00:06+0000 [-] IncomingStatusPowerReading
+TSnPowerReading: 
+  ave V1 = 19815.6
+  ave V2 = 19778.5
+  rms V1 = 8.3364
+  rms V2 = 8.05853
+  est. V ~ 12.018
+  est. C ~ 0.102449 (SST)
+  time   = Tue, 05 Mar 2019 06:59:02 +0000 (GMT) +        0 nsec
+2019-03-05 07:00:06+0000 [-] pullFromBuffToBinFile to rawStatus/status.0002F7F2E82D.20190305-065908.SBD.dat with len 21
+2019-03-05 07:00:06+0000 [-] incoming:
+OBJ: TSnCommIncStatus   TSnCommIncStatus        an incoming status info packet
+Timestamp (0x150b00f0):
+Date/Time = Tue, 05 Mar 2019 07:00:06 +0000 (GMT) +        0 nsec
+Status (0x14fb4a80):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 83
+  time            = Tue, 05 Mar 2019 06:59:08 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.4
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+PowerReading (0x1501b120)
+TSnPowerReading: 
+  ave V1 = 19815.6
+  ave V2 = 19778.5
+  rms V1 = 8.3364
+  rms V2 = 8.05853
+  est. V ~ 12.018
+  est. C ~ 0.102449 (SST)
+  time   = Tue, 05 Mar 2019 06:59:02 +0000 (GMT) +        0 nsec
+Power IO version:  2
+2019-03-05 07:00:06+0000 [-] mac=0002F7F2E82D
+2019-03-05 07:00:06+0000 [-] getActorFor 0002F7F2E82D, AriStatusActor
+2019-03-05 07:00:06+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 07:00:06+0000 [-] Opening actor file /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 07:00:06+0000 [-] Checking dir exists for [/data/ONLINE/Stage/AriStage.0002F7F2E82D.root]
+2019-03-05 07:00:06+0000 [-] Got actor:
+OBJ: TSnCommActor       AriStatusActor  0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From Queue To Stn (TSnCommActSendQueued)
+------ #2: Resend Conf If Not On Stn (TSnCommActConfResend)
+------ #3: Send No New Conf Signal (TSnCommActSendNoConf)
+2019-03-05 07:00:06+0000 [-] Clearing header!
+2019-03-05 07:00:06+0000 [-] CompactifyBufferCheck
+2019-03-05 07:00:06+0000 [-] didHandle=[31407]
+2019-03-05 07:00:06+0000 [-] Responder = TSnCommActSendNoConf
+2019-03-05 07:00:06+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 07:00:06+0000 [-] sendCommObj
+2019-03-05 07:00:06+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 07:00:06+0000 [-] sendIObuf
+2019-03-05 07:00:06+0000 [-] Sending 5 bytes to station.
+2019-03-05 07:02:34+0000 [-] ensureNoOver statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00083.dat
+2019-03-05 07:02:34+0000 [-] Checking dir exists for [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00083.dat]
+2019-03-05 07:02:34+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00083.dat with len 26
+2019-03-05 07:02:34+0000 [-] Clearing header!
+2019-03-05 07:02:34+0000 [-] handleHeader: mcode=x12, mlen=185
+2019-03-05 07:02:34+0000 [-] handleStatusDataPack
+2019-03-05 07:02:34+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00083.dat with len 185
+2019-03-05 07:02:34+0000 [-] Clearing header!
+2019-03-05 07:02:34+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 07:02:34+0000 [-] handleStatusDataPack
+2019-03-05 07:02:34+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00083.dat with len 22
+2019-03-05 07:02:34+0000 [-] Clearing header!
+2019-03-05 07:02:34+0000 [-] handleHeader: mcode=x12, mlen=14
+2019-03-05 07:02:34+0000 [-] handleStatusDataPack
+2019-03-05 07:02:34+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00083.dat with len 14
+2019-03-05 07:02:34+0000 [-] Clearing header!
+2019-03-05 07:02:34+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 07:02:34+0000 [-] handleStatusDataPack
+2019-03-05 07:02:34+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00083.dat with len 22
+2019-03-05 07:02:34+0000 [-] Clearing header!
+2019-03-05 07:02:34+0000 [-] handleHeader: mcode=x14, mlen=0
+2019-03-05 07:02:34+0000 [-] handleStatusDataPackDone
+2019-03-05 07:02:34+0000 [-] writeBinFileToDisk
+2019-03-05 07:02:34+0000 [-] outf=<AriFiles.AriStatusDataPackBinFile object at 0x7f99b3a97dd0>, rawFile=None, statFile=None
+2019-03-05 07:02:34+0000 [-] Wrote status data packs to [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00083.dat]
+2019-03-05 07:02:54+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a handshaking code
+Timestamp (0x1504c930):
+Date/Time = Tue, 05 Mar 2019 07:00:06 +0000 (GMT) +        0 nsec
+Status (0x1598e480):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 83
+  time            = Tue, 05 Mar 2019 06:59:08 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.4
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 07:02:54+0000 [-] mac=0002F7F2E82D
+2019-03-05 07:02:54+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 07:02:54+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 07:02:54+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 07:02:54+0000 [-] Clearing header!
+2019-03-05 07:02:54+0000 [-] CompactifyBufferCheck
+2019-03-05 07:02:54+0000 [-] didHandle=[31411]
+2019-03-05 07:02:54+0000 [-] uponBdysSorted
+2019-03-05 07:02:54+0000 [-] Process msg MOMSN 1073 from 300234011888040 at 2019-03-05 07:01:54
+2019-03-05 07:02:54+0000 [-] processMsgCache
+2019-03-05 07:02:54+0000 [-] getSeqYesNo()
+2019-03-05 07:02:54+0000 [-] getSeqYesNo()
+2019-03-05 07:02:54+0000 [-] momsnVals=[1072, 1073]
+2019-03-05 07:02:54+0000 [-] seqMomsn =[1072, 1073]
+2019-03-05 07:02:54+0000 [-] is sequential = True
+2019-03-05 07:02:54+0000 [-] didHandle=[1073]
+2019-03-05 07:02:54+0000 [-] Responder = TSnCommFiActNoReplyHndshk
+2019-03-05 07:02:54+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 6f (HnShNoReplyCode)
+  payload = 0 (0)
+2019-03-05 07:02:54+0000 [-] sendCommObj
+2019-03-05 07:02:54+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 6f (HnShNoReplyCode)
+  payload = 0 (0)
+2019-03-05 07:02:54+0000 [-] sendIObuf
+2019-03-05 07:02:54+0000 [-] Sending 5 bytes to station.
+2019-03-05 07:06:28+0000 [-] filename=[SnEvtsM0002F7F2E82Dr00808s00083.dat]
+2019-03-05 07:06:28+0000 [-] ensureNoOver binFiles/SnEvtsM0002F7F2E82Dr00808s00083.dat
+2019-03-05 07:06:28+0000 [-] Checking dir exists for [binFiles/SnEvtsM0002F7F2E82Dr00808s00083.dat]
+2019-03-05 07:06:28+0000 [-] IncomingFilename [SnEvtsM0002F7F2E82Dr00808s00083.dat]
+2019-03-05 07:06:28+0000 [-] Set incoming status, timee
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x1598edb0):
+Date/Time = Tue, 05 Mar 2019 07:00:06 +0000 (GMT) +        0 nsec
+Status (0x15a01800):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 83
+  time            = Tue, 05 Mar 2019 06:59:08 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.4
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [SnEvtsM0002F7F2E82Dr00808s00083.dat] (version [0])
+2019-03-05 07:06:28+0000 [-] Saving raw file [binFiles/SnEvtsM0002F7F2E82Dr00808s00083.dat]
+2019-03-05 07:06:28+0000 [-] Clearing header!
+2019-03-05 07:06:28+0000 [-] handleHeader: mcode=x2a, mlen=15
+2019-03-05 07:06:28+0000 [-] handleFileHeader
+2019-03-05 07:06:28+0000 [-] IncomingFileVersion
+2019-03-05 07:06:28+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00083.dat with l
+en 15
+2019-03-05 07:06:28+0000 [-] Clearing header!
+2019-03-05 07:06:28+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 07:06:28+0000 [-] handlePower
+2019-03-05 07:06:28+0000 [-] IncomingFilePowerReading
+2019-03-05 07:06:28+0000 [-] saving power reading to event binf
+2019-03-05 07:06:28+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00083.dat with l
+en 21
+2019-03-05 07:06:28+0000 [-] Clearing header!
+2019-03-05 07:06:28+0000 [-] handleHeader: mcode=x40, mlen=180
+2019-03-05 07:06:28+0000 [-] handleConfig
+2019-03-05 07:06:28+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00083.dat with l
+en 180
+2019-03-05 07:06:28+0000 [-] Clearing header!
+2019-03-05 07:06:28+0000 [-] handleHeader: mcode=x24, mlen=17
+2019-03-05 07:06:28+0000 [-] handleClockSetTrgStart
+2019-03-05 07:06:28+0000 [-] handleClockSet
+2019-03-05 07:06:28+0000 [-] saving clock set to event binf
+2019-03-05 07:06:28+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00083.dat with l
+en 17
+2019-03-05 07:06:28+0000 [-] Clearing header!
+2019-03-05 07:06:28+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 07:06:28+0000 [-] handlePower
+2019-03-05 07:06:28+0000 [-] IncomingFilePowerReading
+2019-03-05 07:06:28+0000 [-] saving power reading to event binf
+2019-03-05 07:06:28+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00083.dat with len 21
+2019-03-05 07:06:28+0000 [-] Clearing header!
+2019-03-05 07:06:28+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 07:06:28+0000 [-] dataReceived: need more data msgLen=21, buf=11
+2019-03-05 07:06:28+0000 [-] CompactifyBufferCheck
+2019-03-05 07:06:28+0000 [-] call handleSbdBinIn for SBD(300234011884030) MOMSN(31417)
+2019-03-05 07:06:28+0000 [-] handleSbdBinIn
+2019-03-05 07:06:28+0000 [-] Ignoring sbd msg num and msg tot.
+2019-03-05 07:06:28+0000 [-] send message to dataReceived
+2019-03-05 07:06:28+0000 [-] dataReceived 269
+2019-03-05 07:06:28+0000 [-] msgCode=112, msgLen=21
+2019-03-05 07:06:28+0000 [-] msgCode=x70
+2019-03-05 07:06:28+0000 [-] (pre) buf len = 280
+2019-03-05 07:06:28+0000 [-] rest of msg arrived. calling handlePayload
+2019-03-05 07:06:28+0000 [-] handlePower
+2019-03-05 07:06:28+0000 [-] IncomingFilePowerReading
+2019-03-05 07:06:28+0000 [-] saving power reading to event binf
+2019-03-05 07:06:28+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00083.dat with len 21
+.
+.
+.
+2019-03-05 07:06:28+0000 [-] FileReceivedChecksum
+Local CRC   = [409145907]
+From file [SnEvtsM0002F7F2E82Dr00808s00083.dat] (version [4])
+2019-03-05 07:06:28+0000 [-] DeferredResponseToFile
+2019-03-05 07:06:28+0000 [-] _deferredResponseTo (AriFileActor)
+2019-03-05 07:06:28+0000 [-] incoming:
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x1598edb0):
+Date/Time = Tue, 05 Mar 2019 07:00:06 +0000 (GMT) +        0 nsec
+Status (0x15a01800):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 83
+  time            = Tue, 05 Mar 2019 06:59:08 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.4
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [409145907]
+Local CRC   = [409145907]
+Received 0/0 events.
+Received 10/10 power readings.
+From file [SnEvtsM0002F7F2E82Dr00808s00083.dat] (version [4])
+2019-03-05 07:06:28+0000 [-] mac=0002F7F2E82D
+2019-03-05 07:06:28+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 07:06:28+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 07:06:28+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 07:06:28+0000 [-] Responder = TSnCommFiActNoReplyHndshk
+2019-03-05 07:06:28+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 6f (HnShNoReplyCode)
+  payload = 0 (0)
+2019-03-05 07:06:28+0000 [-] sendCommObj
+2019-03-05 07:06:28+0000 [-] Sending station (0002F7F20A9C):
+TSnCommProtocolMsg:
+  code    = 6f (HnShNoReplyCode)
+  payload = 0 (0)
+2019-03-05 07:06:28+0000 [-] sendIObuf
+2019-03-05 07:06:28+0000 [-] Sending 5 bytes to station.
+2019-03-05 07:06:28+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 61 (HnShOkComplCode)
+  payload = 0 (0)
+2019-03-05 07:06:28+0000 [-] fcrc=409145907, resp=<ROOT.TSnCommProtocolMsg object ("TSnCommProtocolMsg") at 0x7f99bc02d080>
+2019-03-05 07:06:28+0000 [-] sendCommObj
+2019-03-05 07:06:28+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 61 (HnShOkComplCode)
+  payload = 0 (0)
+2019-03-05 07:06:28+0000 [-] sendIObuf
+2019-03-05 07:06:28+0000 [-] Sending 5 bytes to station.
+2019-03-05 07:08:55+0000 [-] Station [0002F7F2E82D] signed off.
+
+#################################################################################################
+#################################################################################################
+
+File Request Sent at 7:33
+
+#################################################################################################
+#################################################################################################
+
+2019-03-05 07:30:45+0000 [-] ensureNoOver rawStatus/status.0002F7F2E82D.20190305-072846.SBD.dat
+2019-03-05 07:30:45+0000 [-] Checking dir exists for [rawStatus/status.0002F7F2E82D.20190305-072846.SBD.dat]
+2019-03-05 07:30:45+0000 [-] Made raw status file [rawStatus/status.0002F7F2E82D.20190305-072846.SBD.dat]
+2019-03-05 07:30:45+0000 [-] status i/o vers = 10 => wait for status done code
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 84
+  time            = Tue, 05 Mar 2019 07:28:46 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+2019-03-05 07:30:45+0000 [-] Clearing header!
+2019-03-05 07:30:45+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 07:30:45+0000 [-] handlePower
+2019-03-05 07:30:45+0000 [-] callback for whenGotStatusPwr
+2019-03-05 07:30:45+0000 [-] IncomingStatusPowerReading
+TSnPowerReading: 
+  ave V1 = 19815.1
+  ave V2 = 19778.5
+  rms V1 = 8.60053
+  rms V2 = 7.90381
+  est. V ~ 12.0177
+  est. C ~ 0.10095 (SST)
+  time   = Tue, 05 Mar 2019 07:28:38 +0000 (GMT) +        0 nsec
+2019-03-05 07:30:45+0000 [-] pullFromBuffToBinFile to rawStatus/status.0002F7F2E82D.20190305-072846.SBD.dat with len 21
+2019-03-05 07:30:45+0000 [-] incoming:
+OBJ: TSnCommIncStatus   TSnCommIncStatus        an incoming status info packet
+Timestamp (0x150b0ae0):
+Date/Time = Tue, 05 Mar 2019 07:30:45 +0000 (GMT) +        0 nsec
+Status (0x15561740):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 84
+  time            = Tue, 05 Mar 2019 07:28:46 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+PowerReading (0x1501b120)
+TSnPowerReading: 
+  ave V1 = 19815.1
+  ave V2 = 19778.5
+  rms V1 = 8.60053
+  rms V2 = 7.90381
+  est. V ~ 12.0177
+  est. C ~ 0.10095 (SST)
+  time   = Tue, 05 Mar 2019 07:28:38 +0000 (GMT) +        0 nsec
+Power IO version:  2
+2019-03-05 07:30:45+0000 [-] mac=0002F7F2E82D
+2019-03-05 07:30:45+0000 [-] getActorFor 0002F7F2E82D, AriStatusActor
+2019-03-05 07:30:45+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 07:30:45+0000 [-] Opening actor file /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 07:30:45+0000 [-] Checking dir exists for [/data/ONLINE/Stage/AriStage.0002F7F2E82D.root]
+2019-03-05 07:30:45+0000 [-] Got actor:
+OBJ: TSnCommActor       AriStatusActor  0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From Queue To Stn (TSnCommActSendQueued)
+------ #2: Resend Conf If Not On Stn (TSnCommActConfResend)
+------ #3: Send No New Conf Signal (TSnCommActSendNoConf)
+2019-03-05 07:30:45+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 07:30:45+0000 [-] sendCommObj
+2019-03-05 07:30:45+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 07:30:45+0000 [-] sendIObuf
+2019-03-05 07:30:45+0000 [-] Sending 5 bytes to station.
+2019-03-05 07:32:58+0000 [-] ensureNoOver statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00084.dat
+2019-03-05 07:32:58+0000 [-] Checking dir exists for [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00084.dat]
+2019-03-05 07:32:58+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00084.dat with len 26
+2019-03-05 07:32:58+0000 [-] Clearing header!
+2019-03-05 07:32:58+0000 [-] handleHeader: mcode=x12, mlen=185
+2019-03-05 07:32:58+0000 [-] handleStatusDataPack
+2019-03-05 07:32:58+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00084.dat with len 185
+2019-03-05 07:32:58+0000 [-] Clearing header!
+2019-03-05 07:32:58+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 07:32:58+0000 [-] handleStatusDataPack
+2019-03-05 07:32:58+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00084.dat with len 22
+2019-03-05 07:32:58+0000 [-] Clearing header!
+2019-03-05 07:32:58+0000 [-] handleHeader: mcode=x12, mlen=14
+2019-03-05 07:32:58+0000 [-] handleStatusDataPack
+2019-03-05 07:32:58+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00084.dat with len 14
+2019-03-05 07:32:58+0000 [-] Clearing header!
+2019-03-05 07:32:58+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 07:32:58+0000 [-] handleStatusDataPack
+2019-03-05 07:32:58+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00084.dat with len 22
+2019-03-05 07:32:58+0000 [-] Clearing header!
+2019-03-05 07:32:58+0000 [-] handleHeader: mcode=x14, mlen=0
+2019-03-05 07:32:58+0000 [-] handleStatusDataPackDone
+2019-03-05 07:32:58+0000 [-] writeBinFileToDisk
+2019-03-05 07:32:58+0000 [-] outf=<AriFiles.AriStatusDataPackBinFile object at 0x7f99aa426690>, rawFile=None, statFile=None
+2019-03-05 07:32:58+0000 [-] Wrote status data packs to [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00084.dat]
+2019-03-05 07:33:14+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a hands
+haking code
+Timestamp (0x15060510):
+Date/Time = Tue, 05 Mar 2019 07:30:45 +0000 (GMT) +        0 nsec
+Status (0x15a006e0):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 84
+  time            = Tue, 05 Mar 2019 07:28:46 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 07:33:14+0000 [-] mac=0002F7F2E82D
+2019-03-05 07:33:14+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 07:33:14+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 07:33:14+0000 [-] Clearing header!
+2019-03-05 07:33:14+0000 [-] CompactifyBufferCheck
+2019-03-05 07:33:14+0000 [-] didHandle=[31431, 31432]
+2019-03-05 07:33:15+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ #1: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+------ #2: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 07:33:15+0000 [-] Responder = TSnCommFiActSendQueued
+2019-03-05 07:33:15+0000 [-] ALERT from addRunSeqRequestToQueue.
+        Subject: Requesting part of run [801].
+        Message: 
+2019-03-05 07:33:15+0000 [-] Got response:
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+2019-03-05 07:33:15+0000 [-] sendCommObj
+2019-03-05 07:33:15+0000 [-] Sending station (0002F7F2E82D):
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+2019-03-05 07:33:15+0000 [-] sendIObuf
+2019-03-05 07:33:15+0000 [-] Sending 5 bytes to station.
+2019-03-05 07:36:37+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a handshaking code
+Timestamp (0x14556570):
+Date/Time = Tue, 05 Mar 2019 07:30:45 +0000 (GMT) +        0 nsec
+Status (0x15b3f6e0):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 84
+  time            = Tue, 05 Mar 2019 07:28:46 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 07:36:37+0000 [-] mac=0002F7F2E82D
+2019-03-05 07:36:37+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 07:36:37+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 07:36:37+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ #1: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 07:36:37+0000 [-] Clearing header!
+2019-03-05 07:36:37+0000 [-] ALERT from addRunSeqRequestToQueue.
+        Subject: Requesting min/max seq [0]=[0,0]
+        Message: 
+2019-03-05 07:36:37+0000 [-] Got response:
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+2019-03-05 07:36:37+0000 [-] sendCommObj
+2019-03-05 07:36:37+0000 [-] Sending station (0002F7F2E82D):
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+2019-03-05 07:36:37+0000 [-] sendIObuf
+2019-03-05 07:36:37+0000 [-] Sending 5 bytes to station.
+2019-03-05 07:38:26+0000 [-] filename=[SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 07:38:26+0000 [-] ensureNoOver binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat
+2019-03-05 07:38:26+0000 [-] Checking dir exists for [binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 07:38:26+0000 [-] IncomingFilename [SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 07:38:26+0000 [-] Set incoming status, timee
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x15a7d370):
+Date/Time = Tue, 05 Mar 2019 07:30:45 +0000 (GMT) +        0 nsec
+Status (0x15639650):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 84
+  time            = Tue, 05 Mar 2019 07:28:46 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [SnEvtsM0002F7F2E82Dr00801s00000.dat] (version [0])
+2019-03-05 07:38:26+0000 [-] Saving raw file [binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 07:38:26+0000 [-] Clearing header!
+2019-03-05 07:38:26+0000 [-] handleHeader: mcode=x2a, mlen=15
+2019-03-05 07:38:26+0000 [-] handleFileHeader
+2019-03-05 07:38:26+0000 [-] IncomingFileVersion
+2019-03-05 07:38:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 15
+2019-03-05 07:38:26+0000 [-] Clearing header!
+2019-03-05 07:38:26+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 07:38:26+0000 [-] handlePower
+2019-03-05 07:38:26+0000 [-] IncomingFilePowerReading
+2019-03-05 07:38:26+0000 [-] saving power reading to event binf
+2019-03-05 07:38:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 21
+2019-03-05 07:38:26+0000 [-] Clearing header!
+2019-03-05 07:38:26+0000 [-] handleHeader: mcode=x40, mlen=180
+2019-03-05 07:38:26+0000 [-] handleConfig
+2019-03-05 07:38:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 180
+2019-03-05 07:38:26+0000 [-] Clearing header!
+2019-03-05 07:38:26+0000 [-] handleHeader: mcode=x24, mlen=17
+2019-03-05 07:38:26+0000 [-] handleClockSetTrgStart
+2019-03-05 07:38:26+0000 [-] handleClockSet
+2019-03-05 07:38:26+0000 [-] saving clock set to event binf
+2019-03-05 07:38:26+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 17
+2019-03-05 07:42:58+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 3159
+.
+.
+.
+2019-03-05 07:59:55+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with l
+en 3159
+
+#################################################################################################
+#################################################################################################
+
+File Request Sent at 8:27
+
+#################################################################################################
+#################################################################################################
+
+2019-03-05 08:23:14+0000 [-] ensureNoOver rawStatus/status.0002F7F2E82D.20190305-082202.SBD.dat
+2019-03-05 08:23:14+0000 [-] Checking dir exists for [rawStatus/status.0002F7F2E82D.20190305-082202.SBD.d
+at]
+2019-03-05 08:23:14+0000 [-] Made raw status file [rawStatus/status.0002F7F2E82D.20190305-082202.SBD.dat]
+2019-03-05 08:23:14+0000 [-] status i/o vers = 10 => wait for status done code
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 85
+  time            = Tue, 05 Mar 2019 08:22:02 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 24.8125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+2019-03-05 08:23:14+0000 [-] Clearing header!
+2019-03-05 08:23:14+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 08:23:14+0000 [-] handlePower
+2019-03-05 08:23:14+0000 [-] callback for whenGotStatusPwr
+2019-03-05 08:23:14+0000 [-] IncomingStatusPowerReading
+TSnPowerReading: 
+  ave V1 = 19815.8
+  ave V2 = 19779.3
+  rms V1 = 7.88535
+  rms V2 = 7.71241
+  est. V ~ 12.0181
+  est. C ~ 0.10095 (SST)
+  time   = Tue, 05 Mar 2019 08:21:55 +0000 (GMT) +        0 nsec
+2019-03-05 08:23:14+0000 [-] pullFromBuffToBinFile to rawStatus/status.0002F7F2E82D.20190305-082202.SBD.d
+at with len 21
+2019-03-05 08:23:14+0000 [-] incoming:
+OBJ: TSnCommIncStatus   TSnCommIncStatus        an incoming status info packet
+Timestamp (0x15a7d370):
+Date/Time = Tue, 05 Mar 2019 08:23:14 +0000 (GMT) +        0 nsec
+Status (0x15561ed0):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 85
+  time            = Tue, 05 Mar 2019 08:22:02 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 24.8125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+PowerReading (0x15a7d260)
+TSnPowerReading: 
+  ave V1 = 19815.8
+  ave V2 = 19779.3
+  rms V1 = 7.88535
+  rms V2 = 7.71241
+  est. V ~ 12.0181
+  est. C ~ 0.10095 (SST)
+  time   = Tue, 05 Mar 2019 08:21:55 +0000 (GMT) +        0 nsec
+Power IO version:  2
+2019-03-05 08:23:14+0000 [-] mac=0002F7F2E82D
+2019-03-05 08:23:14+0000 [-] getActorFor 0002F7F2E82D, AriStatusActor
+2019-03-05 08:23:14+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 08:23:14+0000 [-] Opening actor file /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 08:23:14+0000 [-] Checking dir exists for [/data/ONLINE/Stage/AriStage.0002F7F2E82D.root]
+2019-03-05 08:23:14+0000 [-] Got actor:
+OBJ: TSnCommActor       AriStatusActor  0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From Queue To Stn (TSnCommActSendQueued)
+------ #2: Resend Conf If Not On Stn (TSnCommActConfResend)
+------ #3: Send No New Conf Signal (TSnCommActSendNoConf)
+2019-03-05 08:23:14+0000 [-] Clearing header!
+2019-03-05 08:23:14+0000 [-] CompactifyBufferCheck
+2019-03-05 08:23:14+0000 [-] didHandle=[31532, 31533]
+2019-03-05 08:23:14+0000 [-] Responder = TSnCommActSendNoConf
+2019-03-05 08:23:14+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 08:23:14+0000 [-] sendCommObj
+2019-03-05 08:23:14+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 08:23:14+0000 [-] sendIObuf
+2019-03-05 08:23:14+0000 [-] Sending 5 bytes to station.
+2019-03-05 08:25:59+0000 [-] Making AriStatusDataPackBinFile
+2019-03-05 08:25:59+0000 [-] ensureNoOver statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00085.dat
+2019-03-05 08:25:59+0000 [-] Checking dir exists for [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00
+085.dat]
+2019-03-05 08:25:59+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00
+085.dat with len 26
+2019-03-05 08:25:59+0000 [-] Clearing header!
+2019-03-05 08:25:59+0000 [-] handleHeader: mcode=x12, mlen=185
+2019-03-05 08:25:59+0000 [-] handleStatusDataPack
+2019-03-05 08:25:59+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00
+085.dat with len 185
+2019-03-05 08:25:59+0000 [-] Clearing header!
+2019-03-05 08:25:59+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 08:25:59+0000 [-] handleStatusDataPack
+2019-03-05 08:25:59+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00
+085.dat with len 22
+2019-03-05 08:25:59+0000 [-] Clearing header!
+2019-03-05 08:25:59+0000 [-] handleHeader: mcode=x12, mlen=14
+2019-03-05 08:25:59+0000 [-] handleStatusDataPack
+2019-03-05 08:25:59+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00085.dat with len 14
+2019-03-05 08:25:59+0000 [-] Clearing header!
+2019-03-05 08:25:59+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 08:25:59+0000 [-] handleStatusDataPack
+2019-03-05 08:25:59+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00085.dat with len 22
+2019-03-05 08:25:59+0000 [-] Clearing header!
+2019-03-05 08:25:59+0000 [-] handleHeader: mcode=x14, mlen=0
+2019-03-05 08:25:59+0000 [-] handleStatusDataPackDone
+2019-03-05 08:25:59+0000 [-] writeBinFileToDisk
+2019-03-05 08:25:59+0000 [-] outf=<AriFiles.AriStatusDataPackBinFile object at 0x7f99c62d4a90>, rawFile=None, statFile=None
+2019-03-05 08:25:59+0000 [-] Wrote status data packs to [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00085.dat]
+2019-03-05 08:25:59+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a handshaking code
+Timestamp (0x15693180):
+Date/Time = Tue, 05 Mar 2019 08:23:14 +0000 (GMT) +        0 nsec
+Status (0x155990b0):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 85
+  time            = Tue, 05 Mar 2019 08:22:02 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 24.8125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 08:25:59+0000 [-] mac=0002F7F2E82D
+2019-03-05 08:25:59+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 08:25:59+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 08:25:59+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 08:25:59+0000 [-] Clearing header!
+2019-03-05 08:25:59+0000 [-] CompactifyBufferCheck
+2019-03-05 08:25:59+0000 [-] didHandle=[31537, 31538, 31539]
+2019-03-05 08:25:59+0000 [-] Responder = TSnCommFiActNoReplyHndshk
+2019-03-05 08:25:59+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 6f (HnShNoReplyCode)
+  payload = 0 (0)
+2019-03-05 08:25:59+0000 [-] sendCommObj
+2019-03-05 08:25:59+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 6f (HnShNoReplyCode)
+  payload = 0 (0)
+2019-03-05 08:25:59+0000 [-] sendIObuf
+2019-03-05 08:25:59+0000 [-] Sending 5 bytes to station.
+2019-03-05 08:27:57+0000 [-] filename=[SnEvtsM0002F7F2E82Dr00808s00085.dat]
+2019-03-05 08:27:57+0000 [-] ensureNoOver binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat
+2019-03-05 08:27:57+0000 [-] Checking dir exists for [binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat]
+2019-03-05 08:27:57+0000 [-] IncomingFilename [SnEvtsM0002F7F2E82Dr00808s00085.dat]
+2019-03-05 08:27:57+0000 [-] Set incoming status, timee
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x150c40b0):
+Date/Time = Tue, 05 Mar 2019 08:23:14 +0000 (GMT) +        0 nsec
+Status (0x15552010):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 85
+  time            = Tue, 05 Mar 2019 08:22:02 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 24.8125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [SnEvtsM0002F7F2E82Dr00808s00085.dat] (version [0])
+2019-03-05 08:27:57+0000 [-] Saving raw file [binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat]
+2019-03-05 08:27:57+0000 [-] Clearing header!
+2019-03-05 08:27:57+0000 [-] handleHeader: mcode=x2a, mlen=15
+2019-03-05 08:27:57+0000 [-] handleFileHeader
+2019-03-05 08:27:57+0000 [-] IncomingFileVersion
+2019-03-05 08:27:57+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 15
+2019-03-05 08:27:57+0000 [-] Clearing header!
+2019-03-05 08:27:57+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 08:27:57+0000 [-] handlePower
+2019-03-05 08:27:57+0000 [-] IncomingFilePowerReading
+2019-03-05 08:27:57+0000 [-] saving power reading to event binf
+2019-03-05 08:27:57+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 21
+2019-03-05 08:27:57+0000 [-] Clearing header!
+2019-03-05 08:27:57+0000 [-] handleHeader: mcode=x40, mlen=180
+2019-03-05 08:27:57+0000 [-] handleConfig
+2019-03-05 08:27:57+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 180
+2019-03-05 08:27:57+0000 [-] Clearing header!
+2019-03-05 08:27:57+0000 [-] handleHeader: mcode=x24, mlen=17
+2019-03-05 08:27:57+0000 [-] handleClockSetTrgStart
+2019-03-05 08:27:57+0000 [-] handleClockSet
+2019-03-05 08:27:57+0000 [-] saving clock set to event binf
+2019-03-05 08:27:57+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 17
+2019-03-05 08:27:57+0000 [-] Clearing header!
+2019-03-05 08:27:57+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 08:27:57+0000 [-] handlePower
+2019-03-05 08:27:57+0000 [-] IncomingFilePowerReading
+2019-03-05 08:27:57+0000 [-] saving power reading to event binf
+2019-03-05 08:27:57+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 21
+2019-03-05 08:28:36+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 21
+2019-03-05 08:28:36+0000 [-] Clearing header!
+2019-03-05 08:28:36+0000 [-] Need to hanle header. br=259, hl=5
+2019-03-05 08:28:36+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 08:28:36+0000 [-] handlePower
+2019-03-05 08:28:36+0000 [-] IncomingFilePowerReading
+2019-03-05 08:28:36+0000 [-] saving power reading to event binf
+2019-03-05 08:28:36+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 21
+2019-03-05 08:28:36+0000 [-] Clearing header!
+2019-03-05 08:28:36+0000 [-] handleHeader: mcode=x74, mlen=9
+2019-03-05 08:28:36+0000 [-] handleTemperature
+2019-03-05 08:28:36+0000 [-] saving temperature reading to event binf
+2019-03-05 08:28:36+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 9
+2019-03-05 08:28:36+0000 [-] IncomingFileTemperature
+2019-03-05 08:28:36+0000 [-] Clearing header!
+2019-03-05 08:28:36+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 08:28:36+0000 [-] handlePower
+2019-03-05 08:28:36+0000 [-] IncomingFilePowerReading
+2019-03-05 08:28:36+0000 [-] saving power reading to event binf
+2019-03-05 08:28:36+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 21
+2019-03-05 08:28:36+0000 [-] Clearing header!
+2019-03-05 08:28:36+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 08:28:36+0000 [-] handlePower
+2019-03-05 08:28:36+0000 [-] IncomingFilePowerReading
+2019-03-05 08:28:36+0000 [-] saving power reading to event binf
+2019-03-05 08:28:36+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 21
+2019-03-05 08:28:36+0000 [-] Clearing header!
+2019-03-05 08:28:36+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 08:28:36+0000 [-] handlePower
+2019-03-05 08:28:36+0000 [-] IncomingFilePowerReading
+2019-03-05 08:28:36+0000 [-] saving power reading to event binf
+2019-03-05 08:28:36+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 21
+2019-03-05 08:28:36+0000 [-] Clearing header!
+2019-03-05 08:28:36+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 08:28:36+0000 [-] handlePower
+2019-03-05 08:28:36+0000 [-] IncomingFilePowerReading
+2019-03-05 08:28:36+0000 [-] saving power reading to event binf
+2019-03-05 08:28:36+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 21
+2019-03-05 08:28:36+0000 [-] Clearing header!
+2019-03-05 08:28:36+0000 [-] handleHeader: mcode=x74, mlen=9
+2019-03-05 08:28:36+0000 [-] handleTemperature
+2019-03-05 08:28:36+0000 [-] saving temperature reading to event binf
+2019-03-05 08:28:36+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 9
+2019-03-05 08:28:36+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 21
+2019-03-05 08:28:36+0000 [-] Clearing header!
+2019-03-05 08:28:36+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 08:28:36+0000 [-] handlePower
+2019-03-05 08:28:36+0000 [-] IncomingFilePowerReading
+2019-03-05 08:28:36+0000 [-] saving power reading to event binf
+2019-03-05 08:28:36+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 21
+2019-03-05 08:28:36+0000 [-] Clearing header!
+2019-03-05 08:28:36+0000 [-] handleHeader: mcode=x25, mlen=17
+2019-03-05 08:28:36+0000 [-] handleClockSetTrgStop
+2019-03-05 08:28:36+0000 [-] handleClockSet
+2019-03-05 08:28:36+0000 [-] saving clock set to event binf
+2019-03-05 08:28:36+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00085.dat with len 17
+2019-03-05 08:28:36+0000 [-] FileReceivedChecksum
+Local CRC   = [3555185184]
+From file [SnEvtsM0002F7F2E82Dr00808s00085.dat] (version [4])
+2019-03-05 08:28:36+0000 [-] DeferredResponseToFile
+2019-03-05 08:28:36+0000 [-] _deferredResponseTo (AriFileActor)
+2019-03-05 08:28:36+0000 [-] incoming:
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x150c40b0):
+Date/Time = Tue, 05 Mar 2019 08:23:14 +0000 (GMT) +        0 nsec
+Status (0x15552010):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 85
+  time            = Tue, 05 Mar 2019 08:22:02 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 24.8125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [3555185184]
+Local CRC   = [3555185184]
+Received 0/0 events.
+Received 10/10 power readings.
+From file [SnEvtsM0002F7F2E82Dr00808s00085.dat] (version [4])
+2019-03-05 08:28:36+0000 [-] mac=0002F7F2E82D
+2019-03-05 08:28:36+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 08:28:36+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 08:28:36+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ #1: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+------ #2: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 08:28:36+0000 [-] Responder = TSnCommFiActSendQueued
+2019-03-05 08:28:36+0000 [-] ALERT from addRunSeqRequestToQueue.
+        Subject: Requesting part of run [801].
+        Message: 
+2019-03-05 08:28:36+0000 [-] Got response:
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+2019-03-05 08:28:36+0000 [-] fcrc=3555185184, resp=<ROOT.TSnCommAlertPack object ("TSnCommAlertPack") at 0x15b331b0>
+2019-03-05 08:28:36+0000 [-] sendCommObj
+2019-03-05 08:28:36+0000 [-] Sending station (0002F7F2E82D):
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+2019-03-05 08:28:36+0000 [-] sendIObuf
+2019-03-05 08:28:36+0000 [-] Sending 5 bytes to station.
+2019-03-05 08:31:11+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a handshaking code
+Timestamp (0xdcd5c20):
+Date/Time = Tue, 05 Mar 2019 08:23:14 +0000 (GMT) +        0 nsec
+Status (0x15599630):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 85
+  time            = Tue, 05 Mar 2019 08:22:02 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 24.8125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 08:31:11+0000 [-] mac=0002F7F2E82D
+2019-03-05 08:31:11+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 08:31:11+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 08:31:11+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ #1: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 08:31:11+0000 [-] Clearing header!
+2019-03-05 08:31:11+0000 [-] CompactifyBufferCheck
+2019-03-05 08:31:11+0000 [-] didHandle=[31549, 31550, 31551]
+2019-03-05 08:31:11+0000 [-] Responder = TSnCommFiActSendQueued
+2019-03-05 08:31:11+0000 [-] ALERT from addRunSeqRequestToQueue.
+        Subject: Requesting min/max seq [0]=[0,0]
+        Message: 
+2019-03-05 08:31:11+0000 [-] Got response:
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+2019-03-05 08:31:11+0000 [-] sendCommObj
+2019-03-05 08:31:11+0000 [-] Sending station (0002F7F2E82D):
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+2019-03-05 08:31:11+0000 [-] sendIObuf
+2019-03-05 08:31:11+0000 [-] Sending 5 bytes to station.
+2019-03-05 08:33:30+0000 [-] filename=[SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 08:33:30+0000 [-] ensureNoOver binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat
+2019-03-05 08:33:30+0000 [-] Checking dir exists for [binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 08:33:30+0000 [-] IncomingFilename [SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 08:33:30+0000 [-] Set incoming status, timee
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x15b30480):
+Date/Time = Tue, 05 Mar 2019 08:23:14 +0000 (GMT) +        0 nsec
+Status (0x15b3ca90):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 85
+  time            = Tue, 05 Mar 2019 08:22:02 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 24.8125
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [SnEvtsM0002F7F2E82Dr00801s00000.dat] (version [0])
+2019-03-05 08:33:30+0000 [-] Saving raw file [binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 08:33:30+0000 [-] Clearing header!
+2019-03-05 08:33:30+0000 [-] handleHeader: mcode=x2a, mlen=15
+2019-03-05 08:33:30+0000 [-] handleFileHeader
+2019-03-05 08:33:30+0000 [-] IncomingFileVersion
+2019-03-05 08:33:30+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 15
+2019-03-05 08:33:30+0000 [-] Clearing header!
+2019-03-05 08:33:30+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 08:33:30+0000 [-] handlePower
+2019-03-05 08:33:30+0000 [-] IncomingFilePowerReading
+2019-03-05 08:33:30+0000 [-] saving power reading to event binf
+2019-03-05 08:33:30+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 21
+2019-03-05 08:33:30+0000 [-] Clearing header!
+2019-03-05 08:33:30+0000 [-] handleHeader: mcode=x40, mlen=180
+2019-03-05 08:33:30+0000 [-] handleConfig
+2019-03-05 08:33:30+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 180
+2019-03-05 08:33:30+0000 [-] Clearing header!
+2019-03-05 08:33:30+0000 [-] handleHeader: mcode=x24, mlen=17
+2019-03-05 08:33:30+0000 [-] handleClockSetTrgStart
+2019-03-05 08:33:30+0000 [-] handleClockSet
+2019-03-05 08:33:30+0000 [-] saving clock set to event binf
+2019-03-05 08:33:30+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 17
+.
+.
+.
+2019-03-05 08:58:05+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with l
+en 3159
+
+#################################################################################################
+#################################################################################################
+
+New Conf w/ Force Trig Sent at 9:07
+
+#################################################################################################
+#################################################################################################
+
+2019-03-05 09:17:18+0000 [-] ensureNoOver rawStatus/status.0002F7F2E82D.20190305-091517.SBD.dat
+2019-03-05 09:17:18+0000 [-] Checking dir exists for [rawStatus/status.0002F7F2E82D.20190305-091517.SBD.d
+at]
+2019-03-05 09:17:18+0000 [-] Made raw status file [rawStatus/status.0002F7F2E82D.20190305-091517.SBD.dat]
+2019-03-05 09:17:18+0000 [-] status i/o vers = 10 => wait for status done code
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 86
+  time            = Tue, 05 Mar 2019 09:15:17 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+2019-03-05 09:17:18+0000 [-] Clearing header!
+2019-03-05 09:17:18+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 09:17:18+0000 [-] handlePower
+2019-03-05 09:17:18+0000 [-] callback for whenGotStatusPwr
+2019-03-05 09:17:18+0000 [-] IncomingStatusPowerReading
+TSnPowerReading: 
+  ave V1 = 19814.2
+  ave V2 = 19777.9
+  rms V1 = 7.58693
+  rms V2 = 8.29197
+  est. V ~ 12.0171
+  est. C ~ 0.100422 (SST)
+  time   = Tue, 05 Mar 2019 09:15:12 +0000 (GMT) +        0 nsec
+2019-03-05 09:17:18+0000 [-] pullFromBuffToBinFile to rawStatus/status.0002F7F2E82D.20190305-091517.SBD.d
+at with len 21
+2019-03-05 09:17:18+0000 [-] incoming:
+OBJ: TSnCommIncStatus   TSnCommIncStatus        an incoming status info packet
+Timestamp (0x15b30480):
+Date/Time = Tue, 05 Mar 2019 09:17:18 +0000 (GMT) +        0 nsec
+Status (0x15696750):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 86
+  time            = Tue, 05 Mar 2019 09:15:17 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+PowerReading (0x159fbc10)
+TSnPowerReading: 
+  ave V1 = 19814.2
+  ave V2 = 19777.9
+  rms V1 = 7.58693
+  rms V2 = 8.29197
+  est. V ~ 12.0171
+  est. C ~ 0.100422 (SST)
+  time   = Tue, 05 Mar 2019 09:15:12 +0000 (GMT) +        0 nsec
+Power IO version:  2
+2019-03-05 09:17:18+0000 [-] mac=0002F7F2E82D
+2019-03-05 09:17:18+0000 [-] getActorFor 0002F7F2E82D, AriStatusActor
+2019-03-05 09:17:18+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 09:17:18+0000 [-] Opening actor file /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 09:17:18+0000 [-] Checking dir exists for [/data/ONLINE/Stage/AriStage.0002F7F2E82D.root]
+2019-03-05 09:17:18+0000 [-] Got actor:
+OBJ: TSnCommActor       AriStatusActor  0002F7F2E82D
+========= Queue:
+------ #1: TSnCommConfPack
+SBD_Comm_force_trig
+Config Frame IO version [17]
+========= Actions:
+------ #1: Send From Queue To Stn (TSnCommActSendQueued)
+------ #2: Resend Conf If Not On Stn (TSnCommActConfResend)
+------ #3: Send No New Conf Signal (TSnCommActSendNoConf)
+2019-03-05 09:17:18+0000 [-] Got response:
+TSnRunInfo:
+   Run        = 807
+   First Seq  = 0
+   Evts / Seq = 300
+   Station    = 
+   Config     = SBD_Comm_force_trig
+TSnDAQConfig: SBD_Comm_force_trig
+  usage         = 
+  user          = 
+  description   = 
+  date built    = Tue, 05 Mar 2019 09:08:46 +0000 (GMT) +205715000 nsec
+  dacs:
+    ch0: [200, 4000]
+    ch1: [200, 4000]
+    ch2: [200, 4000]
+    ch3: [200, 4000]
+    ch4: [200, 4000]
+    ch5: [200, 4000]
+    ch6: [200, 4000]
+    ch7: [200, 4000]
+  plas:
+    
+  trigger setup:
+  trigger logic:
+    majority logic = 2
+  trig throttle = 0
+  forced period = 3
+  therm trig on = false
+  L1 single frq = off
+  L1 trgs apply = false
+  thm trig bits = 0000000000000000
+  L1 single freq ratio cut = 77 (0.301961)
+  L1 scaledown  = 50
+  run mode bits (32) = 0000000000100000
+    continuous data taking
+    counting events
+    single threshold mode (SST)
+    separate comparitor trigger mode (SST)
+    Afar/SBD powering unchanged in low power mode
+    run/seq list cleared after each comm win
+    Data read/write from/to SD card enabled
+    Afar/SBD powered as needed during comm win
+    Comm window according to comm period only
+    Chips reset when MBED starts waiting for triggers
+  heartbeat per = 0
+  stream hi lo  = false
+  wv lose LSB   = 0
+  wv lose MSB   = 4
+  wv baseline   = 0
+  dat pack bits : 00001111
+  pow mode bits = (98) = 01100010
+    amps data take off
+    card data take ON
+    irid data take off
+    afar data take off
+    amps comm wind off
+    card comm wind ON
+    irid comm wind ON
+    afar comm wind off
+  bat volt  TO  low pwr = 0
+  bat volt FROM low pwr = 0
+  volt chk per  = 127
+  temp chk per  = 8
+  temp pwr mode = mbed
+  comm win dur  = 1800
+  comm win per  = 1200
+  connect t.o. Irid  = 3 (mins)
+  listen t.o.  Irid  = 3 (mins)
+  connect t.o. Afar  = 1 (mins)
+  listen t.o.  Afar  = 1 (mins)
+  com send bits (-11340) : 
+    send latest file
+    stop sending at timeout
+    keep files on station
+    data files sent even over SBD
+    wait for handshake before sending data
+    send status data packet: config
+    send status data packet: trigger start/stop times
+    send status data packet: power reading
+    not sending event with status data
+    not sending heartbeat with status data
+    send status data packet: temperature
+  com dur lowp  = 600
+  com per lowp  = 21600
+  watchdog time = 1200
+TSnNetAdrSet:
+  Remote Serv = DEF
+  Remote Port = 0
+  Local IP    = DEF
+  Local Mask  = DEF
+  Local Gate  = DEF
+Config Frame IO version [17]
+2019-03-05 09:17:18+0000 [-] sendCommObj
+2019-03-05 09:17:18+0000 [-] Sending station (0002F7F2E82D):
+2019-03-05 09:17:18+0000 [-] Sending station (0002F7F2E82D):
+TSnRunInfo:
+   Run        = 807
+   First Seq  = 0
+   Evts / Seq = 300
+   Station    = 
+   Config     = SBD_Comm_force_trig
+TSnDAQConfig: SBD_Comm_force_trig
+  usage         = 
+  user          = 
+  description   = 
+  date built    = Tue, 05 Mar 2019 09:08:46 +0000 (GMT) +205715000 nsec
+  dacs:
+    ch0: [200, 4000]
+    ch1: [200, 4000]
+    ch2: [200, 4000]
+    ch3: [200, 4000]
+    ch4: [200, 4000]
+    ch5: [200, 4000]
+    ch6: [200, 4000]
+    ch7: [200, 4000]
+  plas:
+    
+  trigger setup:
+  trigger logic:
+    majority logic = 2
+  trig throttle = 0
+  forced period = 3
+  therm trig on = false
+  L1 single frq = off
+  L1 trgs apply = false
+  thm trig bits = 0000000000000000
+  L1 single freq ratio cut = 77 (0.301961)
+  L1 scaledown  = 50
+  run mode bits (32) = 0000000000100000
+    continuous data taking
+    counting events
+    single threshold mode (SST)
+    separate comparitor trigger mode (SST)
+    Afar/SBD powering unchanged in low power mode
+    run/seq list cleared after each comm win
+    Data read/write from/to SD card enabled
+    Afar/SBD powered as needed during comm win
+    Comm window according to comm period only
+    Chips reset when MBED starts waiting for triggers
+  heartbeat per = 0
+  stream hi lo  = false
+  wv lose LSB   = 0
+  wv lose MSB   = 4
+  wv baseline   = 0
+  dat pack bits : 00001111
+  pow mode bits = (98) = 01100010
+    amps data take off
+    card data take ON
+    irid data take off
+    afar data take off
+    amps comm wind off
+    card comm wind ON
+    irid comm wind ON
+    afar comm wind off
+  bat volt  TO  low pwr = 0
+  bat volt FROM low pwr = 0
+  volt chk per  = 127
+  temp chk per  = 8
+  temp pwr mode = mbed
+  comm win dur  = 1800
+  comm win per  = 1200
+  connect t.o. Irid  = 3 (mins)
+  listen t.o.  Irid  = 3 (mins)
+  connect t.o. Afar  = 1 (mins)
+  listen t.o.  Afar  = 1 (mins)
+  com send bits (-11340) : 
+    send latest file
+    stop sending at timeout
+    keep files on station
+    data files sent even over SBD
+    wait for handshake before sending data
+    send status data packet: config
+    send status data packet: trigger start/stop times
+    send status data packet: power reading
+    not sending event with status data
+    not sending heartbeat with status data
+    send status data packet: temperature
+  com dur lowp  = 600
+  com per lowp  = 21600
+  watchdog time = 1200
+TSnNetAdrSet:
+  Remote Serv = DEF
+  Remote Port = 0
+  Local IP    = DEF
+  Local Mask  = DEF
+  Local Gate  = DEF
+Config Frame IO version [17]
+2019-03-05 09:17:18+0000 [-] sendIObuf
+2019-03-05 09:20:46+0000 [-] ensureNoOver statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00086.dat
+2019-03-05 09:20:46+0000 [-] Checking dir exists for [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00086.dat]
+2019-03-05 09:20:46+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00086.dat with len 26
+2019-03-05 09:20:46+0000 [-] Clearing header!
+2019-03-05 09:20:46+0000 [-] handleHeader: mcode=x12, mlen=185
+2019-03-05 09:20:46+0000 [-] handleStatusDataPack
+2019-03-05 09:20:46+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00086.dat with len 185
+2019-03-05 09:20:46+0000 [-] Clearing header!
+2019-03-05 09:20:46+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 09:20:46+0000 [-] handleStatusDataPack
+2019-03-05 09:20:46+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00086.dat with len 22
+2019-03-05 09:20:46+0000 [-] Clearing header!
+2019-03-05 09:20:46+0000 [-] handleHeader: mcode=x12, mlen=14
+2019-03-05 09:20:46+0000 [-] handleStatusDataPack
+2019-03-05 09:20:46+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00086.dat with len 14
+2019-03-05 09:20:46+0000 [-] Clearing header!
+2019-03-05 09:20:46+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 09:20:46+0000 [-] handleStatusDataPack
+2019-03-05 09:20:46+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00086.dat with len 22
+2019-03-05 09:20:46+0000 [-] Clearing header!
+2019-03-05 09:20:46+0000 [-] handleHeader: mcode=x14, mlen=0
+2019-03-05 09:20:46+0000 [-] handleStatusDataPackDone
+2019-03-05 09:20:46+0000 [-] writeBinFileToDisk
+2019-03-05 09:20:46+0000 [-] outf=<AriFiles.AriStatusDataPackBinFile object at 0x7f99df58ca10>, rawFile=None, statFile=None
+2019-03-05 09:20:46+0000 [-] Wrote status data packs to [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00808s00086.dat]
+
+2019-03-05 09:20:46+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a handshaking code
+Timestamp (0x1554ce00):
+Date/Time = Tue, 05 Mar 2019 09:17:18 +0000 (GMT) +        0 nsec
+Status (0x159e9be0):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 86
+  time            = Tue, 05 Mar 2019 09:15:17 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 09:20:46+0000 [-] mac=0002F7F2E82D
+2019-03-05 09:20:46+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 09:20:46+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 09:20:46+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 09:20:46+0000 [-] Clearing header!
+2019-03-05 09:20:46+0000 [-] CompactifyBufferCheck
+2019-03-05 09:20:46+0000 [-] didHandle=[31657, 31658, 31659, 31660]
+2019-03-05 09:20:46+0000 [-] uponBdysSorted
+2019-03-05 09:20:46+0000 [-] Process msg MOMSN 29550 from 300234061725940 at 2019-03-05 09:19:34
+2019-03-05 09:20:46+0000 [-] processMsgCache
+2019-03-05 09:20:46+0000 [-] getSeqYesNo()
+2019-03-05 09:20:46+0000 [-] getSeqYesNo()
+2019-03-05 09:20:46+0000 [-] momsnVals=[29548, 29550]
+2019-03-05 09:20:46+0000 [-] seqMomsn =[29548, 29550]
+2019-03-05 09:20:46+0000 [-] is sequential = False
+2019-03-05 09:20:46+0000 [-] didHandle=[]
+2019-03-05 09:20:46+0000 [-] uponBdysSorted
+2019-03-05 09:20:46+0000 [-] Process msg MOMSN 48197 from 300234011889020 at 2019-03-05 09:19:06
+2019-03-05 09:20:46+0000 [-] processMsgCache
+2019-03-05 09:20:46+0000 [-] getSeqYesNo()
+2019-03-05 09:20:46+0000 [-] getSeqYesNo()
+2019-03-05 09:20:46+0000 [-] momsnVals=[48196, 48197]
+2019-03-05 09:20:46+0000 [-] seqMomsn =[48196, 48197]
+2019-03-05 09:20:46+0000 [-] is sequential = True
+2019-03-05 09:20:46+0000 [-] didHandle=[48197]
+2019-03-05 09:20:46+0000 [-] Responder = TSnCommFiActNoReplyHndshk
+2019-03-05 09:20:46+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 6f (HnShNoReplyCode)
+  payload = 0 (0)
+2019-03-05 09:20:46+0000 [-] sendCommObj
+2019-03-05 09:20:46+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 6f (HnShNoReplyCode)
+  payload = 0 (0)
+2019-03-05 09:20:46+0000 [-] sendIObuf
+2019-03-05 09:20:46+0000 [-] Sending 5 bytes to station.
+2019-03-05 09:23:33+0000 [-] filename=[SnEvtsM0002F7F2E82Dr00808s00086.dat]
+2019-03-05 09:23:33+0000 [-] ensureNoOver binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat
+2019-03-05 09:23:33+0000 [-] Checking dir exists for [binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat]
+2019-03-05 09:23:33+0000 [-] IncomingFilename [SnEvtsM0002F7F2E82Dr00808s00086.dat]
+2019-03-05 09:23:33+0000 [-] Set incoming status, timee
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x159e0290):
+Date/Time = Tue, 05 Mar 2019 09:17:18 +0000 (GMT) +        0 nsec
+Status (0x15560e70):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 86
+  time            = Tue, 05 Mar 2019 09:15:17 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [SnEvtsM0002F7F2E82Dr00808s00086.dat] (version [0])
+2019-03-05 09:23:33+0000 [-] Saving raw file [binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat]
+2019-03-05 09:23:33+0000 [-] Clearing header!
+2019-03-05 09:23:33+0000 [-] handleHeader: mcode=x2a, mlen=15
+2019-03-05 09:23:33+0000 [-] handleFileHeader
+2019-03-05 09:23:33+0000 [-] IncomingFileVersion
+2019-03-05 09:23:33+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat with len 15
+2019-03-05 09:23:33+0000 [-] Clearing header!
+2019-03-05 09:23:33+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 09:23:33+0000 [-] handlePower
+2019-03-05 09:23:33+0000 [-] IncomingFilePowerReading
+2019-03-05 09:23:33+0000 [-] saving power reading to event binf
+2019-03-05 09:23:33+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat with len 21
+2019-03-05 09:23:33+0000 [-] Clearing header!
+2019-03-05 09:23:33+0000 [-] handleHeader: mcode=x40, mlen=180
+2019-03-05 09:23:33+0000 [-] handleConfig
+2019-03-05 09:23:33+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat with len 180
+2019-03-05 09:23:33+0000 [-] Clearing header!
+2019-03-05 09:23:33+0000 [-] handleHeader: mcode=x24, mlen=17
+2019-03-05 09:23:33+0000 [-] handleClockSetTrgStart
+2019-03-05 09:23:33+0000 [-] handleClockSet
+2019-03-05 09:23:33+0000 [-] saving clock set to event binf
+2019-03-05 09:23:33+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat with len 17
+2019-03-05 09:23:33+0000 [-] Clearing header!
+2019-03-05 09:23:33+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 09:23:33+0000 [-] handlePower
+2019-03-05 09:23:33+0000 [-] IncomingFilePowerReading
+2019-03-05 09:23:33+0000 [-] saving power reading to event binf
+2019-03-05 09:23:33+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat with len 21
+2019-03-05 09:23:33+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat with l
+en 21
+2019-03-05 09:23:33+0000 [-] Clearing header!
+2019-03-05 09:23:33+0000 [-] Need to hanle header. br=259, hl=5
+2019-03-05 09:23:33+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 09:23:33+0000 [-] handlePower
+2019-03-05 09:23:33+0000 [-] IncomingFilePowerReading
+2019-03-05 09:23:33+0000 [-] saving power reading to event binf
+2019-03-05 09:23:33+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat with len 21
+2019-03-05 09:23:33+0000 [-] Clearing header!
+2019-03-05 09:23:33+0000 [-] handleHeader: mcode=x74, mlen=9
+2019-03-05 09:23:33+0000 [-] handleTemperature
+2019-03-05 09:23:33+0000 [-] saving temperature reading to event binf
+2019-03-05 09:23:33+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat with len 9
+2019-03-05 09:23:33+0000 [-] IncomingFileTemperature
+2019-03-05 09:23:33+0000 [-] Clearing header!
+2019-03-05 09:23:33+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 09:23:33+0000 [-] handlePower
+2019-03-05 09:23:33+0000 [-] IncomingFilePowerReading
+2019-03-05 09:23:33+0000 [-] saving power reading to event binf
+2019-03-05 09:23:33+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat with len 21
+2019-03-05 09:23:33+0000 [-] Clearing header!
+2019-03-05 09:23:33+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 09:23:33+0000 [-] handlePower
+2019-03-05 09:23:33+0000 [-] IncomingFilePowerReading
+2019-03-05 09:23:33+0000 [-] saving power reading to event binf
+2019-03-05 09:23:33+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat with len 21
+2019-03-05 09:23:33+0000 [-] Clearing header!
+2019-03-05 09:23:33+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 09:23:33+0000 [-] handlePower
+2019-03-05 09:23:33+0000 [-] IncomingFilePowerReading
+2019-03-05 09:23:33+0000 [-] saving power reading to event binf
+2019-03-05 09:23:33+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat with len 21
+2019-03-05 09:23:33+0000 [-] Clearing header!
+2019-03-05 09:23:33+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 09:23:33+0000 [-] handlePower
+2019-03-05 09:23:33+0000 [-] IncomingFilePowerReading
+2019-03-05 09:23:33+0000 [-] saving power reading to event binf
+2019-03-05 09:23:33+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat with len 21
+2019-03-05 09:23:33+0000 [-] Clearing header!
+2019-03-05 09:23:33+0000 [-] handleHeader: mcode=x74, mlen=9
+2019-03-05 09:23:33+0000 [-] handleTemperature
+2019-03-05 09:23:33+0000 [-] saving temperature reading to event binf
+2019-03-05 09:23:33+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00808s00086.dat with len 9
+2019-03-05 09:23:33+0000 [-] FileReceivedChecksum
+Local CRC   = [1693231913]
+From file [SnEvtsM0002F7F2E82Dr00808s00086.dat] (version [4])
+2019-03-05 09:23:33+0000 [-] DeferredResponseToFile
+2019-03-05 09:23:33+0000 [-] _deferredResponseTo (AriFileActor)
+2019-03-05 09:23:33+0000 [-] incoming:
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x159e0290):
+Date/Time = Tue, 05 Mar 2019 09:17:18 +0000 (GMT) +        0 nsec
+Status (0x15560e70):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_diff
+  run             = 808
+  seq             = 86
+  time            = Tue, 05 Mar 2019 09:15:17 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29556.3
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.25
+  SD init ok      = true
+  seq livetime    = 1199.63
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 0 (0.00 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [1693231913]
+Local CRC   = [1693231913]
+Received 0/0 events.
+Received 10/10 power readings.
+From file [SnEvtsM0002F7F2E82Dr00808s00086.dat] (version [4])
+2019-03-05 09:23:33+0000 [-] mac=0002F7F2E82D
+2019-03-05 09:23:33+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 09:23:33+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 09:23:33+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 09:23:33+0000 [-] Responder = TSnCommFiActTransComplete
+2019-03-05 09:23:34+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 61 (HnShOkComplCode)
+  payload = 0 (0)
+2019-03-05 09:23:34+0000 [-] fcrc=1693231913, resp=<ROOT.TSnCommProtocolMsg object ("TSnCommProtocolMsg") at 0x7f99b4040080>
+2019-03-05 09:23:34+0000 [-] sendCommObj
+2019-03-05 09:23:34+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 61 (HnShOkComplCode)
+  payload = 0 (0)
+2019-03-05 09:23:34+0000 [-] sendIObuf
+2019-03-05 09:23:34+0000 [-] Sending 5 bytes to station.
+2019-03-05 09:27:36+0000 [-] Station [0002F7F2E82D] signed off.
+
+#################################################################################################
+#################################################################################################
+
+File Request Sent at 9:28
+
+#################################################################################################
+#################################################################################################
+
+2019-03-05 09:46:44+0000 [-] ensureNoOver rawStatus/status.0002F7F2E82D.20190305-094532.SBD.dat
+2019-03-05 09:46:44+0000 [-] Checking dir exists for [rawStatus/status.0002F7F2E82D.20190305-094532.SBD.dat]
+2019-03-05 09:46:44+0000 [-] Made raw status file [rawStatus/status.0002F7F2E82D.20190305-094532.SBD.dat]
+2019-03-05 09:46:44+0000 [-] status i/o vers = 10 => wait for status done code
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_force_trig
+  run             = 807
+  seq             = 3
+  time            = Tue, 05 Mar 2019 09:45:32 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29555.1
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.1875
+  SD init ok      = true
+  seq livetime    = 299.139
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 100 (0.33 Hz)
+  Received via    = SBD
+2019-03-05 09:46:44+0000 [-] Clearing header!
+2019-03-05 09:46:44+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 09:46:44+0000 [-] handlePower
+2019-03-05 09:46:44+0000 [-] callback for whenGotStatusPwr
+2019-03-05 09:46:44+0000 [-] IncomingStatusPowerReading
+TSnPowerReading: 
+  ave V1 = 19814.6
+  ave V2 = 19778.1
+  rms V1 = 7.75414
+  rms V2 = 7.97714
+  est. V ~ 12.0173
+  est. C ~ 0.1006 (SST)
+  time   = Tue, 05 Mar 2019 09:45:25 +0000 (GMT) +        0 nsec
+2019-03-05 09:46:44+0000 [-] pullFromBuffToBinFile to rawStatus/status.0002F7F2E82D.20190305-094532.SBD.dat with len 21
+2019-03-05 09:46:44+0000 [-] incoming:
+OBJ: TSnCommIncStatus   TSnCommIncStatus        an incoming status info packet
+Timestamp (0x15086130):
+Date/Time = Tue, 05 Mar 2019 09:46:44 +0000 (GMT) +        0 nsec
+Status (0x150225d0):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_force_trig
+  run             = 807
+  seq             = 3
+  time            = Tue, 05 Mar 2019 09:45:32 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29555.1
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.1875
+  SD init ok      = true
+  seq livetime    = 299.139
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 100 (0.33 Hz)
+  Received via    = SBD
+Status IO version: 10
+PowerReading (0x14462aa0)
+TSnPowerReading: 
+  ave V1 = 19814.6
+  ave V2 = 19778.1
+  rms V1 = 7.75414
+  rms V2 = 7.97714
+  est. V ~ 12.0173
+  est. C ~ 0.1006 (SST)
+  time   = Tue, 05 Mar 2019 09:45:25 +0000 (GMT) +        0 nsec
+Power IO version:  2
+2019-03-05 09:46:44+0000 [-] mac=0002F7F2E82D
+2019-03-05 09:46:44+0000 [-] getActorFor 0002F7F2E82D, AriStatusActor
+2019-03-05 09:46:44+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 09:46:44+0000 [-] Opening actor file /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 09:46:44+0000 [-] Checking dir exists for [/data/ONLINE/Stage/AriStage.0002F7F2E82D.root]
+2019-03-05 09:46:44+0000 [-] Got actor:
+OBJ: TSnCommActor       AriStatusActor  0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From Queue To Stn (TSnCommActSendQueued)
+------ #2: Resend Conf If Not On Stn (TSnCommActConfResend)
+------ #3: Send No New Conf Signal (TSnCommActSendNoConf)
+2019-03-05 09:46:44+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 09:46:45+0000 [-] sendCommObj
+2019-03-05 09:46:45+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 80 (NoConfigCode)
+  payload = 0 (0)
+2019-03-05 09:46:45+0000 [-] sendIObuf
+2019-03-05 09:46:45+0000 [-] Sending 5 bytes to station.
+2019-03-05 09:48:29+0000 [-] Making AriStatusDataPackBinFile
+2019-03-05 09:48:29+0000 [-] ensureNoOver statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00807s00003.dat
+2019-03-05 09:48:29+0000 [-] Checking dir exists for [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00807s00003.dat]
+2019-03-05 09:48:29+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00807s00003.dat with len 26
+2019-03-05 09:48:29+0000 [-] Clearing header!
+2019-03-05 09:48:29+0000 [-] handleHeader: mcode=x12, mlen=185
+2019-03-05 09:48:29+0000 [-] handleStatusDataPack
+2019-03-05 09:48:29+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00807s00003.dat with len 185
+2019-03-05 09:48:29+0000 [-] Clearing header!
+2019-03-05 09:48:29+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 09:48:29+0000 [-] handleStatusDataPack
+2019-03-05 09:48:29+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00807s00003.dat with len 22
+2019-03-05 09:48:29+0000 [-] Clearing header!
+2019-03-05 09:48:29+0000 [-] handleHeader: mcode=x12, mlen=14
+2019-03-05 09:48:29+0000 [-] handleStatusDataPack
+2019-03-05 09:48:29+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00807s00003.dat with len 14
+2019-03-05 09:48:29+0000 [-] Clearing header!
+2019-03-05 09:48:29+0000 [-] handleHeader: mcode=x12, mlen=22
+2019-03-05 09:48:29+0000 [-] handleStatusDataPack
+2019-03-05 09:48:29+0000 [-] pullFromBuffToBinFile to statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00807s00003.dat with len 22
+2019-03-05 09:48:29+0000 [-] Clearing header!
+2019-03-05 09:48:29+0000 [-] handleHeader: mcode=x14, mlen=0
+2019-03-05 09:48:29+0000 [-] handleStatusDataPackDone
+2019-03-05 09:48:29+0000 [-] writeBinFileToDisk
+2019-03-05 09:48:29+0000 [-] outf=<AriFiles.AriStatusDataPackBinFile object at 0x7f99a0c86790>, rawFile=None, statFile=None
+2019-03-05 09:48:29+0000 [-] Wrote status data packs to [statusDataPacks/SnEvtsStatDatM0002F7F2E82Dr00807s00003.dat]
+2019-03-05 09:48:29+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a handshak
+ing code
+Timestamp (0x12297130):
+Date/Time = Tue, 05 Mar 2019 09:46:44 +0000 (GMT) +        0 nsec
+Status (0x15613960):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_force_trig
+  run             = 807
+  seq             = 3
+  time            = Tue, 05 Mar 2019 09:45:32 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29555.1
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.1875
+  SD init ok      = true
+  seq livetime    = 299.139
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 100 (0.33 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 09:48:29+0000 [-] mac=0002F7F2E82D
+2019-03-05 09:48:29+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 09:48:29+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 09:48:29+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ #1: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+------ #2: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 09:48:29+0000 [-] Clearing header!
+2019-03-05 09:48:29+0000 [-] CompactifyBufferCheck
+2019-03-05 09:48:29+0000 [-] didHandle=[31676, 31677, 31678]
+2019-03-05 09:48:29+0000 [-] Responder = TSnCommFiActSendQueued
+2019-03-05 09:48:29+0000 [-] ALERT from addRunSeqRequestToQueue.
+        Subject: Requesting part of run [801].
+        Message: 
+2019-03-05 09:48:29+0000 [-] Got response:
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+2019-03-05 09:48:29+0000 [-] sendCommObj
+2019-03-05 09:48:29+0000 [-] Sending station (0002F7F2E82D):
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting part of run [801].]
+Message: []
+TSnCommProtocolMsg:
+  code    = 62 (HnShOkRqPtRnCode)
+  payload = 321 (801)
+2019-03-05 09:48:29+0000 [-] sendIObuf
+2019-03-05 09:48:29+0000 [-] Sending 5 bytes to station.
+2019-03-05 09:50:25+0000 [-] incoming:
+OBJ: TSnCommIncHandshake        TSnCommIncHandshake     a pseudo-incoming-file that's really just a handshaking code
+Timestamp (0x15622350):
+Date/Time = Tue, 05 Mar 2019 09:46:44 +0000 (GMT) +        0 nsec
+Status (0x1306b830):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_force_trig
+  run             = 807
+  seq             = 3
+  time            = Tue, 05 Mar 2019 09:45:32 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29555.1
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.1875
+  SD init ok      = true
+  seq livetime    = 299.139
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 100 (0.33 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [] (version [0])
+Handshake code = [6e]
+2019-03-05 09:50:25+0000 [-] mac=0002F7F2E82D
+2019-03-05 09:50:25+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 09:50:25+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 09:50:25+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ #1: TSnCommAlertPack
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 09:50:25+0000 [-] Clearing header!
+2019-03-05 09:50:25+0000 [-] CompactifyBufferCheck
+2019-03-05 09:50:25+0000 [-] didHandle=[31682]
+2019-03-05 09:50:25+0000 [-] Responder = TSnCommFiActSendQueued
+2019-03-05 09:50:25+0000 [-] ALERT from addRunSeqRequestToQueue.
+        Subject: Requesting min/max seq [0]=[0,0]
+        Message: 
+2019-03-05 09:50:25+0000 [-] Got response:
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+2019-03-05 09:50:25+0000 [-] sendCommObj
+2019-03-05 09:50:25+0000 [-] Sending station (0002F7F2E82D):
+Source:  [addRunSeqRequestToQueue]
+Subject: [Requesting min/max seq [0]=[0,0]]
+Message: []
+TSnCommProtocolMsg:
+  code    = 63 (HnShOkRqPtSqCode)
+  payload = 0 (0)
+2019-03-05 09:50:25+0000 [-] sendIObuf
+2019-03-05 09:50:25+0000 [-] Sending 5 bytes to station.
+2019-03-05 09:54:35+0000 [-] filename=[SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 09:54:35+0000 [-] ensureNoOver binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat
+2019-03-05 09:54:35+0000 [-] Checking dir exists for [binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 09:54:35+0000 [-] IncomingFilename [SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 09:54:35+0000 [-] Set incoming status, timee
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x159f1fc0):
+Date/Time = Tue, 05 Mar 2019 09:46:44 +0000 (GMT) +        0 nsec
+Status (0x1556c370):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_force_trig
+  run             = 807
+  seq             = 3
+  time            = Tue, 05 Mar 2019 09:45:32 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29555.1
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.1875
+  SD init ok      = true
+  seq livetime    = 299.139
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 100 (0.33 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [0]
+Local CRC   = [0]
+Received 0/0 events.
+Received 0/0 power readings.
+From file [SnEvtsM0002F7F2E82Dr00801s00000.dat] (version [0])
+2019-03-05 09:54:35+0000 [-] Saving raw file [binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat]
+2019-03-05 09:54:35+0000 [-] Clearing header!
+2019-03-05 09:54:35+0000 [-] handleHeader: mcode=x2a, mlen=15
+2019-03-05 09:54:35+0000 [-] handleFileHeader
+2019-03-05 09:54:35+0000 [-] IncomingFileVersion
+2019-03-05 09:54:35+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 15
+2019-03-05 09:54:35+0000 [-] Clearing header!
+2019-03-05 09:54:35+0000 [-] handleHeader: mcode=x70, mlen=21
+2019-03-05 09:54:35+0000 [-] handlePower
+2019-03-05 09:54:35+0000 [-] IncomingFilePowerReading
+2019-03-05 09:54:35+0000 [-] saving power reading to event binf
+2019-03-05 09:54:35+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 21
+2019-03-05 09:54:35+0000 [-] Clearing header!
+2019-03-05 09:54:35+0000 [-] handleHeader: mcode=x40, mlen=180
+2019-03-05 09:54:35+0000 [-] handleConfig
+2019-03-05 09:54:35+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 180
+2019-03-05 09:54:35+0000 [-] Clearing header!
+2019-03-05 09:54:35+0000 [-] handleHeader: mcode=x24, mlen=17
+2019-03-05 09:54:35+0000 [-] handleClockSetTrgStart
+2019-03-05 09:54:35+0000 [-] handleClockSet
+2019-03-05 09:54:35+0000 [-] saving clock set to event binf
+2019-03-05 09:54:35+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 17
+2019-03-05 09:57:18+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 3159
+.
+.
+.
+2019-03-05 10:15:52+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 
+3159
+2019-03-05 10:20:27+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 
+3159
+2019-03-05 10:20:27+0000 [-] pullFromBuffToBinFile to binFiles/SnEvtsM0002F7F2E82Dr00801s00000.dat with len 
+17
+2019-03-05 10:20:27+0000 [-] FileReceivedChecksum
+Local CRC   = [1922154052]
+From file [SnEvtsM0002F7F2E82Dr00801s00000.dat] (version [4])
+2019-03-05 10:20:27+0000 [-] DeferredResponseToFile
+2019-03-05 10:20:27+0000 [-] _deferredResponseTo (AriFileActor)
+2019-03-05 10:20:27+0000 [-] incoming:
+OBJ: TSnCommIncFile     TSnCommIncFile  info packet about an incoming file
+Timestamp (0x159f1fc0):
+Date/Time = Tue, 05 Mar 2019 09:46:44 +0000 (GMT) +        0 nsec
+Status (0x1556c370):
+TSnStatusUpdate: 
+  mac adr         = 835572602830848 (0002F7F2E82D)
+  config label    = SBD_Comm_force_trig
+  run             = 807
+  seq             = 3
+  time            = Tue, 05 Mar 2019 09:45:32 +0000 (GMT) +        0 nsec
+  wv lose LSB     = 0
+  wv lose MSB     = 4
+  wv baseline     = 0
+  free megabytes  = 29555.1
+  watchdog reset  = false
+  config io versn = 17
+  power on time   = Tue, 05 Mar 2019 01:04:08 +0000 (GMT) +        0 nsec
+  temperature     = 25.1875
+  SD init ok      = true
+  seq livetime    = 299.139
+  num thm trgs    = 0 (0.00 Hz)
+  num saved evts  = 100 (0.33 Hz)
+  Received via    = SBD
+Status IO version: 10
+Station CRC = [1922154052]
+Local CRC   = [1922154052]
+Received 10/10 events.
+Received 1/1 power readings.
+From file [SnEvtsM0002F7F2E82Dr00801s00000.dat] (version [4])
+2019-03-05 10:20:27+0000 [-] mac=0002F7F2E82D
+2019-03-05 10:20:27+0000 [-] getActorFor 0002F7F2E82D, AriFileActor
+2019-03-05 10:20:27+0000 [-] ActorFN for 0002F7F2E82D is /data/ONLINE/Stage/AriStage.0002F7F2E82D.root
+2019-03-05 10:20:27+0000 [-] Got actor:
+OBJ: TSnCommActor       AriFileActor    0002F7F2E82D
+========= Queue:
+------ [empty]
+========= Actions:
+------ #1: Send From File Queue To Stn (TSnCommFiActSendQueued)
+------ #2: No Reply To Handshake Demand (TSnCommFiActNoReplyHndshk)
+------ #3: Respond To File Transfer (TSnCommFiActTransComplete)
+2019-03-05 10:20:27+0000 [-] Responder = TSnCommFiActTransComplete
+2019-03-05 10:20:27+0000 [-] Got response:
+TSnCommProtocolMsg:
+  code    = 61 (HnShOkComplCode)
+  payload = 0 (0)
+2019-03-05 10:20:27+0000 [-] fcrc=1922154052, resp=<ROOT.TSnCommProtocolMsg object ("TSnCommProtocolMsg") at 0x7f999000af30>
+2019-03-05 10:20:27+0000 [-] sendCommObj
+2019-03-05 10:20:27+0000 [-] Sending station (0002F7F2E82D):
+TSnCommProtocolMsg:
+  code    = 61 (HnShOkComplCode)
+  payload = 0 (0)
+2019-03-05 10:20:27+0000 [-] sendIObuf
+2019-03-05 10:20:27+0000 [-] Sending 5 bytes to station.
+2019-03-05 10:22:16+0000 [-] Station [0002F7F2E82D] signed off.
