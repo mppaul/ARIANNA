@@ -375,3 +375,9 @@ Station Commuincates, Gets New Conf, Sends Current File, Signs Off
 Comm -- 2019-03-05 09:46:44 (10 events)
 Station Commuincates, File Reqeust Sent First Check, File Sent, No Timeout
 Checks File Actor, Signs Off (Data 807 Seq 2,3,4, 5)
+
+------------------------------------------------------------------------------
+Test #5 - Patterns in Watchdog Reset
+------------------------------------------------------------------------------
+
+
