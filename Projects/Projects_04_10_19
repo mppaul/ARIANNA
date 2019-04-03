@@ -16,14 +16,17 @@ Iridum File Transfer Study (M)
 -- Record the SBD log
 -- Decode debug output
 -- Update the SBD Report
+-- Take Data and See if Reset Frequency Increases
 
 Building and Testing Heating Strip (M)
 -- Make Report for Heating Strip
+-- Do Ice Tests w/ Tough
 
 Threshold Calibration Studies (L)
 -- Document for Manual Threshold Calibration Code and Process
 
 400 Series Amps (H)
+-- Fix Power/ Oscillation Issue
 -- Connect Amp to SST Board and Take Force Triggers
 -- Make Formal Report
 -- Connect Amp to Full Station and Take Thermal Triggers
