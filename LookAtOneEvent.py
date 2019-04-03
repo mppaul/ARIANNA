@@ -26,7 +26,7 @@ data = np.array(file['CalibTree']['AmpOutData.']['AmpOutData.fData'].array())
 colors = ["#FF9900","#0066FF","#CC00CC","#339933","#fd5249","#00c7c1","#58008f","#5ca7ff"]
 time = np.arange(0,256,1)
 
-for i in range(8):
+for i in range(4):
 	plt.figure(i)
 	plt.plot(time,data[e][i], color=colors[i], label="Channel " +str(i))
 	plt.legend()
