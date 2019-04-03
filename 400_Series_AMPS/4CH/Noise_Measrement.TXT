@@ -1,0 +1,336 @@
+# The station type. This should come first, as some parameters may
+# depend on it.
+#
+# options:
+#   DAQchip=SST8Ch_2017 : 8ch SST chip (256 samps) and 2017 mbed code
+#   DAQchip=SST8Ch_20171GHz : 8ch SST chip (1GHz 256 samps) and 2017 mbed code
+#   DAQchip=SST512_2016 : SST chip (512 samps) and 2016 mbed code
+#   DAQchip=SST512_20161GHz : SST (1GHz, 512 samps) chip and 2016 mbed code
+#   DAQchip=SST20151GHz : SST chip (1GHz) and 2015,2016 mbed code
+#   DAQchip=SST2015     : SST chip and 2015,2016 mbed code
+#   DAQchip=ATWD2015    : compatible with the ATWD chip and the 2015 mbed code
+#   DAQchip=SST2014     : compatible with the SST chip and 2014 FPGA code
+#   DAQchip=ATWD2013    : compatible with the ATWD chip and the 2013 online code
+#   DAQchip=OldATWD2012 : compatible with the ATWD chip and old 2012 online code
+DAQchip=SST2015
+#
+#
+# the (unique!) label for this config
+ConfLabel=Noise_Measurement
+#
+# the run number and first sequence number
+Run=998
+FirstSeq=0
+#
+# number of X per sequence, where X is either saved triggered events (default)
+# or number of saved power readings (if CountPower bit set in RunMode)
+EvtsPerSeq=10
+#
+# run mode: each line enables one bit. possible bits are:
+#   SingleSeq:  unset (default) = take many sequences,
+#                           set = take one seq and stop
+#   CountPower: unset (default) = EvtsPerSeq applies to number of events taken
+#                           set = EvtsPerSeq applies to number of power readings
+#   DualThresh: unset (default) = SST triggers on high OR low thresh crossing
+#                           set = SST triggers on high AND low thresh crossing
+#   DiffTrig:   unset (default) = SST sends high and low thresh comparitor
+#                                 results separately to FPGA
+#                           set = SST sends result of high/low thresh pair
+#                                 to FPGA
+#   LowPwrSBDonly: unset (default) = afar/sbd com win power settings same in low
+#                                    power mode
+#                           set    = afar off and sbd on during comm wins in
+#                                    low power mode
+#   RunSeqListOneCommWin: unset (default) = a list of run/seq's taken since
+#                                           files the last time all files on the
+#                                           list were sent (or the list was
+#                                           explicitly cleared) is kept
+#                           set   = the list is cleared at the end of each
+#                                   comm win
+#                           (see CommWinSendData, SendRunSeqList)
+#   IgnoreSDcard: unset (default) = will save data to the SD card as normal
+#                   set           = will bypass all SD card usage entirely
+#   CommPowerSimple: (ATWD2015,SST2015 or later only)
+#                    unset (default) = will power comm peripherals as needed
+#                                      during comm windows. (So if Afar is in
+#                                      use, Iridium will be powered off.)
+#                    set             = will strictly follow PowerOnFor
+#                                      so any comm peripheral told to be on
+#                                      during comm wins will be on whether
+#                                      currently in use or not.
+#   CommWinEachEvent: unset (default) = will go into comm wins after
+#                                       "CommWinPeriod" secs after the last
+#                     set             = will ALSO go into comm wins after
+#                                       EVERY good event (good = qualified
+#                                       to be saved in a data file)
+#   SkipTrgStartReset: unset (default) = chips (SST) will be reset when
+#                                        the MBED starts waiting for triggers
+#                      set             = no reset occurs, which can cause an
+#                                        immediate readout if the chip had
+#                                        triggered before the mbed was ready
+#
+# DualThresh and DiffTrig are ignored for ATWD stations, but these bits
+# should almost certainly be set for SST stations.
+#
+RunMode=SingleSeq
+#RunMode=CountPower
+#RunMode=DualThresh
+#RunMode=DiffTrig
+#RunMode=LowPwrSBDonly
+#RunMode=RunSeqListOneCommWin
+#RunMode=IgnoreSDcard
+#RunMode=CommPowerSimple
+#RunMode=CommWinEachEvent
+#RunMode=SkipTrgStartReset
+#
+# UTC unix time
+# If left commented out, this will be set to the current time
+#DateBuilt=1387077393
+#
+# (ATWD) DACS=channel:dac #0, dac #1, dac #2, dac #3
+# (ATWD) dac number: 0=HI (c4), 1=LO (c2/c1), 2=LO (c1/c2), 3=HI (c3)
+#
+# (SST)  DACS= channel : dac low thresh, dac high thresh
+DACS= 0 : 200,4000
+DACS= 1 : 200,4000
+DACS= 2 : 200,4000
+DACS= 3 : 200,4000
+# number of cards in the majority logic
+NumCardsMajLog=2
+# if False, will disable all thermal triggers (!)
+ThermalTrigOn=False
+#
+# forced trigger period (s). 1800 max. 0 = off
+# NOTE: this is now a floating point number, in seconds
+# (with MBED revision 18 and above)
+# the period can be specified from 0.05s to 1800s
+# of course, triggering faster than the throttle is useless
+ForcedPeriod=1
+#
+# heartbeat period (s). 1800 max. 0 = off. integer values.
+# NOTE: May want "CommWinSendData=StatSendHtbt" enabled
+# if data files are not being transferred.
+# NOTE: Probably want to set "L1TrigsApplied=False" and
+# to comment out the "L1TrigEnable=" line while running hearbeats.
+HeartbeatPeriod=0
+#
+# the minimum amount of time (ms) between triggers saved as events
+# triggers occuring before this window has elapsed are discarded
+# integer values. the safety net max is 60000
+ThrottlePeriodms=0
+#
+# how often to check the voltages (s). 1800 max. 0 = off. integer values.
+VoltCheckPeriod=127
+#
+# how often to check the temperature (minutes!). 30 mins max. 0 = off.
+# integer values only.
+# also specifies how to power the temperature probe:
+#   CardPower = powered by 3.3V supply: tied to "CardDatTak" and "CardComWin"
+#               in the "PowerOnFor" parameter below.
+#   MbedPower = powered by the MBED in a "parasitic" mode. This allows
+#               temperature readings while the 3.3V supply is off (low power)
+# format is: TempCheckPeriodAndPower=[period],[CardPower / MbedPower]
+# (only useful for SST boards)
+TempCheckPeriodAndPower=8,MbedPower
+#
+# com win period, dur in seconds. integer values.
+# the comm win period safety net range is [120, 259200]
+# the comm win duration safety net min is 600.
+# the duration is capped at 86400 (24hrs)
+CommWinPeriod=300
+CommWinDuration=0
+#
+# CommWinSendEvents: if >0, will send this number of events
+# back during the communication window.
+# NOTE: if CommWinSendEvents is declared, CommWinSendData cannot be!
+#CommWinSendEvents=0
+#
+# CommWinSendData: options for sending whole file(s) back during
+# the comm win. One option per line.
+# note: if CommWinSendData is declared, CommWinSendEvents cannot be.
+# options are:
+#   DefaultSendData = send last file, keep comm win open until sending done, don't delete file from station
+#   AllFiles = send all files on SD card
+#   CloseOnTimeout = obey comm win duration
+#   DeleteIfReceived = delete file from SD card if it's received (and station get OK handshake)
+#   ForceSBDtoSendFileData = force data files to be sent over SBD
+#   HandshakeBeforeSendData = start handshaking with the station before sending data. this can be used to immediately request a run to be sent.
+#   SendRunSeqList = send all files in the run/seq list (see RunMode,RunSeqListOneCommWin)
+#   StatSendConf = send the current station config as part of the status update data
+#   StatSendTrgTim = send the trigger start/stop times as part of the status update data
+#   StatSendPwrDat = send the latest voltage/current reading (obtained during data taking mode) as part of the status update data
+#   StatSendEvent = send the latest event as part of the status update data
+#   StatSendHtbt = send the latest heartbeat fire time as part of the status update data
+#   StatSendTmpDat = send the latest temperature reading (obtained during data taking mode) as part of the status update data
+#
+# the "DefaultSendData" MUST always be declared first
+CommWinSendData=DefaultSendData
+#CommWinSendData=AllFiles
+#CommWinSendData=DeleteIfReceived
+#CommWinSendData=HandshakeBeforeSendData
+CommWinSendData=CloseOnTimeout
+#CommWinSendData=SendRunSeqList
+#CommWinSendData=ForceSBDtoSendFileData
+CommWinSendData=StatSendConf
+CommWinSendData=StatSendTrgTim
+CommWinSendData=StatSendPwrDat
+CommWinSendData=StatSendEvent
+#CommWinSendData=StatSendHtbt
+CommWinSendData=StatSendTmpDat
+#
+#
+# L1 trigger parameters below
+#
+#
+#
+# which L1 triggers to *calculate*. (If this line is commented out, no
+# L1's will be calculated, so the trigger rate will not be reduced even
+# if L1TrigsApplied==True. On the other hand, if this line contains some
+# L1 triggers, their values will be calculated and the trigger bits set
+# accordingly -- whether or not the L1 triggers are actually applied.)
+# This can be a list, but currently there is only one possibility:
+# SingleFreqSupp if there were more, use L1TrigEnable=trigOne,trigTwo, etc
+#L1TrigEnable=SingleFreqSupp
+#
+# if true, throw away events that don't pass the enabled L1 triggers
+# if false, process the enabled L1 triggers to set trg bits, but keep all evts
+L1TrigsApplied=False
+#
+# save every L1Scaledown events that fail the L1 trigger(s)
+# i.e. if L1Scaledown=5, then 4 events failing L1 trigs will be thrown away
+# while the 5th event to fail L1 trigs will be saved
+# valid scaledowns are [0,255]. if 0, never save any L1 fail events
+L1Scaledown=50
+#
+# the L1 single frequency suppression cut value. the variable is
+# L = 1.0 / ( sum(fft_mag)/max(fft_mag) - 1) , where the sum omits
+# the 0th frequency bin.
+# the value can be specified as an integer, in which
+# case the cut value used on the station will be L/255
+# valid integer range = [ 26, 255 ]
+# the value can also be specified as a floating point, in which case
+# it is rounded to the nearest ratio of integers X/255 ~ L
+# valid float range = [0.1, 1.0]
+L1SingleFreqSuppressRatio=0.30
+#
+#
+# PARAMETERS NOT LIKELY TO CHANGE BELOW
+#
+#
+# how long to wait for a peripheral (afar, sbd, etc) to make a connection
+# before trying the next peripheral. (safety net minimum = 3 minutes)
+# note that the safety net maximum is dynamically determined:
+# max = (comm duration) / (number of comm peripherals)
+# For example, a station with Afar and Iridium (regardless of how
+# they're powered) and a comm duration of 10 minutes will have
+# max = 10 / 2 = 5 mins. Specifying a time longer than max will
+# cause the station to silently revert back to the default (3mins).
+# the integer value is in minutes and must be between 0 and 255
+# should specify: [minutes],[peripheral name]
+# where Iridium and Afar are the possibilities
+# for DAQchip SST2014 and earlier, the Iridium timeout will be used for all
+CommWinConnectTOmins=3,Iridium
+CommWinConnectTOmins=1,Afar
+# how long to wait for a peripheral (afar, sbd, etc) to receive a
+# new configuration once it's connected. (safety net minimum = 3 minutes)
+# see the description of CommWinConnectTOmins for a note about the
+# safety net maximum.
+# the integer value is in minutes and must be between 0 and 255
+# should specify: [minutes],[peripheral name]
+# where Iridium and Afar are the possibilities
+# for DAQchip SST2014 and earlier, the Iridium timeout will be used for all
+CommWinListenTOmins=3,Iridium
+CommWinListenTOmins=1,Afar
+#
+# how to power what, when. DEFAULT: EVERYTHING OFF!! one line per option
+# options: AmpsDatTak, CardDatTak, IridDatTak, AfarDatTak (during data taking)
+#          AmpsComWin, CardComWin, IridComWin, AfarComWin (during communication)
+#
+# If both Afar and Irid are off during ComWin, the safety net will enable *both*
+#
+# Note: current dCard FPGA program will not accept new threshold values unless
+# power to card is cycled. The work around is to power cards off during comm win.
+#PowerOnFor=AmpsDatTak
+PowerOnFor=CardDatTak
+#PowerOnFor=AfarDatTak
+#PowerOnFor=IridDatTak
+#PowerOnFor=AmpsComWin
+PowerOnFor=CardComWin
+#PowerOnFor=AfarComWin
+#PowerOnFor=IridComWin
+#
+# how many least significant (noise) bits to lose (>0 is lossy)
+WvLoseLSB=0
+# how many most significant (dyn. range) bits to lose (>4 is lossy)
+WvLoseMSB=4
+# a baseline to subtract before compression (useful if WvLoseMSB>4)
+WvBaseline=0
+#
+# com win period in low power mode. integer values.
+CommWinPeriodLowPwr=21600
+# com win duration in low power mode. integer values.
+CommWinDurationLowPwr=600
+#
+# 16 bit ADC reading, below which to switch TO low power mode.
+# safety net max is 25000
+# 16700 should be ~10.1V
+BatVoltToLowPwr=0
+# 16 bit ADC reading, above which to switch back OUT OF low power mode
+# safety net min will be BatVoltToLowPwr
+# 18500 should be ~11.1V
+BatVoltFromLowPwr=0
+#
+# the server that the station should talk to over ethernet
+# for the RemotePort, 0 means the default (6655)
+RemoteServer=DEF
+RemotePort=0
+# the stations's internet addresses
+StationIP=DEF
+StationMask=DEF
+StationGateway=DEF
+#
+# reset after X seconds of inactivity. integer values.
+# safety nets to the range [300, 3600]
+WatchdogPeriod=1200
+#
+#
+# ATWD PARAMETERS ONLY BELOW
+#
+# list of pla's. H=high, L=low, A=any (don't care), B=between
+#
+# Ignored for SST
+#Plas=HAAAAAAA
+Plas=HAAALAAA,HAALAAAA,HAAAALAA,HALAAAAA,HAAAAALA
+#
+# DEPRECATED PARAMETERS BELOW
+#
+# whether to write the individual hi/lo thresh PLA's to disk and communications
+# rather than the single pattern. for more info, see TSnPlaSet::GetHiLoPlas
+# this would only be useful for diagnostics to check the PLA hi/lo splitting
+# algorithm on the mbed.
+#
+# Ignored for SST
+# Note: this variable is only used with DAQchip ATWD2013 and earlier.
+#StreamHiLoPlas=False
+#
+# one line per destination for which the data should be compressed
+# note that this applies only to the event sent with the status update
+# events from files will be sent as they appear on the SD card!
+# (so these options are actually not really implemented and should
+# probably be left alone)
+# possibilities are: SDcard, Iridium, Afar, USB
+# Note: this variable is only used with DAQchip SST2014 and earlier (in
+# which case, all PackDatFor lines should be uncommented)
+#PackDatFor=SDcard
+#PackDatFor=Afar
+#PackDatFor=Iridium
+#PackDatFor=USB
+#
+# NON-FUNCTIONAL PARAMETERS BELOW
+#
+# amps currently can't be set individually
+# the intention is "when amps get power, turn these amps on"
+# currently NOT functional
+# This variable should only be defined if the DAQchip is SST2014
+# or earlier.
+#AmpsOn=0,1,2,3
