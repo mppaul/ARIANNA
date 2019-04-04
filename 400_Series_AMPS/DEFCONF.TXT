@@ -19,7 +19,7 @@ DAQchip=SST8Ch_20171GHz
 ConfLabel=ForceTrigg
 #
 # the run number and first sequence number
-Run=5001
+Run=5005
 FirstSeq=0
 #
 # number of X per sequence, where X is either saved triggered events (default)
