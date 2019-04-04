@@ -3,7 +3,7 @@
 			    Due Wed. April 10
 ==============================================================================
 
-BMU Noise Study (H)
+BMU Noise Study (H) F/ M
 -- Begin Initial Tests w/ Solar Panel Power Source and Station
 -- Redo Internal Noise Test w/ Solar Panel if Possible
 -- Attach Long 5-7m Cables to the Inputs of Stn for an Increase of Rates
@@ -12,31 +12,31 @@ BMU Noise Study (H)
 -- Redo tests with new BMU box
 -- Update BMU Report
 
-Iridum File Transfer Study (M)
+Iridum File Transfer Study (L) T
 -- Record the SBD log
 -- Decode debug output
 -- Update the SBD Report
 -- Take Data and See if Reset Frequency Increases
 
-Building and Testing Heating Strip (M)
+Building and Testing Heating Strip (M) M
 -- Make Report for Heating Strip
 -- Do Ice Tests w/ Tough
 
-Threshold Calibration Studies (L)
+Threshold Calibration Studies (L) WE
 -- Document for Manual Threshold Calibration Code and Process
 
-400 Series Amps (H)
+400 Series Amps (H) R/ F
 -- Fix Power/ Oscillation Issue
 -- Connect Amp to SST Board and Take Force Triggers
 -- Make Formal Report
 -- Connect Amp to Full Station and Take Thermal Triggers
 -- Become Familiar with Amp Noise Statisitcs
 
-FPGA Programming (M)
+FPGA Programming (M) WE
 -- Learn more abou the Language 
 -- Start Practicing 
 
-KU Dipole Park Tests (L)
+KU Dipole Park Tests (L) T
 -- Plan Park test and date
 -- Understand what tests need to be done and why
 
