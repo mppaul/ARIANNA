@@ -19,10 +19,10 @@ Iridum File Transfer Study (L) T
 -- Take Data and See if Reset Frequency Increases
 
 Building and Testing Heating Strip (M) M
--- Make Report for Heating Strip
--- Do Ice Test w/ Tough
--- Measure Ice Density
--- Add Connector to Strip
+X- Make Report for Heating Strip
+XX Do Ice Test w/ Tough
+XX Measure Ice Density
+XX Add Connector to Strip
 
 Threshold Calibration Studies (L) WE
 -- Document for Manual Threshold Calibration Code and Process
@@ -33,7 +33,7 @@ XX Fix Astrid's Code
 XX Fix Power/ Oscillation Issue
 XX Connect Amp to SST Board and Take Force Triggers
 -- Make Formal Report
--- Connect Amp to Full Station and Take Thermal Triggers
+X- Connect Amp to Full Station and Take Thermal Triggers
 X- Become Familiar with Amp Noise Statisitcs
 -- Meet w/ Stuart regarding oscillation
 
@@ -41,7 +41,7 @@ FPGA Programming (M) WE
 -- Learn more abou the Language 
 -- Start Practicing 
 
-KU Dipole Park Tests (L) T
+KU Dipole Park Tests (L) Planned for April 18th
 XX Plan Park test and date
 XX Understand what tests need to be done and why
 
