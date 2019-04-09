@@ -16,15 +16,15 @@ DAQchip=SST8Ch_20171GHz
 #
 #
 # the (unique!) label for this config
-ConfLabel=ForceTrigg
+ConfLabel=5sig_HoL_CH0_1of4
 #
 # the run number and first sequence number
-Run=5006
+Run=5010
 FirstSeq=0
 #
 # number of X per sequence, where X is either saved triggered events (default)
 # or number of saved power readings (if CountPower bit set in RunMode)
-EvtsPerSeq=300
+EvtsPerSeq=15
 #
 # run mode: each line enables one bit. possible bits are:
 #   SingleSeq:  unset (default) = take many sequences,
@@ -74,7 +74,7 @@ EvtsPerSeq=300
 #
 #RunMode=SingleSeq
 #RunMode=CountPower
-RunMode=DualThresh
+#RunMode=DualThresh
 RunMode=DiffTrig
 #RunMode=LowPwrSBDonly
 #RunMode=RunSeqListOneCommWin
@@ -91,25 +91,25 @@ RunMode=DiffTrig
 # (ATWD) dac number: 0=HI (c4), 1=LO (c2/c1), 2=LO (c1/c2), 3=HI (c3)
 #
 # (SST)  DACS= channel : dac low thresh, dac high thresh
-DACS= 0 : 200,4000
-DACS= 1 : 200,4000
-DACS= 2 : 200,4000
-DACS= 3 : 200,4000
-DACS= 4 : 200,4000
-DACS= 5 : 200,4000
-DACS= 6 : 200,4000
-DACS= 7 : 200,4000
+DACS= 0 : 23328,24146
+DACS= 1 : 200,40000
+DACS= 2 : 200,40000
+DACS= 3 : 200,40000
+DACS= 4 : 200,40000
+DACS= 5 : 200,40000
+DACS= 6 : 200,40000
+DACS= 7 : 200,40000
 # number of cards in the majority logic
-NumCardsMajLog=2
+NumCardsMajLog=1
 # if False, will disable all thermal triggers (!)
-ThermalTrigOn=False
+ThermalTrigOn=True
 #
 # forced trigger period (s). 1800 max. 0 = off
 # NOTE: this is now a floating point number, in seconds
 # (with MBED revision 18 and above)
 # the period can be specified from 0.05s to 1800s
 # of course, triggering faster than the throttle is useless
-ForcedPeriod=0.05
+ForcedPeriod=0
 #
 # heartbeat period (s). 1800 max. 0 = off. integer values.
 # NOTE: May want "CommWinSendData=StatSendHtbt" enabled
@@ -121,7 +121,7 @@ HeartbeatPeriod=0
 # the minimum amount of time (ms) between triggers saved as events
 # triggers occuring before this window has elapsed are discarded
 # integer values. the safety net max is 60000
-ThrottlePeriodms=0
+ThrottlePeriodms=60000
 #
 # how often to check the voltages (s). 1800 max. 0 = off. integer values.
 VoltCheckPeriod=127
@@ -261,7 +261,7 @@ PowerOnFor=CardDatTak
 PowerOnFor=AmpsComWin
 PowerOnFor=CardComWin
 #PowerOnFor=AfarComWin
-PowerOnFor=IridComWin
+#PowerOnFor=IridComWin
 #
 # how many least significant (noise) bits to lose (>0 is lossy)
 WvLoseLSB=0
