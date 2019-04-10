@@ -18,8 +18,8 @@ if __name__ == '__main__':
 
 print "Initializing..."
 
-Printvals = True 	# Print each channel's average sigma, VRMS and offset for the entire data set
-makePlots = True	# Make histogram plots of the noise voltage
+Printvals = False 	# Print each channel's average sigma, VRMS and offset for the entire data set
+makePlots = False	# Make histogram plots of the noise voltage
 log = False 		# Plot histogram in log
 TempPlots = False	# Make Temperature Plots: 1) VRMS vs Temp 2) Temp vs Time**
 FreqPlots = True	# Make Frequency Plots: 1) AVG Frequency 2) Frequency vs Event
@@ -81,7 +81,7 @@ if FreqPlots == True:
 	plt.figure(2)	
 	for i in range(nChans):	
 		avg_freq[i] = np.sum(freq_data[i], axis=0)/len(freq_data[i])
-		plt.plot(freq[1:],avg_freq[i][1:], color=colors[i], label="Channel " +str(i))
+		plt.plot(freq[10:],avg_freq[i][10:], color=colors[i], label="Channel " +str(i))
 		plt.title("Average Frequency Dependence")
 		plt.xlabel("Frequency [GHz]")
 		plt.legend()
