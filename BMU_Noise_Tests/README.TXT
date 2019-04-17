@@ -244,4 +244,32 @@ voltage ~17V. Data taking ended at 10:05PM.
 Test #6 - Solar Panel + BMU Noise Tests
 ------------------------------------------------------------------------------
 
+Set Up:
+Solar Panel is placed on top the High Bay building. Solar Panel is a 10W max
+power output. The solar panel is then hooked up to the Station. The power 
+input to the station is used along with a Bias Tee which has the RF/DC as the 
+input to the station, DC port is conencted to the solar panel, and RF is 
+connected to the scope.
 
+Obserations:
+There is noise. Simlar pulses are seen as well as periodic waveforms but they
+are not in the same shape as the dischage and charging expoential waveforms.
+The time difference between the new waveforms is 739ms. There are patterns of 
+three waveforms then a fourth one but its emtpy.
+
+Voltage fluctions occured which means that Stewart was correct in that the power
+source does not keep a constant voltage but more like a constant current and
+trys to pull more when chraging the battery, but the solar panel can not give 
+that much power so it power cycles the BMU charging.
+
+At 5:12 the station was put to take thermal triggers at 5sigma asssuming
+a sigma of 11mV. I did see the station triggering so it must be working.
+I was working with the station having the bias tee and scope attached till 
+about 7PM. Station continued to take thermal triggers all night till 1PM when 
+I attached cables to inputs. cables are temrinated on the other end. Scope and 
+bias tee were removed from the power input.
+
+Run 3334 is the config taking thermal triggers.
+
+At 4:30PM Station was stopped from taking triggers and the scope measured 
+the noise on the inside of the station powerlines. 

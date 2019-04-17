@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
 print "Initializing..."
 
-Printvals = False 	# Print each channel's average sigma, VRMS and offset for the entire data set
+Printvals = True 	# Print each channel's average sigma, VRMS and offset for the entire data set
 makePlots = False	# Make histogram plots of the noise voltage
 log = False 		# Plot histogram in log
 TempPlots = False	# Make Temperature Plots: 1) VRMS vs Temp 2) Temp vs Time**

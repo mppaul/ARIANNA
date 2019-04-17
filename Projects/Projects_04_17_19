@@ -1,0 +1,53 @@
+==============================================================================
+			    Current Projects 
+			    Due Wed. April 17
+==============================================================================
+
+BMU Noise Study (H) 
+XX Begin Initial Tests w/ Solar Panel Power Source and Station
+XX Get Scope measurement of noise inside and out
+XX Redo Internal Noise Test w/ Solar Panel if Possible
+XX Attach Long 5-7m Cables to the Inputs of Stn for an Increase of Rates
+OO Use the BMU pulses to Trigger the Stn w/ LPDAs Connected to Input
+XX Build new BMU Box with new pins
+XX Redo tests with new BMU box
+-- Change BMU period for charging
+-- Update BMU Report
+
+Iridum File Transfer Study (L) 
+-- Record the SBD log
+-- Decode debug output
+-- Update the SBD Report
+-- Take Data and See if Reset Frequency Increases
+
+Building and Testing Heating Strip (M) 
+X- Make Formal Report for Heating Strip
+XX Look for Smaller Strips to Add to HS 2.0
+
+Calibration Studies (L) 
+-- Document for Manual Threshold Calibration Code and Process
+-- Do Gain Calibration on 201
+
+400 Series Amps (M) 
+-- Make Formal Report
+-- Meet w/ Stuart regarding oscillation
+-- Look into FPN Sigma Adding to Noise of Amps
+
+FPGA Programming (M) 
+-- Learn more abou the Language 
+-- Start Practicing 
+
+KU Dipole Park Tests (L) - Planned for April 18th
+OO NOTHING
+
+MISC
+
+==============================================================================
+
+(--) Not Done
+(XX) Finished
+(X-) Partially Done
+(OO) No Longer Needed
+* Rolled Over From Last Week (MUST DO!)
+** Rolled Over From Two Weeks (REALLY MUST DO!)
+!! Rolled Over From 3+ Weeks (JUST DO IT!!!)

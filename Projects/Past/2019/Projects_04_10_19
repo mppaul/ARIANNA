@@ -1,0 +1,59 @@
+==============================================================================
+			    Current Projects 
+			    Due Wed. April 10
+==============================================================================
+
+BMU Noise Study (H) F/ M
+-- Begin Initial Tests w/ Solar Panel Power Source and Station
+-- Redo Internal Noise Test w/ Solar Panel if Possible
+-- Attach Long 5-7m Cables to the Inputs of Stn for an Increase of Rates
+-- Use the BMU pulses to Trigger the Stn w/ LPDAs Connected to Input
+-- Build new BMU Box with new pins
+-- Redo tests with new BMU box
+-- Change BMU period for charging
+-- Update BMU Report
+
+Iridum File Transfer Study (L) T
+-- Record the SBD log
+-- Decode debug output
+-- Update the SBD Report
+-- Take Data and See if Reset Frequency Increases
+
+Building and Testing Heating Strip (M) M
+X- Make Report for Heating Strip
+XX Do Ice Test w/ Tough
+XX Measure Ice Density
+XX Add Connector to Strip
+
+Threshold Calibration Studies (L) WE
+-- Document for Manual Threshold Calibration Code and Process
+XX Fix Astrid's Code
+-- Check New Calibration for correct trigger rates
+
+400 Series Amps (H) R/ F
+XX Fix Power/ Oscillation Issue
+XX Connect Amp to SST Board and Take Force Triggers
+-- Make Formal Report
+XX Connect Amp to Full Station and Take Thermal Triggers
+XX Become Familiar with Amp Noise Statisitcs
+-- Meet w/ Stuart regarding oscillation
+
+FPGA Programming (M) WE
+-- Learn more abou the Language 
+-- Start Practicing 
+
+KU Dipole Park Tests (L) Planned for April 18th
+XX Plan Park test and date
+XX Understand what tests need to be done and why
+
+MISC
+
+==============================================================================
+
+(--) Not Done
+(XX) Finished
+(X-) Partially Done
+(OO) No Longer Needed
+* Rolled Over From Last Week (MUST DO!)
+** Rolled Over From Two Weeks (REALLY MUST DO!)
+!! Rolled Over From 3+ Weeks (JUST DO IT!!!)

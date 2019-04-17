@@ -19,7 +19,7 @@ DAQchip=SST8Ch_20171GHz
 ConfLabel=Thermal_Trigger_INSIDE
 #
 # the run number and first sequence number
-Run=6789
+Run=3335
 FirstSeq=0
 #
 # number of X per sequence, where X is either saved triggered events (default)
@@ -74,7 +74,7 @@ EvtsPerSeq=10
 #
 #RunMode=SingleSeq
 #RunMode=CountPower
-#RunMode=DualThresh
+RunMode=DualThresh
 #RunMode=DiffTrig
 #RunMode=LowPwrSBDonly
 #RunMode=RunSeqListOneCommWin
@@ -91,14 +91,14 @@ EvtsPerSeq=10
 # (ATWD) dac number: 0=HI (c4), 1=LO (c2/c1), 2=LO (c1/c2), 3=HI (c3)
 #
 # (SST)  DACS= channel : dac low thresh, dac high thresh
-DACS= 0 : 22018,25163
-DACS= 1 : 22018,25163
-DACS= 2 : 22018,25163
-DACS= 3 : 22018,25163
-DACS= 4 : 22018,25163
-DACS= 5 : 22018,25163
-DACS= 6 : 22018,25163
-DACS= 7 : 22018,25163
+DACS= 0 : 200,40000
+DACS= 1 : 22440,24490
+DACS= 2 : 200,40000 
+DACS= 3 : 200,40000 
+DACS= 4 : 200,40000 
+DACS= 5 : 200,40000 
+DACS= 6 : 200,40000 
+DACS= 7 : 22309,24899
 # number of cards in the majority logic
 NumCardsMajLog=1
 # if False, will disable all thermal triggers (!)
