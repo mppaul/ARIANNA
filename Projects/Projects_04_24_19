@@ -1,0 +1,59 @@
+==============================================================================
+			    Current Projects 
+			    Due Wed. April 24
+==============================================================================
+
+BMU Noise Study (H) 
+-- Take One More Set of Data for Each BMU.
+-- Change BMU period for charging
+-- Update BMU Report
+
+Iridum File Transfer Study (L) 
+-- Record the SBD log
+-- Decode debug output
+-- Update the SBD Report
+-- Take Data and See if Reset Frequency Increases
+
+Building and Testing Heating Strip (M) 
+X- Make Formal Report for Heating Strip
+-- Test Heating Strip 1.0 in Chicken Trough for Rate Measurement
+
+Calibration Studies (L) 
+-- Document for Manual Threshold Calibration Code and Process
+-- Do Gain Calibration on 201
+
+400 Series Amps (M) 
+-- Make Formal Report
+XX Meet w/ Stuart regarding oscillation - Parasitic Oscillation
+XX Look into FPN Sigma Adding to Noise of Amps
+-- Add 6dB of attenuation and see if trigger rates stay stable
+-- Check for cross triggering between comparators
+
+FPGA Programming (M) 
+-- Learn more abou the Language 
+-- Start Practicing 
+
+KU Dipole Park Tests (L) - Planned for April 29th
+-- Measure Pulses from Dipole w/ Cables (Different orientations)
+-- Confirm wiring doesn't dramatically change the received signal
+-- Ask Steve what will be connected to green cables
+
+Build and Put Away LPDAs from Antarctica 
+-- Set day up with Astrid and Geoff to do this
+-- Move equipment to EH
+-- Build NTU LPDAs and fix bent ones
+-- Organizae equipment in EH and Highbay
+
+MISC
+-- Write NSF GRFP Report
+-- Fill out SRP application
+
+==============================================================================
+
+(--) Not Done
+(XX) Finished
+(X-) Partially Done
+(OO) No Longer Needed
+* Rolled Over From Last Week (MUST DO!)
+** Rolled Over From Two Weeks (REALLY MUST DO!)
+!! Rolled Over From 3+ Weeks (JUST DO IT!!!)
