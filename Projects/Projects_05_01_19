@@ -1,18 +1,18 @@
 ==============================================================================
 			    Current Projects 
-			    Due Wed. April 24
+			    Due Wed. May 1
 ==============================================================================
 
 BMU Noise Study (H) 
--- Take One More Set of Data for Each BMU.
--- Change BMU period for charging
--- Update BMU Report
+OO Take One More Set of Data for Each BMU.
+OO Change BMU period for charging
+OO Update BMU Report
 
 Iridum File Transfer Study (L) 
--- Record the SBD log
--- Decode debug output
--- Update the SBD Report
--- Take Data and See if Reset Frequency Increases
+OO Record the SBD log
+OO Decode debug output
+OO Update the SBD Report
+OO Take Data and See if Reset Frequency Increases
 
 Building and Testing Heating Strip (M) 
 X- Make Formal Report for Heating Strip
@@ -39,14 +39,14 @@ KU Dipole Park Tests (L) - Planned for April 29th
 -- Ask Steve what will be connected to green cables
 
 Build and Put Away LPDAs from Antarctica 
--- Set day up with Astrid and Geoff to do this
--- Move equipment to EH
--- Build NTU LPDAs and fix bent ones
--- Organizae equipment in EH and Highbay
+XX Set day up with Astrid and Geoff to do this
+XX Move equipment to EH
+X- Build NTU LPDAs and fix bent ones
+X- Organizae equipment in EH
 
 MISC
--- Write NSF GRFP Report
--- Fill out SRP application
+X- Write NSF GRFP Report
+XX Fill out SRP application
 
 ==============================================================================
 
